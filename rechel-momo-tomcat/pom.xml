@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>rechel-momo-tomcat</artifactId>
-    <name>Rachel Momo::Tomcat @${tomcat.version} &#10;&#9;&#9;&#160;&#160;&#160;&#160;Legacy / ${tomcat-legacy.version}</name>
+    <name>Rachel Momo::Tomcat @${tomcat.version} |🟡 - ${tomcat-legacy.version}</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>

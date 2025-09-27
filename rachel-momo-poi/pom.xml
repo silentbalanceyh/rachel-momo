@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>rachel-momo-poi</artifactId>
-    <name>Rachel Momo::Poi @${poi.version} &#10;&#9;&#9;&#160;&#160;&#160;&#160;Schema / ${poi-ooxml-schemas.version}</name>
+    <name>Rachel Momo::Poi @${poi.version} |🟡 - ${poi-ooxml-schemas.version}</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>

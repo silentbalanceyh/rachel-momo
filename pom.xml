@@ -16,6 +16,8 @@
         <module>rachel-momo-httpcore5</module>
         <module>rachel-momo-poi</module>
         <module>rechel-momo-tomcat</module>
+        <module>rachel-momo-apache-felix</module>
+        <module>rachel-momo-aspectj</module>
     </modules>
     <properties>
         <!-- 项目基本信息 -->
@@ -85,6 +87,21 @@
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/servlet-api -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/annotations-api -->
         <tomcat-legacy.version>6.0.53</tomcat-legacy.version>
+
+
+        <!-- ========================  🌸 -felix ============================ -->
+        <felix-framework.version>7.0.5</felix-framework.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.framework -->
+        <felix-scr.versoin>2.2.14</felix-scr.versoin><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr -->
+        <felix-scr-annotations.version>1.12.0</felix-scr-annotations.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr.annotations -->
+
+
+        <!-- ========================  🌸 -aspectj ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjtools -->
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+        <aspectj.version>1.9.24</aspectj.version>
+        <aspectj-jcabi.version>0.26.0</aspectj-jcabi.version><!-- https://mvnrepository.com/artifact/com.jcabi/jcabi-aspects -->
+
 
         <!-- ====== ☘️ 非标准第三方插件 ===== -->
         <maven.plugin.versions>2.19.1</maven.plugin.versions><!-- http://www.mvnrepository.com/artifact/org.codehaus.mojo/versions-maven-plugin -->

@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>rachel-momo-httpcore5</artifactId>
-    <name>Rachel Momo::HttpCore5 @${httpcore5.version} &#10;&#9;&#9;&#160;&#160;&#160;&#160;Client / ${httpclient5.version}</name>
+    <name>Rachel Momo::HttpCore5 @${httpcore5.version} |🟡 - ${httpclient5.version}</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
