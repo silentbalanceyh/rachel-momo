@@ -38,7 +38,7 @@ Rachel Momo（统一版本管理，适用于所有项目）
 <dependencyManagement>
     <dependencies>
         <dependency>
-            <groupId>io.vertx</groupId>
+            <groupId>io.zerows</groupId>
             <artifactId>rachel-momo-stack</artifactId>
             <version>1.0.0</version>
             <type>pom</type>
