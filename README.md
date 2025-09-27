@@ -1,5 +1,7 @@
 # rachel-momo
 
+> For Rachel Momo
+
 ## 介绍
 
 ### 基本介绍
@@ -27,9 +29,26 @@ Rachel Momo（统一版本管理，适用于所有项目）
 
 - 文档地图：<https://kumu.io/LangYu1017/r2mo#r2mo-dash>
 
-### 若要使用插件最新版
+### 最新版的使用
 
-直接在您的 Maven 中追加两块内容
+直接在您的 Maven 中追加如下：
+
+```xml
+
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>rachel-momo-stack</artifactId>
+            <version>1.0.0</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+```
+
+追加之后，大部分的插件和依赖都可以直接使用而不需要设置版本信息，当然，您也可以通过设置版本号来覆盖默认的版本。
 
 ### 参考链接
 
