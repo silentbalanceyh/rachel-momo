@@ -38,6 +38,8 @@
         <module>rachel-momo-junit</module>
         <module>rachel-momo-hibernate</module>
         <module>rachel-momo-secure</module>
+        <module>rachel-momo-vendor</module>
+        <module>rachel-momo-scala</module>
     </modules>
     <properties>
         <!-- 项目基本信息 -->
@@ -351,10 +353,28 @@
         <poi-ooxml-schemas.version>4.1.2</poi-ooxml-schemas.version>
 
 
+        <!-- ========================  🌸 -scala ============================ -->
+        <scala.version>3.7.3</scala.version><!-- https://mvnrepository.com/artifact/org.scala-lang/scala3-library -->
+        <scala-legacy.version>2.13-17-M1</scala-legacy.version><!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
+
+
         <!-- ========================  🌸 -secure ============================ -->
         <secure-jwt.version>4.5.0</secure-jwt.version><!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
         <secure-sshd.version>3.0.0-M1</secure-sshd.version><!-- https://mvnrepository.com/artifact/org.apache.sshd/sshd-core -->
         <secure-prime-jws.version>2.0.0</secure-prime-jws.version><!-- https://mvnrepository.com/artifact/com.inversoft/prime-jwt -->
+
+
+        <!-- ========================  🌸 -vendor ============================ -->
+        <vendor.termd-core.version>1.1.0</vendor.termd-core.version><!-- https://mvnrepository.com/artifact/io.termd/termd-core -->
+        <vendor.janino.version>3.1.12</vendor.janino.version><!-- https://mvnrepository.com/artifact/org.codehaus.janino/janino -->
+        <vendor.animal-sniffer-annotations.version>1.24</vendor.animal-sniffer-annotations.version><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/animal-sniffer-annotations -->
+        <vendor.HdrHistogram.version>2.2.2</vendor.HdrHistogram.version><!-- https://mvnrepository.com/artifact/org.hdrhistogram/HdrHistogram -->
+        <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-core -->
+        <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-jackson -->
+        <vendor.feign.version>8.18.0</vendor.feign.version>
+        <vendor.picocli.version>4.7.7</vendor.picocli.version><!-- https://mvnrepository.com/artifact/info.picocli/picocli -->
+        <vendor.jedis.version>6.2.0</vendor.jedis.version><!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+        <vendor.checker-qual.version>3.51.0</vendor.checker-qual.version><!-- https://mvnrepository.com/artifact/org.checkerframework/checker-qual -->
 
 
         <!-- ========================  🌸 -vertx ============================ -->
