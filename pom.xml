@@ -40,6 +40,11 @@
         <module>rachel-momo-secure</module>
         <module>rachel-momo-vendor</module>
         <module>rachel-momo-scala</module>
+        <module>rachel-momo-util</module>
+        <module>rachel-momo-reactive</module>
+        <module>rachel-momo-spring</module>
+        <module>rachel-momo-template</module>
+        <module>rachel-momo-swagger</module>
     </modules>
     <properties>
         <!-- 项目基本信息 -->
@@ -113,6 +118,14 @@
         <!-- https://mvnrepository.com/artifact/org.jooq/jooq -->
         <database-jooq.version>3.20.7</database-jooq.version>
         <database-liquibase.version>4.33.0</database-liquibase.version><!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-mysql -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-h2 -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-derby -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-postgresql -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-oracle -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-sqlserver -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
+        <database-flyway.version>11.13.1</database-flyway.version><!-- 低一个版本，为了统一，因为有两个库还没有 11.13.1 的版本 -->
 
 
         <!-- ========================  🌸 -database-driver ============================ -->
@@ -306,6 +319,7 @@
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-extension -->
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-generator -->
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-annotation -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-jsqlparser -->
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-core -->
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-spring -->
         <mybatisplus.version>3.5.14</mybatisplus.version>
@@ -353,6 +367,13 @@
         <poi-ooxml-schemas.version>4.1.2</poi-ooxml-schemas.version>
 
 
+        <!-- ========================  🌸 -reactive ============================ -->
+        <reactive.rxjava2.version>2.2.21</reactive.rxjava2.version><!-- https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava -->
+        <reactive.rxjava3.version>3.1.12</reactive.rxjava3.version><!-- https://mvnrepository.com/artifact/io.reactivex.rxjava3/rxjava -->
+        <reactive.streams.version>1.0.4</reactive.streams.version><!-- https://mvnrepository.com/artifact/org.reactivestreams/reactive-streams -->
+        <reactive.reactor.version>3.8.0-M7</reactive.reactor.version><!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
+
+
         <!-- ========================  🌸 -scala ============================ -->
         <scala.version>3.7.3</scala.version><!-- https://mvnrepository.com/artifact/org.scala-lang/scala3-library -->
         <scala-legacy.version>2.13-17-M1</scala-legacy.version><!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
@@ -362,6 +383,39 @@
         <secure-jwt.version>4.5.0</secure-jwt.version><!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
         <secure-sshd.version>3.0.0-M1</secure-sshd.version><!-- https://mvnrepository.com/artifact/org.apache.sshd/sshd-core -->
         <secure-prime-jws.version>2.0.0</secure-prime-jws.version><!-- https://mvnrepository.com/artifact/com.inversoft/prime-jwt -->
+        <secure-bcprov-jdk18on.version>1.82</secure-bcprov-jdk18on.version><!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk18on -->
+
+
+        <!-- ========================  🌸 -spring ============================ -->
+
+
+        <!-- ========================  🌸 -swagger ============================ -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-jaxrs2 -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-jaxrs2-jakarta -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-jaxrs2-servlet-initializer -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-jaxrs2-servlet-initializer-jakarta -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-core -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-core-jakarta -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-integration -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-integration-jakarta -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-models -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-models-jakarta -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations-jakarta -->
+        <doc-swagger3.version>2.2.37</doc-swagger3.version>
+
+
+        <!-- ========================  🌸 -template ============================ -->
+        <tpl.freemaker.version>1.8.1</tpl.freemaker.version><!-- https://mvnrepository.com/artifact/com.quhaodian/freemaker -->
+        <!-- https://mvnrepository.com/artifact/org.apache.velocity/spring-velocity-support -->
+        <!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity-engine-core -->
+        <tpl.velocity.version>2.4.1</tpl.velocity.version>
+        <tpl.velocity-tools.version>3.1</tpl.velocity-tools.version><!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity-tools -->
+
+
+        <!-- ========================  🌸 -util ============================ -->
+        <util.joda.version>2.14.0</util.joda.version><!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+        <util.hutool.version>5.8.40</util.hutool.version><!-- https://mvnrepository.com/artifact/cn.hutool/hutool-bom -->
 
 
         <!-- ========================  🌸 -vendor ============================ -->
@@ -378,7 +432,7 @@
 
 
         <!-- ========================  🌸 -vertx ============================ -->
-        <vertx.version>5.0.4</vertx.version><!-- Import vertx-stack-depchain -->
+        <vertx.version>5.0.4</vertx.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-stack-depchain -->
         <vertx-swagger.version>1.6.0</vertx-swagger.version><!-- https://mvnrepository.com/artifact/com.github.phiz71/vertx-swagger-router -->
         <vertx-legacy.version>4.5.21</vertx-legacy.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-io_uring-incubator -->
 

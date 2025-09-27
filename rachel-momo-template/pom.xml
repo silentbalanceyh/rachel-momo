@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.zerows</groupId>
+        <artifactId>rachel-momo</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>rachel-momo-template</artifactId>
+    <name>Rachel Momo::Template / F${tpl.freemaker.version} | V${tpl.velocity.version}</name>
+    <packaging>pom</packaging>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.quhaodian</groupId>
+                <artifactId>freemaker</artifactId>
+                <version>${tpl.freemaker.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity-engine-core</artifactId>
+                <version>${tpl.velocity.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>spring-velocity-support</artifactId>
+                <version>${tpl.velocity.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.velocity.tools</groupId>
+                <artifactId>velocity-tools-generic</artifactId>
+                <version>${tpl.velocity-tools.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

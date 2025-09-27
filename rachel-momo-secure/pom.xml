@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>rachel-momo-secure</artifactId>
-    <name>Rachel Momo::Secure</name>
+    <name>Rachel Momo::Secure / BC${secure-bcprov-jdk18on.version}</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
@@ -28,6 +28,11 @@
                 <groupId>com.inversoft</groupId>
                 <artifactId>prime-jwt</artifactId>
                 <version>${secure-prime-jwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk18on</artifactId>
+                <version>${secure-bcprov-jdk18on.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

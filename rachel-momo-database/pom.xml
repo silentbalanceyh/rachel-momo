@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>rachel-momo-database</artifactId>
-    <name>Rachel Momo::Database</name>
+    <name>Rachel Momo::Database / Jooq@${database-jooq.version} | Flyway - ${database-flyway.version}</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
@@ -40,6 +40,42 @@
                 <groupId>org.liquibase</groupId>
                 <artifactId>liquibase-core</artifactId>
                 <version>${database-liquibase.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-mysql</artifactId>
+                <version>${database-flyway.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-database-derby</artifactId>
+                <version>${database-flyway.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-database-h2</artifactId>
+                <version>${database-flyway.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-database-postgresql</artifactId>
+                <version>${database-flyway.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-sqlserver</artifactId>
+                <version>${database-flyway.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-database-oracle</artifactId>
+                <version>${database-flyway.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-core</artifactId>
+                <version>${database-flyway.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
