@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.zerows</groupId>
+    <artifactId>rachel-momo</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>Rachel Momo</name>
+    <!-- License -->
+    <url>https://gitee.com/silentbalanceyh/rachel-momo</url>
+    <modules>
+        <module>rachel-momo-apache</module>
+        <module>rachel-momo-stack</module>
+        <module>rachel-momo-httpcore5</module>
+        <module>rachel-momo-poi</module>
+        <module>rechel-momo-tomcat</module>
+    </modules>
+    <properties>
+        <!-- 项目基本信息 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <java.version>17</java.version>
+
+
+        <!-- ========================  🌸 -apache-common ============================ -->
+        <commons-compress.version>1.28.0</commons-compress.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-compress -->
+        <commons-net.version>3.12.0</commons-net.version><!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
+        <commons-codec.version>1.19.0</commons-codec.version><!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+        <commons-collections4.version>4.5.0</commons-collections4.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
+        <commons-jexl3.version>3.5.0</commons-jexl3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-jexl3 -->
+        <commons-logging.version>1.3.5</commons-logging.version><!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+        <commons-lang3.version>3.19.0</commons-lang3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <commons-cli.version>1.10.0</commons-cli.version><!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
+        <commons-io.version>2.20.0</commons-io.version><!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <commons-text.version>1.14.0</commons-text.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
+
+
+        <!-- ========================  🌸 -httpcore5 ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-reactive -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5 -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-testing -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-h2 -->
+        <httpcore5.version>5.3.6</httpcore5.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-testing -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-cache -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-fluent -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5 -->
+        <httpclient5.version>5.5</httpclient5.version>
+        <httpclient5-win.version>5.2.3</httpclient5-win.version><!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-win -->
+        <!-- 旧版本 -->
+        <httpcore4.version>4.4.16</httpcore4.version><!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpmime -->
+        <httpclient4.version>4.5.14</httpclient4.version>
+
+
+        <!-- ========================  🌸 -poi ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-xml -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-excelant -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-lite -->
+        <poi.version>5.4.1</poi.version>
+        <poi-ooxml-schemas.version>4.1.2</poi-ooxml-schemas.version>
+
+
+        <!-- ========================  🌸 -tomcat ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jdbc -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-coyote -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-annotations-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-juli -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jsp-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper-el -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-dbcp -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina-ha -->
+        <tomcat.version>11.0.11</tomcat.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/servlet-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/annotations-api -->
+        <tomcat-legacy.version>6.0.53</tomcat-legacy.version>
+
+        <!-- ====== ☘️ 非标准第三方插件 ===== -->
+        <maven.plugin.versions>2.19.1</maven.plugin.versions><!-- http://www.mvnrepository.com/artifact/org.codehaus.mojo/versions-maven-plugin -->
+        <maven.plugin.central-publishing>0.9.0</maven.plugin.central-publishing><!-- https://mvnrepository.com/artifact/org.sonatype.central/central-publishing-maven-plugin -->
+
+
+        <!-- ====== 🌷 标准 Maven 插件 （可以不加 groupId） ===== -->
+        <maven.plugin.source>3.3.1</maven.plugin.source><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
+        <maven.plugin.javadoc>3.12.0</maven.plugin.javadoc><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
+        <maven.plugin.compiler>3.14.1</maven.plugin.compiler><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+        <maven.plugin.pgp>3.2.7</maven.plugin.pgp><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
+        <maven.plugin.dependency>3.8.1</maven.plugin.dependency><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin -->
+    </properties>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>${maven.plugin.dependency}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven.plugin.compiler}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${maven.plugin.source}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>${maven.plugin.pgp}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${maven.plugin.javadoc}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.sonatype.central</groupId>
+                    <artifactId>central-publishing-maven-plugin</artifactId>
+                    <version>${maven.plugin.central-publishing}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>versions-maven-plugin</artifactId>
+                    <version>${maven.plugin.versions}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <additionalOptions>
+                        <additionalOption>-Xdoclint:none</additionalOption>
+                    </additionalOptions>
+                    <failOnError>false</failOnError>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Source -->
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                        <configuration>
+                            <passphraseServerId>oss</passphraseServerId>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>oss</publishingServerId>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+    <description>
+        统一版本管理模型，管理所有依赖库的版本号，方便在各个项目中通过 stack - import 方式引用
+    </description>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <comments>The project itself is licensed under MIT License.</comments>
+        </license>
+    </licenses>
+    <!-- Developers -->
+    <developers>
+        <developer>
+            <name>lang.yu</name>
+            <email>silentbalanceyh@126.com</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
+    <!-- Scm Connection -->
+    <scm>
+        <connection>scm:git:https://gitee.com/silentbalanceyh/r2mo-rachel-momo.git</connection>
+        <developerConnection>scm:git:https://gitee.com/silentbalanceyh</developerConnection>
+        <url>https://www.zerows.io</url>
+        <tag>v${project.version}</tag>
+    </scm>
+    <!-- Distribution -->
+    <distributionManagement>
+        <snapshotRepository>
+            <id>oss</id>
+            <name>Maven Central Snapshots Repository</name>
+            <url>https://central.sonatype.com</url>
+        </snapshotRepository>
+        <repository>
+            <id>oss</id>
+            <name>Maven Central Staging Repository</name>
+            <url>https://central.sonatype.com</url>
+        </repository>
+    </distributionManagement>
+</project>
