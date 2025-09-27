@@ -18,12 +18,15 @@
         <module>rachel-momo-cluster</module>
         <module>rachel-momo-database</module>
         <module>rachel-momo-database-driver</module>
+        <module>rachel-momo-eclipse</module>
+        <module>rachel-momo-elasticsearch</module>
         <module>rachel-momo-httpcore5</module>
-        <module>rachel-momo-poi</module>
-        <module>rechel-momo-tomcat</module>
-        <module>rachel-momo-stack</module>
         <module>rachel-momo-jklingsporn</module>
         <module>rachel-momo-mybatisplus</module>
+        <module>rachel-momo-osgi</module>
+        <module>rachel-momo-poi</module>
+        <module>rachel-momo-stack</module>
+        <module>rechel-momo-tomcat</module>
     </modules>
     <properties>
         <!-- 项目基本信息 -->
@@ -45,54 +48,6 @@
         <commons-cli.version>1.10.0</commons-cli.version><!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
         <commons-io.version>2.20.0</commons-io.version><!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <commons-text.version>1.14.0</commons-text.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
-
-
-        <!-- ========================  🌸 -httpcore5 ============================ -->
-        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-reactive -->
-        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5 -->
-        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-testing -->
-        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-h2 -->
-        <httpcore5.version>5.3.6</httpcore5.version>
-        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-testing -->
-        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-cache -->
-        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-fluent -->
-        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5 -->
-        <httpclient5.version>5.5</httpclient5.version>
-        <httpclient5-win.version>5.2.3</httpclient5-win.version><!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-win -->
-        <!-- 旧版本 -->
-        <httpcore4.version>4.4.16</httpcore4.version><!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
-        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
-        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpmime -->
-        <httpclient4.version>4.5.14</httpclient4.version>
-
-
-        <!-- ========================  🌸 -poi ============================ -->
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-xml -->
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-excelant -->
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad -->
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-lite -->
-        <poi.version>5.4.1</poi.version>
-        <poi-ooxml-schemas.version>4.1.2</poi-ooxml-schemas.version>
-
-
-        <!-- ========================  🌸 -tomcat ============================ -->
-        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jdbc -->
-        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
-        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api -->
-        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-coyote -->
-        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-annotations-api -->
-        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper -->
-        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-juli -->
-        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jsp-api -->
-        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper-el -->
-        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-dbcp -->
-        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-api -->
-        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina-ha -->
-        <tomcat.version>11.0.11</tomcat.version>
-        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/servlet-api -->
-        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/annotations-api -->
-        <tomcat-legacy.version>6.0.53</tomcat-legacy.version>
 
 
         <!-- ========================  🌸 -felix ============================ -->
@@ -148,17 +103,52 @@
         <database-liquibase.version>4.33.0</database-liquibase.version><!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
 
 
-        <!-- ========================  🌸 -mybatis ============================ -->
-        <mybatis.version>3.5.19</mybatis.version><!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
-        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus -->
-        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-extension -->
-        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-generator -->
-        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-annotation -->
-        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-core -->
-        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-spring -->
-        <mybatisplus.version>3.5.14</mybatisplus.version>
+        <!-- ========================  🌸 -database-driver ============================ -->
+        <database-neo4j.version>5.28.9</database-neo4j.version><!-- https://mvnrepository.com/artifact/org.neo4j.driver/neo4j-java-driver -->
+        <database-mongodb.version>5.6.0</database-mongodb.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-sync -->
+        <database-mongodb-legacy.version>3.12.14</database-mongodb-legacy.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
+        <database-mysql.version>9.4.0</database-mysql.version><!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+        <database-pgsql.version>42.7.8</database-pgsql.version><!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <database-h2.version>2.4.240</database-h2.version><!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+        <database-sqlite.version>3.50.3.0</database-sqlite.version><!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
+        <!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
+        <!-- https://mvnrepository.com/artifact/org.apache.derby/derbytools -->
+        <!-- https://mvnrepository.com/artifact/org.apache.derby/derbyclient -->
+        <!-- https://mvnrepository.com/artifact/org.apache.derby/derbynet -->
+        <database-derby.version>10.17.1.0</database-derby.version>
 
-        <mybatis-spring.version>3.0.5</mybatis-spring.version><!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+
+        <!-- ========================  🌸 -eclipse ============================ -->
+        <eclipse-jgit.version>7.3.0.202506031305-r</eclipse-jgit.version><!-- https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit -->
+
+
+        <!-- ========================  🌸 -elasticsearch ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-core -->
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-x-content -->
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client -->
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client-sniffer -->
+        <elasticsearch.version>9.1.4</elasticsearch.version>
+        <elasticsearch-client.version>7.17.29</elasticsearch-client.version><!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-high-level-client -->
+
+
+        <!-- ========================  🌸 -httpcore5 ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-reactive -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5 -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-testing -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-h2 -->
+        <httpcore5.version>5.3.6</httpcore5.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-testing -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-cache -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-fluent -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5 -->
+        <httpclient5.version>5.5</httpclient5.version>
+        <httpclient5-win.version>5.2.3</httpclient5-win.version><!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-win -->
+        <!-- 旧版本 -->
+        <httpcore4.version>4.4.16</httpcore4.version><!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpmime -->
+        <httpclient4.version>4.5.14</httpclient4.version>
 
 
         <!-- ========================  🌸 -jklingsporn ============================ -->
@@ -173,19 +163,53 @@
         <jklingsporn.version>6.5.5</jklingsporn.version>
 
 
-        <!-- ========================  🌸 -database-driver ============================ -->
-        <database-neo4j.version>5.28.9</database-neo4j.version><!-- https://mvnrepository.com/artifact/org.neo4j.driver/neo4j-java-driver -->
-        <database-mongodb.version>5.6.0</database-mongodb.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-sync -->
-        <database-mongodb-legacy.version>3.12.14</database-mongodb-legacy.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
-        <database-mysql.version>9.4.0</database-mysql.version><!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
-        <database-pgsql.version>42.7.8</database-pgsql.version><!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-        <database-h2.version>2.4.240</database-h2.version><!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
-        <database-sqlite.version>3.50.3.0</database-sqlite.version><!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
-        <!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
-        <!-- https://mvnrepository.com/artifact/org.apache.derby/derbytools -->
-        <!-- https://mvnrepository.com/artifact/org.apache.derby/derbyclient -->
-        <!-- https://mvnrepository.com/artifact/org.apache.derby/derbynet -->
-        <database-derby.version>10.17.1.0</database-derby.version>
+        <!-- ========================  🌸 -mybatis ============================ -->
+        <mybatis.version>3.5.19</mybatis.version><!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-extension -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-generator -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-annotation -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-core -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-spring -->
+        <mybatisplus.version>3.5.14</mybatisplus.version>
+        <mybatis-spring.version>3.0.5</mybatis-spring.version><!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+
+
+        <!-- ========================  🌸 -osgi ============================ -->
+        <osgi-framework.version>1.10.0</osgi-framework.version><!-- https://mvnrepository.com/artifact/org.osgi/org.osgi.framework -->
+        <osgi-core.version>8.0.0</osgi-core.version><!-- https://mvnrepository.com/artifact/org.osgi/osgi.core -->
+        <osgi-cmpn.version>7.0.0</osgi-cmpn.version><!-- https://mvnrepository.com/artifact/org.osgi/osgi.cmpn -->
+        <osgi-annotation.version>8.1.0</osgi-annotation.version><!-- https://mvnrepository.com/artifact/org.osgi/osgi.annotation -->
+        <osgi-service-cm.version>1.6.1</osgi-service-cm.version><!-- https://mvnrepository.com/artifact/org.osgi/org.osgi.service.cm -->
+
+
+        <!-- ========================  🌸 -poi ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-xml -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-excelant -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-lite -->
+        <poi.version>5.4.1</poi.version>
+        <poi-ooxml-schemas.version>4.1.2</poi-ooxml-schemas.version>
+
+
+        <!-- ========================  🌸 -tomcat ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jdbc -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-coyote -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-annotations-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-juli -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jsp-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper-el -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-dbcp -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina-ha -->
+        <tomcat.version>11.0.11</tomcat.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/servlet-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/annotations-api -->
+        <tomcat-legacy.version>6.0.53</tomcat-legacy.version>
 
 
         <!-- ====== ☘️ 非标准第三方插件 ===== -->
