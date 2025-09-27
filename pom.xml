@@ -12,12 +12,18 @@
     <url>https://gitee.com/silentbalanceyh/rachel-momo</url>
     <modules>
         <module>rachel-momo-apache</module>
-        <module>rachel-momo-stack</module>
+        <module>rachel-momo-apache-felix</module>
+        <module>rachel-momo-aspectj</module>
+        <module>rachel-momo-camunda</module>
+        <module>rachel-momo-cluster</module>
+        <module>rachel-momo-database</module>
+        <module>rachel-momo-database-driver</module>
         <module>rachel-momo-httpcore5</module>
         <module>rachel-momo-poi</module>
         <module>rechel-momo-tomcat</module>
-        <module>rachel-momo-apache-felix</module>
-        <module>rachel-momo-aspectj</module>
+        <module>rachel-momo-stack</module>
+        <module>rachel-momo-jklingsporn</module>
+        <module>rachel-momo-mybatisplus</module>
     </modules>
     <properties>
         <!-- 项目基本信息 -->
@@ -93,6 +99,10 @@
         <felix-framework.version>7.0.5</felix-framework.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.framework -->
         <felix-scr.versoin>2.2.14</felix-scr.versoin><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr -->
         <felix-scr-annotations.version>1.12.0</felix-scr-annotations.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr.annotations -->
+        <felix-shell.version>1.4.3</felix-shell.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.shell -->
+        <felix-dm.version>4.6.1</felix-dm.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.dependencymanager -->
+        <felix-logback.version>1.0.6</felix-logback.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.logback -->
+        <felix-gogo-command.version>1.1.2</felix-gogo-command.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.gogo.command -->
 
 
         <!-- ========================  🌸 -aspectj ============================ -->
@@ -101,6 +111,81 @@
         <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
         <aspectj.version>1.9.24</aspectj.version>
         <aspectj-jcabi.version>0.26.0</aspectj-jcabi.version><!-- https://mvnrepository.com/artifact/com.jcabi/jcabi-aspects -->
+
+
+        <!-- ========================  🌸 -camunda ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.commons/camunda-commons-testing -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.commons/camunda-commons-utils -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.commons/camunda-commons-logging -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.connect/camunda-connect-core -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.connect/camunda-connect-soap-http-client -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.connect/camunda-connect-http-client -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.connect/camunda-connect-connectors-all -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.spin/camunda-spin-dataformat-xml-dom -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.spin/camunda-spin-dataformat-xml-dom-jakarta -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.spin/camunda-spin-dataformat-all -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.spin/camunda-spin-dataformat-json-jackson -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.spin/camunda-spin-core -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.template-engines/camunda-template-engines-freemarker -->
+        <camunda.version>7.23.0</camunda.version>
+        <camunda-bpm.version>1.2.0</camunda-bpm.version><!-- https://mvnrepository.com/artifact/org.camunda.bpm.extension.xslt/camunda-bpm-xslt -->
+
+
+        <!-- ========================  🌸 -cluster ============================ -->
+        <cluster-hazelcast.version>5.5.0</cluster-hazelcast.version><!-- https://mvnrepository.com/artifact/com.hazelcast/hazelcast -->
+        <cluster-zookeeper.version>3.9.4</cluster-zookeeper.version><!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
+        <!-- https://mvnrepository.com/artifact/org.apache.ignite/ignite-core -->
+        <!-- https://mvnrepository.com/artifact/org.apache.ignite/ignite-indexing -->
+        <cluster-ignite.version>3.0.0</cluster-ignite.version>
+
+
+        <!-- ========================  🌸 -database ============================ -->
+        <database-hikari.version>7.0.2</database-hikari.version><!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-codegen -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-meta -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq -->
+        <database-jooq.version>3.20.7</database-jooq.version>
+        <database-liquibase.version>4.33.0</database-liquibase.version><!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
+
+
+        <!-- ========================  🌸 -mybatis ============================ -->
+        <mybatis.version>3.5.19</mybatis.version><!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-extension -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-generator -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-annotation -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-core -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-spring -->
+        <mybatisplus.version>3.5.14</mybatisplus.version>
+
+        <mybatis-spring.version>3.0.5</mybatis-spring.version><!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+
+
+        <!-- ========================  🌸 -jklingsporn ============================ -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-classic-jdbc -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-classic-reactive -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-rx-jdbc -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-rx-reactive -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-rx3-jdbc -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-rx3-reactive -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-mutiny-jdbc -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-mutiny-reactive -->
+        <jklingsporn.version>6.5.5</jklingsporn.version>
+
+
+        <!-- ========================  🌸 -database-driver ============================ -->
+        <database-neo4j.version>5.28.9</database-neo4j.version><!-- https://mvnrepository.com/artifact/org.neo4j.driver/neo4j-java-driver -->
+        <database-mongodb.version>5.6.0</database-mongodb.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-sync -->
+        <database-mongodb-legacy.version>3.12.14</database-mongodb-legacy.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
+        <database-mysql.version>9.4.0</database-mysql.version><!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+        <database-pgsql.version>42.7.8</database-pgsql.version><!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <database-h2.version>2.4.240</database-h2.version><!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+        <database-sqlite.version>3.50.3.0</database-sqlite.version><!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
+        <!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
+        <!-- https://mvnrepository.com/artifact/org.apache.derby/derbytools -->
+        <!-- https://mvnrepository.com/artifact/org.apache.derby/derbyclient -->
+        <!-- https://mvnrepository.com/artifact/org.apache.derby/derbynet -->
+        <database-derby.version>10.17.1.0</database-derby.version>
 
 
         <!-- ====== ☘️ 非标准第三方插件 ===== -->

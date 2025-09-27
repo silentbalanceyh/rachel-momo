@@ -2,6 +2,8 @@
 
 ## 介绍
 
+### 基本介绍
+
 Rachel Momo（统一版本管理，适用于所有项目）
 
 - R2MO = R² Meta-Orchestrated <https://gitee.com/silentbalanceyh/r2mo-rapid>
@@ -9,6 +11,11 @@ Rachel Momo（统一版本管理，适用于所有项目）
 
 纯软件版本管理模型，可直接通过 dependencyManagement 管理所有依赖库的核心版本实现版本的统一管理，直接通过 import
 而避免繁琐的依赖库的处理。
+
+### 标记
+
+- 🦠 / 混合版本
+- 🟡 / 存在第二主版本，如 Core 和 Client 客户端
 
 ## 子项目
 
