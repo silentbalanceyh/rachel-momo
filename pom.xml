@@ -11,6 +11,7 @@
     <!-- License -->
     <url>https://gitee.com/silentbalanceyh/rachel-momo</url>
     <modules>
+        <!-- POM 优先 -->
         <module>rachel-momo-apache</module>
         <module>rachel-momo-apache-felix</module>
         <module>rachel-momo-aspectj</module>
@@ -20,31 +21,32 @@
         <module>rachel-momo-database-driver</module>
         <module>rachel-momo-eclipse</module>
         <module>rachel-momo-elasticsearch</module>
-        <module>rachel-momo-httpcore5</module>
-        <module>rachel-momo-jklingsporn</module>
-        <module>rachel-momo-mybatisplus</module>
-        <module>rachel-momo-osgi</module>
-        <module>rachel-momo-poi</module>
-        <module>rachel-momo-stack</module>
-        <module>rechel-momo-tomcat</module>
-        <module>rachel-momo-logging</module>
         <module>rachel-momo-google</module>
         <module>rachel-momo-grpc</module>
-        <module>rachel-momo-jackson</module>
-        <module>rachel-momo-netty</module>
-        <module>rachel-momo-jsr</module>
-        <module>rachel-momo-jvmr</module>
-        <module>rachel-momo-vertx</module>
-        <module>rachel-momo-junit</module>
         <module>rachel-momo-hibernate</module>
-        <module>rachel-momo-secure</module>
-        <module>rachel-momo-vendor</module>
-        <module>rachel-momo-scala</module>
-        <module>rachel-momo-util</module>
+        <module>rachel-momo-httpcore5</module>
+        <module>rachel-momo-jackson</module>
+        <module>rachel-momo-jklingsporn</module>
+        <module>rachel-momo-jsr</module>
+        <module>rachel-momo-junit</module>
+        <module>rachel-momo-jvmr</module>
+        <module>rachel-momo-logging</module>
+        <module>rachel-momo-mybatisplus</module>
+        <module>rachel-momo-netty</module>
+        <module>rachel-momo-osgi</module>
+        <module>rachel-momo-poi</module>
         <module>rachel-momo-reactive</module>
+        <module>rachel-momo-scala</module>
+        <module>rachel-momo-secure</module>
         <module>rachel-momo-spring</module>
-        <module>rachel-momo-template</module>
+        <module>rachel-momo-spring-alibaba</module>
         <module>rachel-momo-swagger</module>
+        <module>rachel-momo-template</module>
+        <module>rachel-momo-tomcat</module>
+        <module>rachel-momo-util</module>
+        <module>rachel-momo-vendor</module>
+        <module>rachel-momo-vertx</module>
+        <module>rachel-momo-stack</module>
     </modules>
     <properties>
         <!-- 项目基本信息 -->
@@ -230,7 +232,7 @@
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
         <jackson.version>2.20.0</jackson.version>
         <jackson-annotation.version>2.20</jackson-annotation.version><!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
-        <jackson-uuid.generator>5.1.0</jackson-uuid.generator><!-- https://mvnrepository.com/artifact/com.fasterxml.uuid/java-uuid-generator -->
+        <jackson-uuid-generator.version>5.1.1</jackson-uuid-generator.version><!-- https://mvnrepository.com/artifact/com.fasterxml.uuid/java-uuid-generator -->
         <jackson-yaml.version>2.5</jackson-yaml.version><!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
 
 
@@ -253,7 +255,7 @@
         <jsr311.ws-rs.version>2.1.1</jsr311.ws-rs.version><!-- JSR311: https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
         <jakarta.ws-rs.version>4.0.0</jakarta.ws-rs.version><!-- * https://mvnrepository.com/artifact/jakarta.ws.rs/jakarta.ws.rs-api -->
         <jsr330.inject.version>1</jsr330.inject.version><!-- JSR330: https://mvnrepository.com/artifact/javax.inject/javax.inject -->
-        <jakarta.inject.version>2.0.1</jakarta.inject.version><!-- * https://mvnrepository.com/artifact/jakarta.inject/jakarta.inject-api -->
+        <jakarta.inject.version>2.0.1.MR</jakarta.inject.version><!-- * https://mvnrepository.com/artifact/jakarta.inject/jakarta.inject-api -->
         <jsr222.jaxb-api.version>2.4.0-b180830.0359</jsr222.jaxb-api.version><!-- JSR222: https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
         <jakarta.jaxb-api.version>4.0.4</jakarta.jaxb-api.version><!-- https://mvnrepository.com/artifact/jakarta.xml.bind/jakarta.xml.bind-api -->
         <jsr107.cache-api.version>1.1.1</jsr107.cache-api.version><!-- JSR107: https://mvnrepository.com/artifact/javax.cache/cache-api -->
@@ -376,17 +378,20 @@
 
         <!-- ========================  🌸 -scala ============================ -->
         <scala.version>3.7.3</scala.version><!-- https://mvnrepository.com/artifact/org.scala-lang/scala3-library -->
-        <scala-legacy.version>2.13-17-M1</scala-legacy.version><!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
+        <scala-lagecy.version>2.13.17-M1</scala-lagecy.version><!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
 
 
         <!-- ========================  🌸 -secure ============================ -->
         <secure-jwt.version>4.5.0</secure-jwt.version><!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
         <secure-sshd.version>3.0.0-M1</secure-sshd.version><!-- https://mvnrepository.com/artifact/org.apache.sshd/sshd-core -->
-        <secure-prime-jws.version>2.0.0</secure-prime-jws.version><!-- https://mvnrepository.com/artifact/com.inversoft/prime-jwt -->
+        <secure-prime-jwt.version>2.0.0</secure-prime-jwt.version><!-- https://mvnrepository.com/artifact/com.inversoft/prime-jwt -->
         <secure-bcprov-jdk18on.version>1.82</secure-bcprov-jdk18on.version><!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk18on -->
 
 
         <!-- ========================  🌸 -spring ============================ -->
+        <spring-boot.version>3.5.6</spring-boot.version><!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies -->
+        <spring-cloud.version>2025.0.0</spring-cloud.version><!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
+        <spring-cloud-alibaba.version>2025.0.0.0-preview</spring-cloud-alibaba.version><!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-alibaba-dependencies -->
 
 
         <!-- ========================  🌸 -swagger ============================ -->
@@ -419,7 +424,7 @@
 
 
         <!-- ========================  🌸 -vendor ============================ -->
-        <vendor.termd-core.version>1.1.0</vendor.termd-core.version><!-- https://mvnrepository.com/artifact/io.termd/termd-core -->
+        <vendor.termd-core.version>1.1.10</vendor.termd-core.version><!-- https://mvnrepository.com/artifact/io.termd/termd-core -->
         <vendor.janino.version>3.1.12</vendor.janino.version><!-- https://mvnrepository.com/artifact/org.codehaus.janino/janino -->
         <vendor.animal-sniffer-annotations.version>1.24</vendor.animal-sniffer-annotations.version><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/animal-sniffer-annotations -->
         <vendor.HdrHistogram.version>2.2.2</vendor.HdrHistogram.version><!-- https://mvnrepository.com/artifact/org.hdrhistogram/HdrHistogram -->
@@ -457,55 +462,209 @@
 
 
         <!-- ====== ☘️ 非标准第三方插件 ===== -->
-        <maven.plugin.versions>2.19.1</maven.plugin.versions><!-- http://www.mvnrepository.com/artifact/org.codehaus.mojo/versions-maven-plugin -->
-        <maven.plugin.central-publishing>0.9.0</maven.plugin.central-publishing><!-- https://mvnrepository.com/artifact/org.sonatype.central/central-publishing-maven-plugin -->
+        <mavenex.plugin.aspectj>1.15.0</mavenex.plugin.aspectj><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/aspectj-maven-plugin -->
+        <mavenex.plugin.build-helper>3.6.1</mavenex.plugin.build-helper><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/build-helper-maven-plugin -->
+        <mavenex.plugin.bundle>6.0.0</mavenex.plugin.bundle><!-- https://mvnrepository.com/artifact/org.apache.felix/maven-bundle-plugin -->
+        <mavenex.plugin.central-publishing>0.9.0</mavenex.plugin.central-publishing><!-- https://mvnrepository.com/artifact/org.sonatype.central/central-publishing-maven-plugin -->
+        <mavenex.plugin.cobertura>2.7</mavenex.plugin.cobertura><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/cobertura-maven-plugin -->
+        <mavenex.plugin.copy-rename>1.0.1</mavenex.plugin.copy-rename><!-- https://mvnrepository.com/artifact/com.coderplus.maven.plugins/copy-rename-maven-plugin -->
+        <mavenex.plugin.coveralls>4.3.0</mavenex.plugin.coveralls><!-- https://mvnrepository.com/artifact/org.eluder.coveralls/coveralls-maven-plugin -->
+        <mavenex.plugin.docker>0.46.0</mavenex.plugin.docker><!-- https://mvnrepository.com/artifact/io.fabric8/docker-maven-plugin -->
+        <mavenex.plugin.exec>3.5.1</mavenex.plugin.exec><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/exec-maven-plugin -->
+        <mavenex.plugin.fabric8>4.4.2</mavenex.plugin.fabric8><!-- https://mvnrepository.com/artifact/io.fabric8/fabric8-maven-plugin -->
+        <mavenex.plugin.lombok>1.18.20.0</mavenex.plugin.lombok><!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven-plugin -->
+        <mavenex.plugin.jcabi>0.17.0</mavenex.plugin.jcabi><!-- https://mvnrepository.com/artifact/com.jcabi/jcabi-maven-plugin -->
+        <mavenex.plugin.os>1.7.1</mavenex.plugin.os><!-- https://mvnrepository.com/artifact/kr.motd.maven/os-maven-plugin -->
+        <mavenex.plugin.protobuf>0.6.1</mavenex.plugin.protobuf><!-- https://mvnrepository.com/artifact/org.xolstice.maven.plugins/protobuf-maven-plugin -->
+        <mavenex.plugin.proguard>2.7.0</mavenex.plugin.proguard><!-- https://mvnrepository.com/artifact/com.github.wvengen/proguard-maven-plugin -->
+        <mavenex.plugin.staging>1.7.0</mavenex.plugin.staging><!-- https://mvnrepository.com/artifact/org.sonatype.plugins/nexus-staging-maven-plugin -->
+        <mavenex.plugin.versions>2.19.1</mavenex.plugin.versions><!-- http://www.mvnrepository.com/artifact/org.codehaus.mojo/versions-maven-plugin -->
+        <mavenex.plugin.processor>5.1</mavenex.plugin.processor><!-- https://mvnrepository.com/artifact/org.bsc.maven/maven-processor-plugin -->
 
 
         <!-- ====== 🌷 标准 Maven 插件 （可以不加 groupId） ===== -->
-        <maven.plugin.source>3.3.1</maven.plugin.source><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
-        <maven.plugin.javadoc>3.12.0</maven.plugin.javadoc><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
+        <maven.plugin.antrun>3.1.0</maven.plugin.antrun><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-antrun-plugin -->
+        <maven.plugin.assembly>3.7.1</maven.plugin.assembly><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-assembly-plugin -->
+        <maven.plugin.clean>3.5.0</maven.plugin.clean><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-clean-plugin -->
         <maven.plugin.compiler>3.14.1</maven.plugin.compiler><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-        <maven.plugin.pgp>3.2.7</maven.plugin.pgp><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
         <maven.plugin.dependency>3.8.1</maven.plugin.dependency><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin -->
-        <maven.plugin.lombok>1.18.20.0</maven.plugin.lombok><!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven-plugin -->
+        <maven.plugin.deploy>3.1.4</maven.plugin.deploy><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-deploy-plugin -->
+        <maven.plugin.enforcer>3.6.1</maven.plugin.enforcer><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-enforcer-plugin -->
+        <maven.plugin.install>3.1.4</maven.plugin.install><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-install-plugin -->
+        <maven.plugin.jar>3.4.2</maven.plugin.jar><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
+        <maven.plugin.javadoc>3.12.0</maven.plugin.javadoc><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
+        <maven.plugin.pgp>3.2.8</maven.plugin.pgp><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
+        <maven.plugin.project-info-reports>3.9.0</maven.plugin.project-info-reports><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-project-info-reports-plugin -->
+        <maven.plugin.resource>3.3.1</maven.plugin.resource><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
+        <maven.plugin.shade>3.6.1</maven.plugin.shade><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-shade-plugin -->
+        <maven.plugin.site>4.0.0-M16</maven.plugin.site><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-site-plugin -->
+        <maven.plugin.source>3.3.1</maven.plugin.source><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
+        <maven.plugin.surefire>3.5.4</maven.plugin.surefire><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
     </properties>
     <build>
         <pluginManagement>
             <plugins>
                 <plugin>
-                    <artifactId>maven-dependency-plugin</artifactId>
-                    <version>${maven.plugin.dependency}</version>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>${maven.plugin.antrun}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>${maven.plugin.assembly}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>${maven.plugin.clean}</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>${maven.plugin.compiler}</version>
                 </plugin>
                 <plugin>
-                    <artifactId>maven-source-plugin</artifactId>
-                    <version>${maven.plugin.source}</version>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>${maven.plugin.dependency}</version>
                 </plugin>
                 <plugin>
-                    <artifactId>maven-gpg-plugin</artifactId>
-                    <version>${maven.plugin.pgp}</version>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>${maven.plugin.deploy}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-enforcer-plugin</artifactId>
+                    <version>${maven.plugin.enforcer}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>${maven.plugin.install}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>${maven.plugin.jar}</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>${maven.plugin.javadoc}</version>
                 </plugin>
                 <plugin>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>${maven.plugin.pgp}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>${maven.plugin.project-info-reports}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${maven.plugin.resource}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-shade-plugin</artifactId>
+                    <version>${maven.plugin.shade}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>${maven.plugin.site}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${maven.plugin.source}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven.plugin.surefire}</version>
+                </plugin>
+
+
+                <!-- =================== 🛰️ 第三方插件 ==================== -->
+
+                <plugin>
+                    <groupId>kr.motd.maven</groupId>
+                    <artifactId>os-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.os}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.xolstice.maven.plugins</groupId>
+                    <artifactId>protobuf-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.protobuf}</version>
+                </plugin>
+                <plugin>
+                    <groupId>io.fabric8</groupId>
+                    <artifactId>docker-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.docker}</version>
+                </plugin>
+                <plugin>
+                    <groupId>io.fabric8</groupId>
+                    <artifactId>fabric8-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.fabric8}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.coderplus.maven.plugins</groupId>
+                    <artifactId>copy-rename-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.copy-rename}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.jcabi</groupId>
+                    <artifactId>jcabi-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.jcabi}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>aspectj-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.aspectj}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>cobertura-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.cobertura}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.eluder.coveralls</groupId>
+                    <artifactId>coveralls-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.coveralls}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.sonatype.plugins</groupId>
+                    <artifactId>nexus-staging-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.staging}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.bsc.maven</groupId>
+                    <artifactId>maven-processor-plugin</artifactId>
+                    <version>${mavenex.plugin.processor}</version>
+                </plugin>
+                <plugin>
                     <groupId>org.projectlombok</groupId>
                     <artifactId>lombok-maven-plugin</artifactId>
-                    <version>${maven.plugin.lombok}</version>
+                    <version>${mavenex.plugin.lombok}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <version>${mavenex.plugin.bundle}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.sonatype.central</groupId>
                     <artifactId>central-publishing-maven-plugin</artifactId>
-                    <version>${maven.plugin.central-publishing}</version>
+                    <version>${mavenex.plugin.central-publishing}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>versions-maven-plugin</artifactId>
-                    <version>${maven.plugin.versions}</version>
+                    <version>${mavenex.plugin.versions}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.exec}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.build-helper}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.github.wvengen</groupId>
+                    <artifactId>proguard-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.proguard}</version>
                 </plugin>
             </plugins>
         </pluginManagement>

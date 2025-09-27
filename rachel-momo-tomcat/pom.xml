@@ -9,7 +9,7 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>rechel-momo-tomcat</artifactId>
+    <artifactId>rachel-momo-tomcat</artifactId>
     <name>Rachel Momo::Tomcat @${tomcat.version} |🟡 - ${tomcat-legacy.version}</name>
     <packaging>pom</packaging>
     <dependencyManagement>
