@@ -27,6 +27,12 @@
         <module>rachel-momo-poi</module>
         <module>rachel-momo-stack</module>
         <module>rechel-momo-tomcat</module>
+        <module>rachel-momo-logging</module>
+        <module>rachel-momo-google</module>
+        <module>rachel-momo-grpc</module>
+        <module>rachel-momo-jackson</module>
+        <module>rachel-momo-netty</module>
+        <module>rachel-momo-jsr</module>
     </modules>
     <properties>
         <!-- 项目基本信息 -->
@@ -43,7 +49,6 @@
         <commons-codec.version>1.19.0</commons-codec.version><!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
         <commons-collections4.version>4.5.0</commons-collections4.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
         <commons-jexl3.version>3.5.0</commons-jexl3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-jexl3 -->
-        <commons-logging.version>1.3.5</commons-logging.version><!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
         <commons-lang3.version>3.19.0</commons-lang3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <commons-cli.version>1.10.0</commons-cli.version><!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
         <commons-io.version>2.20.0</commons-io.version><!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
@@ -132,6 +137,34 @@
         <elasticsearch-client.version>7.17.29</elasticsearch-client.version><!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-high-level-client -->
 
 
+        <!-- ========================  🌸 -google ============================ -->
+        <google-errorprone.version>2.42.0</google-errorprone.version><!-- https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations -->
+        <google-jsr305.version>4.9.6</google-jsr305.version><!-- https://mvnrepository.com/artifact/com.github.spotbugs/spotbugs-annotations -->
+        <google-jsr305-legacy.version>3.0.2</google-jsr305-legacy.version><!-- https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305 -->
+        <google-gson.version>2.13.2</google-gson.version><!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <google-guice.version>7.0.0</google-guice.version><!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
+        <google-guava.version>33.5.0-jre</google-guava.version><!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
+        <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java-util -->
+        <google-protobuf.version>4.32.1</google-protobuf.version>
+        <google-etcd.version>2.18.0</google-etcd.version><!-- https://mvnrepository.com/artifact/org.mousio/etcd4j -->
+        <google-j2objc.version>3.1</google-j2objc.version><!-- https://mvnrepository.com/artifact/com.google.j2objc/j2objc-annotations -->
+
+
+        <!-- ========================  🌸 -grpc ============================ -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-context -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-stub -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-protobuf -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-shaded -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-netty -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-core -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-auth -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-services -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-util -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-testing -->
+        <google-grpc.version>1.75.0</google-grpc.version>
+
+
         <!-- ========================  🌸 -httpcore5 ============================ -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-reactive -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5 -->
@@ -151,6 +184,22 @@
         <httpclient4.version>4.5.14</httpclient4.version>
 
 
+        <!-- ========================  🌸 -jackson ============================ -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jdk8 -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jsr310 -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-smile -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-parameter-names -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-afterburner -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+        <jackson.version>2.20.0</jackson.version>
+        <jackson-annotation.version>2.20</jackson-annotation.version><!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
+        <jackson-uuid.generator>5.1.0</jackson-uuid.generator><!-- https://mvnrepository.com/artifact/com.fasterxml.uuid/java-uuid-generator -->
+        <jackson-yaml.version>2.5</jackson-yaml.version><!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+
+
         <!-- ========================  🌸 -jklingsporn ============================ -->
         <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-classic-jdbc -->
         <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-classic-reactive -->
@@ -163,6 +212,51 @@
         <jklingsporn.version>6.5.5</jklingsporn.version>
 
 
+        <!-- ========================  🌸 -jsr ============================ -->
+        <!-- 升级之后到 jakarta 不再使用 JSR 编号 -->
+        <jsr303.validation.version>2.0.1.Final</jsr303.validation.version><!-- JSR303: https://mvnrepository.com/artifact/javax.validation/validation-api -->
+        <jakarta.validation.version>3.1.1</jakarta.validation.version><!-- * https://mvnrepository.com/artifact/jakarta.validation/jakarta.validation-api -->
+        <jsr311.ws-rs.version>2.1.1</jsr311.ws-rs.version><!-- JSR311: https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+        <jakarta.ws-rs.version>4.0.0</jakarta.ws-rs.version><!-- * https://mvnrepository.com/artifact/jakarta.ws.rs/jakarta.ws.rs-api -->
+        <jsr330.inject.version>1</jsr330.inject.version><!-- JSR330: https://mvnrepository.com/artifact/javax.inject/javax.inject -->
+        <jakarta.inject.version>2.0.1</jakarta.inject.version><!-- * https://mvnrepository.com/artifact/jakarta.inject/jakarta.inject-api -->
+        <jsr222.jaxb-api.version>2.4.0-b180830.0359</jsr222.jaxb-api.version><!-- JSR222: https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+        <jakarta.jaxb-api.version>4.0.4</jakarta.jaxb-api.version><!-- https://mvnrepository.com/artifact/jakarta.xml.bind/jakarta.xml.bind-api -->
+        <jsr107.cache-api.version>1.1.1</jsr107.cache-api.version><!-- JSR107: https://mvnrepository.com/artifact/javax.cache/cache-api -->
+        <jsr338.persistence-api.version>2.2</jsr338.persistence-api.version><!-- JSR338: https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
+        <jakarta.persistence-api.version>3.2.0</jakarta.persistence-api.version><!-- * https://mvnrepository.com/artifact/jakarta.persistence/jakarta.persistence-api -->
+        <jsr369.servlet-api.version>4.0.1</jsr369.servlet-api.version><!-- JSR369: https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <jakarta.servlet-api.version>6.1.0</jakarta.servlet-api.version><!-- * https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+        <jsr341.el-api.version>3.0.1-b06</jsr341.el-api.version><!-- JSR341: https://mvnrepository.com/artifact/javax.el/javax.el-api -->
+        <jakarta.el-api.version>6.0.1</jakarta.el-api.version><!-- * https://mvnrepository.com/artifact/jakarta.el/jakarta.el-api -->
+        <jsr925.activation.version>1.2.0</jsr925.activation.version><!-- JSR925: https://mvnrepository.com/artifact/javax.activation/javax.activation-api -->
+        <jakarta.activation.version>2.0.1</jakarta.activation.version><!-- * https://mvnrepository.com/artifact/jakarta.activation/jakarta.activation-api -->
+
+        <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-server -->
+        <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
+        <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-common -->
+        <glassfish-jersey.version>4.0.0-M4</glassfish-jersey.version>
+
+        <!-- ========================  🌸 -logging ============================ -->
+        <logging-common.version>1.3.5</logging-common.version><!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-1.2-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-to-slf4j -->
+        <logging-log4j2.version>2.25.2</logging-log4j2.version>
+        <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+        <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
+        <logging-logback.version>1.5.18</logging-logback.version>
+        <logging-logback-cal10n.version>0.8.1</logging-logback-cal10n.version><!-- https://mvnrepository.com/artifact/ch.qos.cal10n/cal10n-api -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/jul-to-slf4j/ -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/jul-over-slf4j/ -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/jcl-over-slf4j/ -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api/ -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-ext/ -->
+        <logging-slf4j.version>2.0.17</logging-slf4j.version>
+
+
         <!-- ========================  🌸 -mybatis ============================ -->
         <mybatis.version>3.5.19</mybatis.version><!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus -->
@@ -173,6 +267,29 @@
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-spring -->
         <mybatisplus.version>3.5.14</mybatisplus.version>
         <mybatis-spring.version>3.0.5</mybatis-spring.version><!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+
+
+        <!-- ========================  🌸 -netty ============================ -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-buffer -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-common -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-handler -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-handler-proxy -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-codec -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-codec-dns -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-codec-http -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-codec-http2 -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-codec-mqtt -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-resolver -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-resolver-dns -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-resolver-dns-native-macos MacOS 专用 -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-transport -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-transport-native-epoll -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-transport-native-kqueue -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-transport-native-unix-common -->
+        <netty.version>4.2.6.Final</netty.version>
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-tcnative-boringssl-static -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-tcnative -->
+        <netty-tcnative.version>2.0.74.Final</netty-tcnative.version>
 
 
         <!-- ========================  🌸 -osgi ============================ -->
