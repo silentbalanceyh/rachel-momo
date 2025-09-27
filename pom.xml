@@ -33,6 +33,11 @@
         <module>rachel-momo-jackson</module>
         <module>rachel-momo-netty</module>
         <module>rachel-momo-jsr</module>
+        <module>rachel-momo-jvmr</module>
+        <module>rachel-momo-vertx</module>
+        <module>rachel-momo-junit</module>
+        <module>rachel-momo-hibernate</module>
+        <module>rachel-momo-secure</module>
     </modules>
     <properties>
         <!-- 项目基本信息 -->
@@ -165,6 +170,20 @@
         <google-grpc.version>1.75.0</google-grpc.version>
 
 
+        <!-- ========================  🌸 -hibernate ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-processor -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-community-dialects -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-jcache -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-envers -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-hikaricp -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-testing -->
+        <hibernate.version>7.1.1.Final</hibernate.version>
+        <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator-cdi -->
+        <hibernate-validator.version>9.0.1.Final</hibernate-validator.version>
+
+
         <!-- ========================  🌸 -httpcore5 ============================ -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-reactive -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5 -->
@@ -236,6 +255,28 @@
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-common -->
         <glassfish-jersey.version>4.0.0-M4</glassfish-jersey.version>
+
+
+        <!-- ========================  🌸 -junit ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params -->
+        <junit.version>5.12.2</junit.version>
+        <junit-lagecy.version>4.13.2</junit-lagecy.version><!-- http://mvnrepository.com/artifact/junit/junit -->
+        <junit-platform.version>1.12.2</junit-platform.version><!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-launcher -->
+
+
+        <!-- ========================  🌸 -jvmr ============================ -->
+        <jvmr-asm.version>9.8</jvmr-asm.version><!-- 后期拆分：https://mvnrepository.com/artifact/org.ow2.asm/asm -->
+        <jvmr-reflectasm.version>1.11.9</jvmr-reflectasm.version><!-- https://mvnrepository.com/artifact/com.esotericsoftware/reflectasm -->
+        <jvmr-lombok.version>1.18.42</jvmr-lombok.version><!-- http://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <jvmr-cglib.version>3.3.0</jvmr-cglib.version><!-- https://mvnrepository.com/artifact/cglib/cglib -->
+        <jvmr-reflections.version>0.10.2</jvmr-reflections.version><!-- https://mvnrepository.com/artifact/org.reflections/reflections -->
+        <jvmr-javassist.version>3.30.2-GA</jvmr-javassist.version><!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+        <!-- https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy -->
+        <!-- https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy-agent -->
+        <jvmr-byte-buddy.version>1.17.7</jvmr-byte-buddy.version>
+
 
         <!-- ========================  🌸 -logging ============================ -->
         <logging-common.version>1.3.5</logging-common.version><!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
@@ -310,6 +351,18 @@
         <poi-ooxml-schemas.version>4.1.2</poi-ooxml-schemas.version>
 
 
+        <!-- ========================  🌸 -secure ============================ -->
+        <secure-jwt.version>4.5.0</secure-jwt.version><!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
+        <secure-sshd.version>3.0.0-M1</secure-sshd.version><!-- https://mvnrepository.com/artifact/org.apache.sshd/sshd-core -->
+        <secure-prime-jws.version>2.0.0</secure-prime-jws.version><!-- https://mvnrepository.com/artifact/com.inversoft/prime-jwt -->
+
+
+        <!-- ========================  🌸 -vertx ============================ -->
+        <vertx.version>5.0.4</vertx.version><!-- Import vertx-stack-depchain -->
+        <vertx-swagger.version>1.6.0</vertx-swagger.version><!-- https://mvnrepository.com/artifact/com.github.phiz71/vertx-swagger-router -->
+        <vertx-legacy.version>4.5.21</vertx-legacy.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-io_uring-incubator -->
+
+
         <!-- ========================  🌸 -tomcat ============================ -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jdbc -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
@@ -340,6 +393,7 @@
         <maven.plugin.compiler>3.14.1</maven.plugin.compiler><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <maven.plugin.pgp>3.2.7</maven.plugin.pgp><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
         <maven.plugin.dependency>3.8.1</maven.plugin.dependency><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin -->
+        <maven.plugin.lombok>1.18.20.0</maven.plugin.lombok><!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven-plugin -->
     </properties>
     <build>
         <pluginManagement>
@@ -364,7 +418,11 @@
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>${maven.plugin.javadoc}</version>
                 </plugin>
-
+                <plugin>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok-maven-plugin</artifactId>
+                    <version>${maven.plugin.lombok}</version>
+                </plugin>
                 <plugin>
                     <groupId>org.sonatype.central</groupId>
                     <artifactId>central-publishing-maven-plugin</artifactId>
