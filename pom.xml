@@ -11,6 +11,10 @@
     <!-- License -->
     <url>https://gitee.com/silentbalanceyh/rachel-momo</url>
     <modules>
+        <!-- Cloud 选择 -->
+        <module>rachel-momo-spring</module>
+        <module>rachel-momo-spring-alibaba</module>
+        <module>rachel-momo-vertx</module>
         <!-- POM 优先 -->
         <module>rachel-momo-apache</module>
         <module>rachel-momo-apache-felix</module>
@@ -38,17 +42,18 @@
         <module>rachel-momo-reactive</module>
         <module>rachel-momo-scala</module>
         <module>rachel-momo-secure</module>
-        <module>rachel-momo-spring</module>
-        <module>rachel-momo-spring-alibaba</module>
         <module>rachel-momo-swagger</module>
         <module>rachel-momo-template</module>
         <module>rachel-momo-tomcat</module>
         <module>rachel-momo-util</module>
         <module>rachel-momo-vendor</module>
-        <module>rachel-momo-vertx</module>
+        <!-- Stack 入口 -->
         <module>rachel-momo-stack</module>
+        <module>rachel-momo.student</module>
+        <module>rachel-momo-maven-plugins</module>
     </modules>
     <properties>
+        <rachel-momo.version>1.0.0</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -324,8 +329,9 @@
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-jsqlparser -->
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-core -->
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-spring -->
-        <mybatisplus.version>3.5.14</mybatisplus.version>
+        <mybatis-plus.version>3.5.14</mybatis-plus.version>
         <mybatis-spring.version>3.0.5</mybatis-spring.version><!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+        <mybatis-plus-dynamic-ds.version>4.3.1</mybatis-plus-dynamic-ds.version><!-- https://mvnrepository.com/artifact/com.baomidou/dynamic-datasource-spring-boot-starter -->
 
 
         <!-- ========================  🌸 -netty ============================ -->

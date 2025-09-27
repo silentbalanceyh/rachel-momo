@@ -19,11 +19,17 @@ Rachel Momo（统一版本管理，适用于所有项目）
 
 ## 子项目
 
-### rachel-momo-doc
+### Rachel-Momo::Student
+
+> id = rachel-momo.student
 
 文档管理平台，对接 <https://gitee.com/zero-ws/r2mo-matrix>，文档以地图模式的文档为主
 
 - 文档地图：<https://kumu.io/LangYu1017/r2mo#r2mo-dash>
+
+### 若要使用插件最新版
+
+直接在您的 Maven 中追加两块内容
 
 ### 参考链接
 
