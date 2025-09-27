@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>rachel-momo-maven-plugins</artifactId>
-    <name>Rachel Momo::✅️ - Maven Plugins</name>
+    <name>Rachel Momo::Maven Plugins</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>

@@ -48,9 +48,9 @@
         <module>rachel-momo-util</module>
         <module>rachel-momo-vendor</module>
         <!-- Stack 入口 -->
+        <module>rachel-momo-maven-plugins</module>
         <module>rachel-momo-stack</module>
         <module>rachel-momo.student</module>
-        <module>rachel-momo-maven-plugins</module>
     </modules>
     <properties>
         <rachel-momo.version>1.0.0</rachel-momo.version>
