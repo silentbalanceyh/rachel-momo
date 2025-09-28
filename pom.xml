@@ -543,6 +543,7 @@
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations-jakarta -->
         <doc-swagger3.version>2.2.37</doc-swagger3.version>
         <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-dependencies -->
+        <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-gateway-spring-boot-starter -->
         <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-openapi3-jakarta-spring-boot-starter -->
         <doc-knife4j.version>4.5.0</doc-knife4j.version>
 
