@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>rachel-momo-util</artifactId>
-    <name>Rachel Momo::Util @${util.hutool.version}</name>
+    <name>Rachel Momo::Util @${util.hutool.version} 🦠</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>

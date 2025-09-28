@@ -79,6 +79,13 @@
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
+                <artifactId>rachel-momo-flyway</artifactId>
+                <version>${rachel-momo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-google</artifactId>
                 <version>${rachel-momo.version}</version>
                 <type>pom</type>
@@ -121,6 +128,13 @@
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
+                <artifactId>rachel-momo-jooq</artifactId>
+                <version>${rachel-momo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-jsr</artifactId>
                 <version>${rachel-momo.version}</version>
                 <type>pom</type>
@@ -150,6 +164,13 @@
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-mybatisplus</artifactId>
+                <version>${rachel-momo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.zerows</groupId>
+                <artifactId>rachel-momo-nacos</artifactId>
                 <version>${rachel-momo.version}</version>
                 <type>pom</type>
                 <scope>import</scope>

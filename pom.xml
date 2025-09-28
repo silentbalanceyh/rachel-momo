@@ -25,17 +25,20 @@
         <module>rachel-momo-database-driver</module>
         <module>rachel-momo-eclipse</module>
         <module>rachel-momo-elasticsearch</module>
+        <module>rachel-momo-flyway</module>
         <module>rachel-momo-google</module>
         <module>rachel-momo-grpc</module>
         <module>rachel-momo-hibernate</module>
         <module>rachel-momo-httpcore5</module>
         <module>rachel-momo-jackson</module>
         <module>rachel-momo-jklingsporn</module>
+        <module>rachel-momo-jooq</module>
         <module>rachel-momo-jsr</module>
         <module>rachel-momo-junit</module>
         <module>rachel-momo-jvmr</module>
         <module>rachel-momo-logging</module>
         <module>rachel-momo-mybatisplus</module>
+        <module>rachel-momo-nacos</module>
         <module>rachel-momo-netty</module>
         <module>rachel-momo-osgi</module>
         <module>rachel-momo-poi</module>
@@ -126,19 +129,7 @@
 
         <!-- ========================  🌸 -database ============================ -->
         <database-hikari.version>7.0.2</database-hikari.version><!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
-        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-codegen -->
-        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-meta -->
-        <!-- https://mvnrepository.com/artifact/org.jooq/jooq -->
-        <database-jooq.version>3.20.7</database-jooq.version>
         <database-liquibase.version>4.33.0</database-liquibase.version><!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
-        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-mysql -->
-        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-h2 -->
-        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-derby -->
-        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-postgresql -->
-        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-oracle -->
-        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-sqlserver -->
-        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
-        <database-flyway.version>11.13.1</database-flyway.version><!-- 低一个版本，为了统一，因为有两个库还没有 11.13.1 的版本 -->
 
 
         <!-- ========================  🌸 -database-driver ============================ -->
@@ -168,6 +159,17 @@
         <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client-sniffer -->
         <elasticsearch.version>9.1.4</elasticsearch.version>
         <elasticsearch-client.version>7.17.29</elasticsearch-client.version><!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-high-level-client -->
+
+
+        <!-- ========================  🌸 -flyway ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-mysql -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-h2 -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-derby -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-postgresql -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-oracle -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-sqlserver -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
+        <database-flyway.version>11.13.1</database-flyway.version><!-- 低一个版本，为了统一，因为有两个库还没有 11.13.1 的版本 -->
 
 
         <!-- ========================  🌸 -google ============================ -->
@@ -259,6 +261,13 @@
         <jklingsporn.version>6.5.5</jklingsporn.version>
 
 
+        <!-- ========================  🌸 -jooq ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-codegen -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-meta -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq -->
+        <database-jooq.version>3.20.7</database-jooq.version>
+
+
         <!-- ========================  🌸 -jsr ============================ -->
         <!-- 升级之后到 jakarta 不再使用 JSR 编号 -->
         <jsr303.validation.version>2.0.1.Final</jsr303.validation.version><!-- JSR303: https://mvnrepository.com/artifact/javax.validation/validation-api -->
@@ -341,6 +350,12 @@
         <mybatis-plus-dynamic-ds.version>4.3.1</mybatis-plus-dynamic-ds.version><!-- https://mvnrepository.com/artifact/com.baomidou/dynamic-datasource-spring-boot-starter -->
 
 
+        <!-- ========================  🌸 -nacos ============================ -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.nacos/nacos-api -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.nacos/nacos-common -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.nacos/nacos-client -->
+        <cloud-nacos.version>3.1.0</cloud-nacos.version>
+
         <!-- ========================  🌸 -netty ============================ -->
         <!-- https://mvnrepository.com/artifact/io.netty/netty-buffer -->
         <!-- https://mvnrepository.com/artifact/io.netty/netty-common -->
@@ -391,7 +406,7 @@
 
         <!-- ========================  🌸 -scala ============================ -->
         <scala.version>3.7.3</scala.version><!-- https://mvnrepository.com/artifact/org.scala-lang/scala3-library -->
-        <scala-lagecy.version>2.13.17-M1</scala-lagecy.version><!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
+        <scala-legacy.version>2.13.17-M1</scala-legacy.version><!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
 
 
         <!-- ========================  🌸 -secure ============================ -->

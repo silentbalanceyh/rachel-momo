@@ -9,20 +9,25 @@
         <version>1.0.1</version>
     </parent>
 
-    <artifactId>rachel-momo-scala</artifactId>
-    <name>Rachel Momo::Scale @${scala.version} |🟡 - ${scala-legacy.version}</name>
+    <artifactId>rachel-momo-jooq</artifactId>
+    <name>Rachel Momo::Jooq @${database-jooq.version}</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.scala-lang</groupId>
-                <artifactId>scala3-library_3</artifactId>
-                <version>${scala.version}</version>
+                <groupId>org.jooq</groupId>
+                <artifactId>jooq-codegen</artifactId>
+                <version>${database-jooq.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.scala-lang</groupId>
-                <artifactId>scala-library</artifactId>
-                <version>${scala-legacy.version}</version>
+                <groupId>org.jooq</groupId>
+                <artifactId>jooq-meta</artifactId>
+                <version>${database-jooq.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jooq</groupId>
+                <artifactId>jooq</artifactId>
+                <version>${database-jooq.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

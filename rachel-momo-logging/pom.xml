@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>rachel-momo-logging</artifactId>
-    <name>Rachel Momo::Logging @${logging-slf4j.version}</name>
+    <name>Rachel Momo::Logging @${logging-slf4j.version} 🦠</name>
     <packaging>pom</packaging>
 
     <dependencyManagement>
