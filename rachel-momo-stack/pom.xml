@@ -198,20 +198,6 @@
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
-                <artifactId>rachel-momo-spring</artifactId>
-                <version>${rachel-momo.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>io.zerows</groupId>
-                <artifactId>rachel-momo-spring-alibaba</artifactId>
-                <version>${rachel-momo.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-swagger</artifactId>
                 <version>${rachel-momo.version}</version>
                 <type>pom</type>
@@ -255,6 +241,23 @@
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-maven-plugins</artifactId>
+                <version>${rachel-momo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--
+            稳定版，如果要覆盖，则在自己的项目中加入最新版即可以直接覆盖
+            -->
+            <dependency>
+                <groupId>io.zerows</groupId>
+                <artifactId>rachel-momo-spring</artifactId>
+                <version>${rachel-momo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.zerows</groupId>
+                <artifactId>rachel-momo-alibaba-cloud</artifactId>
                 <version>${rachel-momo.version}</version>
                 <type>pom</type>
                 <scope>import</scope>

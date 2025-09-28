@@ -13,7 +13,7 @@
     <modules>
         <!-- Cloud 选择 -->
         <module>rachel-momo-spring</module>
-        <module>rachel-momo-spring-alibaba</module>
+        <module>rachel-momo-alibaba-cloud</module>
         <module>rachel-momo-vertx</module>
         <!-- POM 优先 -->
         <module>rachel-momo-apache</module>
@@ -50,6 +50,8 @@
         <!-- Stack 入口 -->
         <module>rachel-momo-maven-plugins</module>
         <module>rachel-momo-stack</module>
+        <module>rachel-momo-2025-spring</module>
+        <module>rachel-momo-2025-alibaba-cloud</module>
         <module>rachel-momo.student</module>
     </modules>
     <properties>
@@ -61,6 +63,10 @@
         <maven.compiler.target>17</maven.compiler.target>
         <java.version>17</java.version>
 
+
+        <!-- ========================  🌸 -alibaba ============================ -->
+        <spring-cloud-alibaba.version>2023.0.3.3</spring-cloud-alibaba.version><!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-alibaba-dependencies -->
+        <spring-2025-cloud-alibaba.version>2025.0.0.0-preview</spring-2025-cloud-alibaba.version>
 
         <!-- ========================  🌸 -apache-common ============================ -->
         <commons-compress.version>1.28.0</commons-compress.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-compress -->
@@ -397,8 +403,13 @@
 
         <!-- ========================  🌸 -spring ============================ -->
         <spring-boot.version>3.5.6</spring-boot.version><!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies -->
-        <spring-cloud.version>2025.0.0</spring-cloud.version><!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
-        <spring-cloud-alibaba.version>2025.0.0.0-preview</spring-cloud-alibaba.version><!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-alibaba-dependencies -->
+        <spring-cloud.version>2024.0.2</spring-cloud.version><!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
+        <spring-starter-bootstrap>4.3.0</spring-starter-bootstrap><!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bootstrap -->
+
+        <!-- 实验性版本 -->
+        <spring-2025-boot.version>4.0.0-M3</spring-2025-boot.version>
+        <spring-2025-cloud.version>2025.1.0-M2</spring-2025-cloud.version>
+        <spring-2025-starter-bootstrap>5.0.0-M2</spring-2025-starter-bootstrap>
 
 
         <!-- ========================  🌸 -swagger ============================ -->
