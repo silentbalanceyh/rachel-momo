@@ -9,26 +9,22 @@
         <version>1.0.2</version>
     </parent>
 
-    <artifactId>rachel-momo-jooq</artifactId>
-    <name>Rachel Momo::Jooq @${database-jooq.version}</name>
+    <artifactId>rachel-momo-aliyun</artifactId>
+    <name>Rachel Momo::Aliyun @${cloud-aliyun.version}</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.jooq</groupId>
-                <artifactId>jooq-codegen</artifactId>
-                <version>${database-jooq.version}</version>
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-core</artifactId>
+                <version>${cloud-aliyun.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.jooq</groupId>
-                <artifactId>jooq-meta</artifactId>
-                <version>${database-jooq.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jooq</groupId>
-                <artifactId>jooq</artifactId>
-                <version>${database-jooq.version}</version>
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
+                <version>${cloud-aliyun-dysmsapi.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
+
 </project>

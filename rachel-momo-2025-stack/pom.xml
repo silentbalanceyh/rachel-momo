@@ -9,38 +9,32 @@
         <version>1.0.2</version>
     </parent>
 
-    <artifactId>rachel-momo-2025-spring</artifactId>
-    <name>2025 🧫 - / Momo::Spring @${spring-2025-boot.version} |🟡 - ${spring-2025-cloud.version}</name>
+    <artifactId>rachel-momo-2025-stack</artifactId>
+    <name>2025 🧫 - / Rachel Momo::✅️ - Stack</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
-            <!-- 导入旧版 -->
             <dependency>
                 <groupId>io.zerows</groupId>
-                <artifactId>rachel-momo-spring</artifactId>
+                <artifactId>rachel-momo-stack</artifactId>
                 <version>${rachel-momo.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- 2025 覆盖 -->
+            <!-- 覆盖 -->
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-2025-boot.version}</version>
+                <groupId>io.zerows</groupId>
+                <artifactId>rachel-momo-2025-spring</artifactId>
+                <version>${rachel-momo.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-2025-cloud.version}</version>
+                <groupId>io.zerows</groupId>
+                <artifactId>rachel-momo-2025-alibaba-cloud</artifactId>
+                <version>${rachel-momo.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-bootstrap</artifactId>
-                <version>${spring-2025-starter-bootstrap}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

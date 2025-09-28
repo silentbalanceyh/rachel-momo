@@ -5,24 +5,23 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>pom</packaging>
-    <name>Rachel Momo</name>
+    <name>Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
     <url>https://gitee.com/silentbalanceyh/rachel-momo</url>
     <modules>
-        <!-- Cloud 选择 -->
-        <module>rachel-momo-spring</module>
-        <module>rachel-momo-alibaba-cloud</module>
-        <module>rachel-momo-vertx</module>
         <!-- POM 优先 -->
+        <module>rachel-momo-aliyun</module>
         <module>rachel-momo-apache</module>
         <module>rachel-momo-apache-felix</module>
         <module>rachel-momo-aspectj</module>
+        <module>rachel-momo-aws</module>
         <module>rachel-momo-camunda</module>
         <module>rachel-momo-cluster</module>
         <module>rachel-momo-database</module>
         <module>rachel-momo-database-driver</module>
+        <module>rachel-momo-dubbo</module>
         <module>rachel-momo-eclipse</module>
         <module>rachel-momo-elasticsearch</module>
         <module>rachel-momo-flyway</module>
@@ -31,34 +30,46 @@
         <module>rachel-momo-hibernate</module>
         <module>rachel-momo-httpcore5</module>
         <module>rachel-momo-jackson</module>
+        <module>rachel-momo-jetty</module>
         <module>rachel-momo-jklingsporn</module>
         <module>rachel-momo-jooq</module>
         <module>rachel-momo-jsr</module>
         <module>rachel-momo-junit</module>
         <module>rachel-momo-jvmr</module>
         <module>rachel-momo-logging</module>
+        <module>rachel-momo-mapstruct</module>
+        <module>rachel-momo-maven-plugins</module>
+        <module>rachel-momo-mq</module>
         <module>rachel-momo-mybatisplus</module>
         <module>rachel-momo-nacos</module>
         <module>rachel-momo-netty</module>
         <module>rachel-momo-osgi</module>
         <module>rachel-momo-poi</module>
         <module>rachel-momo-reactive</module>
+        <module>rachel-momo-redxxx</module>
         <module>rachel-momo-scala</module>
+        <module>rachel-momo-seata</module>
         <module>rachel-momo-secure</module>
+        <module>rachel-momo-sentinel</module>
         <module>rachel-momo-swagger</module>
         <module>rachel-momo-template</module>
         <module>rachel-momo-tomcat</module>
         <module>rachel-momo-util</module>
         <module>rachel-momo-vendor</module>
-        <!-- Stack 入口 -->
-        <module>rachel-momo-maven-plugins</module>
+        <!-- Cloud 选择 -->
+        <module>rachel-momo-spring</module>
+        <module>rachel-momo-alibaba-cloud</module>
+        <module>rachel-momo-vertx</module>
         <module>rachel-momo-stack</module>
+        <!-- Cloud 2025 实验版 -->
         <module>rachel-momo-2025-spring</module>
         <module>rachel-momo-2025-alibaba-cloud</module>
+        <module>rachel-momo-2025-stack</module>
+        <!-- Stack 入口 -->
         <module>rachel-momo.student</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.1</rachel-momo.version>
+        <rachel-momo.version>1.0.2</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -70,6 +81,10 @@
         <!-- ========================  🌸 -alibaba ============================ -->
         <spring-cloud-alibaba.version>2023.0.3.3</spring-cloud-alibaba.version><!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-alibaba-dependencies -->
         <spring-2025-cloud-alibaba.version>2025.0.0.0-preview</spring-2025-cloud-alibaba.version>
+
+        <!-- ========================  🌸 -aliyun ============================ -->
+        <cloud-aliyun.version>4.7.6</cloud-aliyun.version><!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core -->
+        <cloud-aliyun-dysmsapi.version>2.2.1</cloud-aliyun-dysmsapi.version><!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-dysmsapi -->
 
         <!-- ========================  🌸 -apache-common ============================ -->
         <commons-compress.version>1.28.0</commons-compress.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-compress -->
@@ -83,7 +98,7 @@
         <commons-text.version>1.14.0</commons-text.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
 
 
-        <!-- ========================  🌸 -felix ============================ -->
+        <!-- ========================  🌸 -apache-felix ============================ -->
         <felix-framework.version>7.0.5</felix-framework.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.framework -->
         <felix-scr.versoin>2.2.14</felix-scr.versoin><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr -->
         <felix-scr-annotations.version>1.12.0</felix-scr-annotations.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr.annotations -->
@@ -99,6 +114,11 @@
         <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
         <aspectj.version>1.9.24</aspectj.version>
         <aspectj-jcabi.version>0.26.0</aspectj-jcabi.version><!-- https://mvnrepository.com/artifact/com.jcabi/jcabi-aspects -->
+
+
+        <!-- ========================  🌸 -aws ============================ -->
+        <aws-sdk.version>2.34.5</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
+        <aws-sdk-legacy.version>1.12.791</aws-sdk-legacy.version><!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
 
 
         <!-- ========================  🌸 -camunda ============================ -->
@@ -145,6 +165,16 @@
         <!-- https://mvnrepository.com/artifact/org.apache.derby/derbyclient -->
         <!-- https://mvnrepository.com/artifact/org.apache.derby/derbynet -->
         <database-derby.version>10.17.1.0</database-derby.version>
+
+
+        <!-- ========================  🌸 -dubbo ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo -->
+        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-cluster -->
+        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-spring-boot-starter -->
+        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-spring-boot-actuator -->
+        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-metadata-report-nacos -->
+        <cloud-dubbo.version>3.3.5</cloud-dubbo.version>
+        <cloud-dubbo-metadata.version>3.2.8</cloud-dubbo-metadata.version><!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-metadata-report-redis -->
 
 
         <!-- ========================  🌸 -eclipse ============================ -->
@@ -249,6 +279,13 @@
         <jackson-yaml.version>2.5</jackson-yaml.version><!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
 
 
+        <!-- ========================  🌸 -jetty ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.ee10.websocket/jetty-ee10-websocket-jetty-server -->
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.ee10.websocket/jetty-ee10-websocket-jakarta-server -->
+        <server-jetty.version>12.1.1</server-jetty.version>
+
+
         <!-- ========================  🌸 -jklingsporn ============================ -->
         <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-classic-jdbc -->
         <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-classic-reactive -->
@@ -336,6 +373,22 @@
         <logging-slf4j.version>2.0.17</logging-slf4j.version>
 
 
+        <!-- ========================  🌸 -mapstruct ============================ -->
+        <!-- https://mvnrepository.com/artifact/io.github.linpeilie/mapstruct-plus-object-convert -->
+        <!-- https://mvnrepository.com/artifact/io.github.linpeilie/mapstruct-plus-processor -->
+        <!-- https://mvnrepository.com/artifact/io.github.linpeilie/mapstruct-plus -->
+        <!-- https://mvnrepository.com/artifact/io.github.linpeilie/mapstruct-plus-spring-boot-starter -->
+        <util.mapstruct.version>1.5.0</util.mapstruct.version>
+
+
+        <!-- ========================  🌸 -mq ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-common -->
+        <!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-client -->
+        <rocketmq.version>5.3.3</rocketmq.version>
+        <rocketmq-spring.version>2.3.4</rocketmq-spring.version><!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-spring-boot-starter -->
+        <rabbitmq.version>5.26.0</rabbitmq.version><!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
+
+
         <!-- ========================  🌸 -mybatis ============================ -->
         <mybatis.version>3.5.19</mybatis.version><!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus -->
@@ -404,9 +457,23 @@
         <reactive.reactor.version>3.8.0-M7</reactive.reactor.version><!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
 
 
+        <!-- ========================  🌸 -redxxx ============================ -->
+        <redx.jedis.version>6.2.0</redx.jedis.version><!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+        <redx.redisson.lock4j.version>2.2.7</redx.redisson.lock4j.version><!-- https://mvnrepository.com/artifact/com.baomidou/lock4j-redisson-spring-boot-starter -->
+        <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
+        <!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
+        <redx.redisson.version>3.52.0</redx.redisson.version>
+
+
         <!-- ========================  🌸 -scala ============================ -->
         <scala.version>3.7.3</scala.version><!-- https://mvnrepository.com/artifact/org.scala-lang/scala3-library -->
         <scala-legacy.version>2.13.17-M1</scala-legacy.version><!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
+
+
+        <!-- ========================  🌸 -seata ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.seata/seata-all -->
+        <!-- https://mvnrepository.com/artifact/org.apache.seata/seata-spring-boot-starter -->
+        <cloud-seata.version>2.5.0</cloud-seata.version>
 
 
         <!-- ========================  🌸 -secure ============================ -->
@@ -414,6 +481,32 @@
         <secure-sshd.version>3.0.0-M1</secure-sshd.version><!-- https://mvnrepository.com/artifact/org.apache.sshd/sshd-core -->
         <secure-prime-jwt.version>2.0.0</secure-prime-jwt.version><!-- https://mvnrepository.com/artifact/com.inversoft/prime-jwt -->
         <secure-bcprov-jdk18on.version>1.82</secure-bcprov-jdk18on.version><!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk18on -->
+        <secure-satoken.version>1.44.0</secure-satoken.version><!-- https://mvnrepository.com/artifact/cn.dev33/sa-token-core -->
+
+
+        <!-- ========================  🌸 -sentinel ============================ -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-core -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-parameter-flow-control -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-extension -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-apollo -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-zookeeper -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-nacos -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-redis -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-consul -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-web-servlet -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-spring-cloud-gateway-adapter -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-transport-simple-http -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-annotation-aspectj -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-reactor-adapter -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-cluster-server-default -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-cluster-client-default -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-spring-webflux-adapter -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-api-gateway-adapter-common -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-spring-webmvc-v6x-adapter -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-dubbo-adapter -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-apache-dubbo-adapter -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-apache-dubbo3-adapter -->
+        <cloud-sentinel.version>1.8.8</cloud-sentinel.version>
 
 
         <!-- ========================  🌸 -spring ============================ -->
@@ -441,6 +534,7 @@
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations -->
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations-jakarta -->
         <doc-swagger3.version>2.2.37</doc-swagger3.version>
+        <doc-knife4j.version>4.5.0</doc-knife4j.version><!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-dependencies -->
 
 
         <!-- ========================  🌸 -template ============================ -->
@@ -454,6 +548,9 @@
         <!-- ========================  🌸 -util ============================ -->
         <util.joda.version>2.14.0</util.joda.version><!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
         <util.hutool.version>5.8.40</util.hutool.version><!-- https://mvnrepository.com/artifact/cn.hutool/hutool-bom -->
+        <util.ip2region.version>3.1.0</util.ip2region.version><!-- https://mvnrepository.com/artifact/org.lionsoul/ip2region -->
+        <util.p6spy.version>3.9.1</util.p6spy.version><!-- https://mvnrepository.com/artifact/p6spy/p6spy -->
+        <util.fastexcel.version>1.3.0</util.fastexcel.version><!-- https://mvnrepository.com/artifact/cn.idev.excel/fastexcel -->
 
 
         <!-- ========================  🌸 -vendor ============================ -->
@@ -465,7 +562,6 @@
         <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-jackson -->
         <vendor.feign.version>8.18.0</vendor.feign.version>
         <vendor.picocli.version>4.7.7</vendor.picocli.version><!-- https://mvnrepository.com/artifact/info.picocli/picocli -->
-        <vendor.jedis.version>6.2.0</vendor.jedis.version><!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
         <vendor.checker-qual.version>3.51.0</vendor.checker-qual.version><!-- https://mvnrepository.com/artifact/org.checkerframework/checker-qual -->
 
 
@@ -488,10 +584,10 @@
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-dbcp -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-api -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina-ha -->
-        <tomcat.version>11.0.11</tomcat.version>
+        <server-tomcat.version>11.0.11</server-tomcat.version>
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/servlet-api -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/annotations-api -->
-        <tomcat-legacy.version>6.0.53</tomcat-legacy.version>
+        <server-tomcat-legacy.version>6.0.53</server-tomcat-legacy.version>
 
 
         <!-- ====== ☘️ 非标准第三方插件 ===== -->

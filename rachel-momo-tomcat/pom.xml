@@ -6,85 +6,85 @@
     <parent>
         <groupId>io.zerows</groupId>
         <artifactId>rachel-momo</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </parent>
 
     <artifactId>rachel-momo-tomcat</artifactId>
-    <name>Rachel Momo::Tomcat @${tomcat.version} |🟡 - ${tomcat-legacy.version}</name>
+    <name>Rachel Momo::Tomcat @${server-tomcat.version} |🟡 - ${server-tomcat-legacy.version}</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-jdbc</artifactId>
-                <version>${tomcat.version}</version>
+                <version>${server-tomcat.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-catalina</artifactId>
-                <version>${tomcat.version}</version>
+                <version>${server-tomcat.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-servlet-api</artifactId>
-                <version>${tomcat.version}</version>
+                <version>${server-tomcat.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-coyote</artifactId>
-                <version>${tomcat.version}</version>
+                <version>${server-tomcat.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-annotations-api</artifactId>
-                <version>${tomcat.version}</version>
+                <version>${server-tomcat.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-jasper</artifactId>
-                <version>${tomcat.version}</version>
+                <version>${server-tomcat.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-jsp-api</artifactId>
-                <version>${tomcat.version}</version>
+                <version>${server-tomcat.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-juli</artifactId>
-                <version>${tomcat.version}</version>
+                <version>${server-tomcat.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-jasper-el</artifactId>
-                <version>${tomcat.version}</version>
+                <version>${server-tomcat.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-dbcp</artifactId>
-                <version>${tomcat.version}</version>
+                <version>${server-tomcat.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-api</artifactId>
-                <version>${tomcat.version}</version>
+                <version>${server-tomcat.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>tomcat-catalina-ha</artifactId>
-                <version>${tomcat.version}</version>
+                <version>${server-tomcat.version}</version>
             </dependency>
 
             <!-- 旧版本 -->
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>annotations-api</artifactId>
-                <version>${tomcat-legacy.version}</version>
+                <version>${server-tomcat-legacy.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.tomcat</groupId>
                 <artifactId>servlet-api</artifactId>
-                <version>${tomcat-legacy.version}</version>
+                <version>${server-tomcat-legacy.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

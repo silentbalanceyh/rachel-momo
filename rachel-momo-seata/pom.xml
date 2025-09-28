@@ -9,26 +9,22 @@
         <version>1.0.2</version>
     </parent>
 
-    <artifactId>rachel-momo-jooq</artifactId>
-    <name>Rachel Momo::Jooq @${database-jooq.version}</name>
+    <artifactId>rachel-momo-seata</artifactId>
+    <name>Rachel Momo::Seata (ALL) @${cloud-seata.version}</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.jooq</groupId>
-                <artifactId>jooq-codegen</artifactId>
-                <version>${database-jooq.version}</version>
+                <groupId>org.apache.seata</groupId>
+                <artifactId>seata-spring-boot-starter</artifactId>
+                <version>${cloud-seata.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.jooq</groupId>
-                <artifactId>jooq-meta</artifactId>
-                <version>${database-jooq.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jooq</groupId>
-                <artifactId>jooq</artifactId>
-                <version>${database-jooq.version}</version>
+                <groupId>org.apache.seata</groupId>
+                <artifactId>seata-all</artifactId>
+                <version>${cloud-seata.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
+
 </project>

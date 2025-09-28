@@ -9,26 +9,22 @@
         <version>1.0.2</version>
     </parent>
 
-    <artifactId>rachel-momo-jooq</artifactId>
-    <name>Rachel Momo::Jooq @${database-jooq.version}</name>
+    <artifactId>rachel-momo-aws</artifactId>
+    <name>Rachel Momo::Aws @${aws-sdk.version} |🟡 - ${aws-sdk-legacy.version}</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.jooq</groupId>
-                <artifactId>jooq-codegen</artifactId>
-                <version>${database-jooq.version}</version>
+                <groupId>com.amazonaws</groupId>
+                <artifactId>aws-java-sdk-s3</artifactId>
+                <version>${aws-sdk-legacy.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.jooq</groupId>
-                <artifactId>jooq-meta</artifactId>
-                <version>${database-jooq.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jooq</groupId>
-                <artifactId>jooq</artifactId>
-                <version>${database-jooq.version}</version>
+                <groupId>software.amazon.awssdk</groupId>
+                <artifactId>s3</artifactId>
+                <version>${aws-sdk.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
+
 </project>

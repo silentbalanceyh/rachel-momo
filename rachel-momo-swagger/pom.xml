@@ -6,11 +6,11 @@
     <parent>
         <groupId>io.zerows</groupId>
         <artifactId>rachel-momo</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </parent>
 
     <artifactId>rachel-momo-swagger</artifactId>
-    <name>Rachel Momo::Swagger 3 @${doc-swagger3.version}</name>
+    <name>Rachel Momo::Swagger 3 @${doc-swagger3.version} |🟡 - K4J ${doc-knife4j.version}</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
@@ -73,6 +73,12 @@
                 <groupId>io.swagger.core.v3</groupId>
                 <artifactId>swagger-jaxrs2-servlet-initializer-jakarta</artifactId>
                 <version>${doc-swagger3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-dependencies</artifactId>
+                <version>${doc-knife4j.version}</version>
+                <type>pom</type>
             </dependency>
         </dependencies>
     </dependencyManagement>

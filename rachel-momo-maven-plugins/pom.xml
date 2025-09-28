@@ -6,11 +6,11 @@
     <parent>
         <groupId>io.zerows</groupId>
         <artifactId>rachel-momo</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </parent>
 
     <artifactId>rachel-momo-maven-plugins</artifactId>
-    <name>Rachel Momo::Maven Plugins</name>
+    <name>🧩 - / Rachel Momo::Maven Plugins</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
