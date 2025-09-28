@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.zerows</groupId>
         <artifactId>rachel-momo</artifactId>
-        <version>1.0.2</version>
+        <version>1.0.3</version>
     </parent>
 
     <artifactId>rachel-momo-2025-alibaba-cloud</artifactId>
@@ -28,6 +28,7 @@
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>${spring-2025-cloud-alibaba.version}</version>
                 <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

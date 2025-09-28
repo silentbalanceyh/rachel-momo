@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>pom</packaging>
     <name>Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
@@ -69,7 +69,7 @@
         <module>rachel-momo.student</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.2</rachel-momo.version>
+        <rachel-momo.version>1.0.3</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -174,7 +174,8 @@
         <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-spring-boot-actuator -->
         <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-metadata-report-nacos -->
         <cloud-dubbo.version>3.3.5</cloud-dubbo.version>
-        <cloud-dubbo-metadata.version>3.2.8</cloud-dubbo-metadata.version><!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-metadata-report-redis -->
+        <cloud-dubbo-metadata.version>3.2.18</cloud-dubbo-metadata.version><!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-metadata-report-redis -->
+        <cloud-dubbo-metaredis.version>3.3.1</cloud-dubbo-metaredis.version><!-- https://mvnrepository.com/artifact/org.apache.dubbo.extensions/dubbo-metadata-report-redis -->
 
 
         <!-- ========================  🌸 -eclipse ============================ -->
@@ -400,7 +401,9 @@
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-spring -->
         <mybatis-plus.version>3.5.14</mybatis-plus.version>
         <mybatis-spring.version>3.0.5</mybatis-spring.version><!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
-        <mybatis-plus-dynamic-ds.version>4.3.1</mybatis-plus-dynamic-ds.version><!-- https://mvnrepository.com/artifact/com.baomidou/dynamic-datasource-spring-boot-starter -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/dynamic-datasource-spring-boot-starter -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/dynamic-datasource-spring-boot3-starter -->
+        <mybatis-plus-dynamic-ds.version>4.3.1</mybatis-plus-dynamic-ds.version>
 
 
         <!-- ========================  🌸 -nacos ============================ -->
@@ -480,8 +483,12 @@
         <secure-jwt.version>4.5.0</secure-jwt.version><!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
         <secure-sshd.version>3.0.0-M1</secure-sshd.version><!-- https://mvnrepository.com/artifact/org.apache.sshd/sshd-core -->
         <secure-prime-jwt.version>2.0.0</secure-prime-jwt.version><!-- https://mvnrepository.com/artifact/com.inversoft/prime-jwt -->
-        <secure-bcprov-jdk18on.version>1.82</secure-bcprov-jdk18on.version><!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk18on -->
-        <secure-satoken.version>1.44.0</secure-satoken.version><!-- https://mvnrepository.com/artifact/cn.dev33/sa-token-core -->
+        <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15to18 -->
+        <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk18on -->
+        <secure-bcprov-jdk18on.version>1.82</secure-bcprov-jdk18on.version>
+        <!-- https://mvnrepository.com/artifact/cn.dev33/sa-token-core -->
+        <!-- https://mvnrepository.com/artifact/cn.dev33/sa-token-jwt -->
+        <secure-satoken.version>1.44.0</secure-satoken.version>
 
 
         <!-- ========================  🌸 -sentinel ============================ -->
@@ -511,6 +518,7 @@
 
         <!-- ========================  🌸 -spring ============================ -->
         <spring-boot.version>3.5.6</spring-boot.version><!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies -->
+        <spring-boot-admin.version>3.5.5</spring-boot-admin.version><!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-server -->
         <spring-cloud.version>2024.0.2</spring-cloud.version><!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
         <spring-starter-bootstrap>4.3.0</spring-starter-bootstrap><!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bootstrap -->
 
@@ -534,7 +542,9 @@
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations -->
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations-jakarta -->
         <doc-swagger3.version>2.2.37</doc-swagger3.version>
-        <doc-knife4j.version>4.5.0</doc-knife4j.version><!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-dependencies -->
+        <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-dependencies -->
+        <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-openapi3-jakarta-spring-boot-starter -->
+        <doc-knife4j.version>4.5.0</doc-knife4j.version>
 
 
         <!-- ========================  🌸 -template ============================ -->
