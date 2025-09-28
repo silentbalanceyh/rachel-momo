@@ -28,6 +28,7 @@ Rachel Momo（统一版本管理，适用于所有项目）
 文档管理平台，对接 <https://gitee.com/zero-ws/r2mo-matrix>，文档以地图模式的文档为主
 
 - 文档地图：<https://kumu.io/LangYu1017/r2mo#r2mo-dash>
+- 辅导笔记：[详情](rachel-momo.student/README.md)
 
 ### 最新版的使用
 
