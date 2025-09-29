@@ -70,7 +70,7 @@
         <module>rachel-momo.student</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.4</rachel-momo.version>
+        <rachel-momo.version>1.0.5</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
