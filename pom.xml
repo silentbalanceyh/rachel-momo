@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>pom</packaging>
     <name>Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
@@ -50,6 +50,7 @@
         <module>rachel-momo-scala</module>
         <module>rachel-momo-seata</module>
         <module>rachel-momo-secure</module>
+        <module>rachel-momo-selenium</module>
         <module>rachel-momo-sentinel</module>
         <module>rachel-momo-swagger</module>
         <module>rachel-momo-template</module>
@@ -69,7 +70,7 @@
         <module>rachel-momo.student</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.3</rachel-momo.version>
+        <rachel-momo.version>1.0.4</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -149,7 +150,9 @@
 
         <!-- ========================  🌸 -database ============================ -->
         <database-hikari.version>7.0.2</database-hikari.version><!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
-        <database-liquibase.version>4.33.0</database-liquibase.version><!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
+        <!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
+        <!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-cdi -->
+        <database-liquibase.version>4.33.0</database-liquibase.version>
 
 
         <!-- ========================  🌸 -database-driver ============================ -->
@@ -194,13 +197,13 @@
 
         <!-- ========================  🌸 -flyway ============================ -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-mysql -->
-        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-h2 -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-derby -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-postgresql -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-oracle -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-sqlserver -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
-        <database-flyway.version>11.13.1</database-flyway.version><!-- 低一个版本，为了统一，因为有两个库还没有 11.13.1 的版本 -->
+        <database-flyway.version>11.13.2</database-flyway.version><!-- 低一个版本，为了统一，因为有两个库还没有 11.13.1 的版本 -->
 
 
         <!-- ========================  🌸 -google ============================ -->
@@ -239,6 +242,13 @@
         <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
         <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-hikaricp -->
         <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-testing -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-agroal -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-ant -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-c3p0 -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-graalvm -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-jpamodelgen -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-micrometer -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-spatial -->
         <hibernate.version>7.1.1.Final</hibernate.version>
         <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
         <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator-cdi -->
@@ -255,7 +265,7 @@
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-cache -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-fluent -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5 -->
-        <httpclient5.version>5.5</httpclient5.version>
+        <httpclient5.version>5.5.1</httpclient5.version>
         <httpclient5-win.version>5.2.3</httpclient5-win.version><!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-win -->
         <!-- 旧版本 -->
         <httpcore4.version>4.4.16</httpcore4.version><!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
@@ -303,6 +313,20 @@
         <!-- https://mvnrepository.com/artifact/org.jooq/jooq-codegen -->
         <!-- https://mvnrepository.com/artifact/org.jooq/jooq-meta -->
         <!-- https://mvnrepository.com/artifact/org.jooq/jooq -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-checker -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-codegen-gradle -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-codegen-maven -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-jackson-extensions -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-kotlin -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-kotlin-coroutines -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-meta-extensions -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-meta-extensions-hibernate -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-meta-extensions-liquibase -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-meta-kotlin -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-migrations -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-migrations-maven -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-postgres-extensions -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-xtend -->
         <database-jooq.version>3.20.7</database-jooq.version>
 
 
@@ -489,6 +513,29 @@
         <!-- https://mvnrepository.com/artifact/cn.dev33/sa-token-core -->
         <!-- https://mvnrepository.com/artifact/cn.dev33/sa-token-jwt -->
         <secure-satoken.version>1.44.0</secure-satoken.version>
+
+
+        <!-- ========================  🌸 -selenium ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/htmlunit3-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chromium-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v134 -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v135 -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-edge-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-grid -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-http -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-ie-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-json -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-manager -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-safari-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-session-map-jdbc -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-session-map-redis -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
+        <selenium.version>4.35.0</selenium.version>
 
 
         <!-- ========================  🌸 -sentinel ============================ -->

@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.zerows</groupId>
         <artifactId>rachel-momo</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
     </parent>
 
     <artifactId>rachel-momo-flyway</artifactId>
@@ -26,7 +26,7 @@
             </dependency>
             <dependency>
                 <groupId>org.flywaydb</groupId>
-                <artifactId>flyway-database-h2</artifactId>
+                <artifactId>flyway-database</artifactId>
                 <version>${database-flyway.version}</version>
             </dependency>
             <dependency>

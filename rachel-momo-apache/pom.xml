@@ -6,11 +6,11 @@
     <parent>
         <groupId>io.zerows</groupId>
         <artifactId>rachel-momo</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
     </parent>
 
     <artifactId>rachel-momo-apache</artifactId>
-    <name>Rachel Momo::Apache</name>
+    <name>Rachel Momo::Apache Common</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
