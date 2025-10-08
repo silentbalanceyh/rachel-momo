@@ -1,4 +1,4 @@
-# rachel-momo
+# Rachel Momo
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.zerows/rachel-momo.svg?label=Maven%20Central&style=for-the-badge&color=blue)](https://mvnrepository.com/artifact/io.zerows/rachel-momo)
 
