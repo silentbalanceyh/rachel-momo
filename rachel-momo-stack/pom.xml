@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.zerows</groupId>
         <artifactId>rachel-momo</artifactId>
-        <version>1.0.5</version>
+        <version>1.0.6</version>
     </parent>
 
     <artifactId>rachel-momo-stack</artifactId>
@@ -192,13 +192,6 @@
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-mapstruct</artifactId>
-                <version>${rachel-momo.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>io.zerows</groupId>
-                <artifactId>rachel-momo-maven-plugins</artifactId>
                 <version>${rachel-momo.version}</version>
                 <type>pom</type>
                 <scope>import</scope>

@@ -9,22 +9,18 @@
         <version>1.0.6</version>
     </parent>
 
-    <artifactId>rachel-momo-seata</artifactId>
-    <name>Rachel Momo::Seata (ALL) @${cloud-seata.version}</name>
+    <artifactId>rachel-momo-0216</artifactId>
+    <name>🧩 - / Rachel Momo::Base Import</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.apache.seata</groupId>
-                <artifactId>seata-spring-boot-starter</artifactId>
-                <version>${cloud-seata.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.seata</groupId>
-                <artifactId>seata-all</artifactId>
-                <version>${cloud-seata.version}</version>
+                <groupId>io.zerows</groupId>
+                <artifactId>rachel-momo-stack</artifactId>
+                <version>${rachel-momo.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 </project>
