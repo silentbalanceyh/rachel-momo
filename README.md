@@ -1,5 +1,7 @@
 # rachel-momo
 
+[![Maven Central](https://img.shields.io/maven-central/v/io.zerows/rachel-momo.svg?label=Maven%20Central&style=for-the-badge&color=blue)](https://mvnrepository.com/artifact/io.zerows/rachel-momo)
+
 > For Rachel Momo
 
 ## 介绍
@@ -41,7 +43,7 @@ Rachel Momo（统一版本管理，适用于所有项目）
         <dependency>
             <groupId>io.zerows</groupId>
             <artifactId>rachel-momo-stack</artifactId>
-            <version>1.0.0</version>
+            <version>${rachel-momo.version}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
