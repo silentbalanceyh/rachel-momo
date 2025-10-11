@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.zerows</groupId>
         <artifactId>rachel-momo</artifactId>
-        <version>1.0.6</version>
+        <version>1.0.7</version>
     </parent>
 
     <artifactId>rachel-momo-netty</artifactId>
@@ -35,6 +35,11 @@
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-codec-dns</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-codec-socks</artifactId>
                 <version>${netty.version}</version>
             </dependency>
             <dependency>
@@ -86,7 +91,12 @@
                 <groupId>io.netty</groupId>
                 <artifactId>netty-resolver-dns-native-macos</artifactId>
                 <version>${netty.version}</version>
-                <classifier>osx-x86_64</classifier>
+                <classifier>osx-aarch_64</classifier>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-resolver-dns-classes-macos</artifactId>
+                <version>${netty.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.netty</groupId>
