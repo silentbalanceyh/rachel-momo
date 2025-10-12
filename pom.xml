@@ -668,6 +668,7 @@
         <mavenex.plugin.staging>1.7.0</mavenex.plugin.staging><!-- https://mvnrepository.com/artifact/org.sonatype.plugins/nexus-staging-maven-plugin -->
         <mavenex.plugin.versions>2.19.1</mavenex.plugin.versions><!-- http://www.mvnrepository.com/artifact/org.codehaus.mojo/versions-maven-plugin -->
         <mavenex.plugin.processor>5.1</mavenex.plugin.processor><!-- https://mvnrepository.com/artifact/org.bsc.maven/maven-processor-plugin -->
+        <mavenex.plugin.liquibase>5.0.1</mavenex.plugin.liquibase><!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-maven-plugin -->
 
 
         <!-- ====== 🌷 标准 Maven 插件 （可以不加 groupId） ===== -->
@@ -818,6 +819,11 @@
                     <groupId>org.bsc.maven</groupId>
                     <artifactId>maven-processor-plugin</artifactId>
                     <version>${mavenex.plugin.processor}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.liquibase</groupId>
+                    <artifactId>liquibase-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.liquibase}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.projectlombok</groupId>
