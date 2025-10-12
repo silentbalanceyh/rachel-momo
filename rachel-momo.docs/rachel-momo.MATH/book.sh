@@ -16,7 +16,7 @@ else
 fi
 
 # ===== 端口设置：可用 env PORT 或第一个参数覆盖，默认 4000 =====
-PORT="${PORT:-${1:-4000}}"
+PORT="${PORT:-${1:-4001}}"
 
 # ===== 进入本书根目录（本脚本所在目录） =====
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
