@@ -67,7 +67,8 @@
         <module>rachel-momo-2025-alibaba-cloud</module>
         <module>rachel-momo-2025-stack</module>
         <!-- Stack 入口 -->
-        <module>rachel-momo.student</module>
+        <module>rachel-momo.docs</module>
+        <module>rachel-momo.linux</module>
     </modules>
     <properties>
         <rachel-momo.version>1.0.7</rachel-momo.version>

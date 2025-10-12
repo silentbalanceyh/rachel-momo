@@ -1,0 +1,24 @@
+{
+    "title": "数学笔记",
+    "plugins": [
+        "-sharing",
+        "anchors",
+        "search-pro",
+        "prism",
+        "splitter",
+        "tbfed-pagefooter",
+        "expandable-chapters",
+        "github",
+        "ga"
+    ],
+    "pluginsConfig": {
+        "tbfed-pagefooter": {
+            "copyright": "© 2025 ZeroWS",
+            "modify_label": "最后更新",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "github": {
+            "url": "https://gitee.com/your/repo"
+        }
+    }
+}

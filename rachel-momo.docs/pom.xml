@@ -8,10 +8,7 @@
         <artifactId>rachel-momo</artifactId>
         <version>1.0.7</version>
     </parent>
-    <artifactId>rachel-momo.student</artifactId>
-    <name>📗 - Rachel Momo::辅导笔记</name>
+    <artifactId>rachel-momo.docs</artifactId>
+    <name>📗 - Rachel Momo::文档集合 / Gitbook ⚙️</name>
     <packaging>pom</packaging>
-    <modules>
-        <module>momo-math.abs</module>
-    </modules>
 </project>

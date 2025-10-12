@@ -5,10 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.zerows</groupId>
-        <artifactId>rachel-momo.student</artifactId>
+        <artifactId>rachel-momo</artifactId>
         <version>1.0.7</version>
     </parent>
 
-    <artifactId>momo-math.abs</artifactId>
-    <name>📗 - Rachel Momo::数学 / 绝对值</name>
+    <artifactId>rachel-momo.linux</artifactId>
+    <name>📗 - Rachel Momo::Linux命令集 / Gitbook ⚙️</name>
+    <packaging>pom</packaging>
 </project>
