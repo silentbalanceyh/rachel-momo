@@ -1,22 +1,31 @@
 {
     "title": "数学笔记",
+    "author": "Lang",
     "plugins": [
-        "-sharing",
-        "search-pro",
-        "prism",
         "splitter",
+        "copy-code-button",
+        "prism",
+        "katex",
+        "mermaid-gb3",
         "tbfed-pagefooter",
-        "expandable-chapters",
-        "github"
+        "search-pro"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
-            "copyright": "© 2025 ZeroWS",
+            "copyright": "© 2025 Lang.Yu",
             "modify_label": "最后更新",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
-        "github": {
-            "url": "https://gitee.com/silentbalanceyh/rachel-momo/tree/master/rachel-momo.docs/rachel-momo.MATH"
+        "prism": {
+            "css": [
+                "prismjs/themes/prism.css"
+            ]
+        },
+        "katex": {
+            "strict": false
+        },
+        "mermaid-gb3": {
+            "theme": "default"
         }
     }
 }
