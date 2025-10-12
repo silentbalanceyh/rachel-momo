@@ -2,14 +2,12 @@
     "title": "数学笔记",
     "plugins": [
         "-sharing",
-        "anchors",
         "search-pro",
         "prism",
         "splitter",
         "tbfed-pagefooter",
         "expandable-chapters",
-        "github",
-        "ga"
+        "github"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
@@ -18,7 +16,7 @@
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "github": {
-            "url": "https://gitee.com/your/repo"
+            "url": "https://gitee.com/silentbalanceyh/rachel-momo/tree/master/rachel-momo.docs/rachel-momo.MATH"
         }
     }
 }
