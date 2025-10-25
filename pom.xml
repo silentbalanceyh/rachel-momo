@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
     <packaging>pom</packaging>
     <name>Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
@@ -68,7 +68,7 @@
         <module>rachel-momo-2025-stack</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.7</rachel-momo.version>
+        <rachel-momo.version>1.0.8</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -116,7 +116,7 @@
 
 
         <!-- ========================  🌸 -aws ============================ -->
-        <aws-sdk.version>2.35.5</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
+        <aws-sdk.version>2.36.2</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
         <aws-sdk-legacy.version>1.12.792</aws-sdk-legacy.version><!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
 
 
@@ -134,12 +134,12 @@
         <!-- https://mvnrepository.com/artifact/org.camunda.spin/camunda-spin-dataformat-json-jackson -->
         <!-- https://mvnrepository.com/artifact/org.camunda.spin/camunda-spin-core -->
         <!-- https://mvnrepository.com/artifact/org.camunda.template-engines/camunda-template-engines-freemarker -->
-        <camunda.version>7.23.0</camunda.version>
+        <camunda.version>7.24.0</camunda.version>
         <camunda-bpm.version>1.2.0</camunda-bpm.version><!-- https://mvnrepository.com/artifact/org.camunda.bpm.extension.xslt/camunda-bpm-xslt -->
 
 
         <!-- ========================  🌸 -cluster ============================ -->
-        <cluster-hazelcast.version>5.5.0</cluster-hazelcast.version><!-- https://mvnrepository.com/artifact/com.hazelcast/hazelcast -->
+        <cluster-hazelcast.version>5.6.0</cluster-hazelcast.version><!-- https://mvnrepository.com/artifact/com.hazelcast/hazelcast -->
         <cluster-zookeeper.version>3.9.4</cluster-zookeeper.version><!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
         <!-- https://mvnrepository.com/artifact/org.apache.ignite/ignite-core -->
         <!-- https://mvnrepository.com/artifact/org.apache.ignite/ignite-indexing -->
@@ -189,7 +189,7 @@
         <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-x-content -->
         <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client -->
         <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client-sniffer -->
-        <elasticsearch.version>9.1.5</elasticsearch.version>
+        <elasticsearch.version>9.2.0</elasticsearch.version>
         <elasticsearch-client.version>7.17.29</elasticsearch-client.version><!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-high-level-client -->
 
 
@@ -201,19 +201,19 @@
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-oracle -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-sqlserver -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
-        <database-flyway.version>11.14.0</database-flyway.version><!-- 低一个版本，为了统一，因为有两个库还没有 11.13.1 的版本 -->
+        <database-flyway.version>11.15.0</database-flyway.version><!-- 低一个版本，为了统一，因为有两个库还没有 11.13.1 的版本 -->
 
 
         <!-- ========================  🌸 -google ============================ -->
-        <google-errorprone.version>2.42.0</google-errorprone.version><!-- https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations -->
-        <google-jsr305.version>4.9.6</google-jsr305.version><!-- https://mvnrepository.com/artifact/com.github.spotbugs/spotbugs-annotations -->
+        <google-errorprone.version>2.43.0</google-errorprone.version><!-- https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations -->
+        <google-jsr305.version>4.9.8</google-jsr305.version><!-- https://mvnrepository.com/artifact/com.github.spotbugs/spotbugs-annotations -->
         <google-jsr305-legacy.version>3.0.2</google-jsr305-legacy.version><!-- https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305 -->
         <google-gson.version>2.13.2</google-gson.version><!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <google-guice.version>7.0.0</google-guice.version><!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
         <google-guava.version>33.5.0-jre</google-guava.version><!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
         <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
         <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java-util -->
-        <google-protobuf.version>4.32.1</google-protobuf.version>
+        <google-protobuf.version>4.33.0</google-protobuf.version>
         <google-etcd.version>2.18.0</google-etcd.version><!-- https://mvnrepository.com/artifact/org.mousio/etcd4j -->
         <google-j2objc.version>3.1</google-j2objc.version><!-- https://mvnrepository.com/artifact/com.google.j2objc/j2objc-annotations -->
 
@@ -292,7 +292,7 @@
         <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
         <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.ee10.websocket/jetty-ee10-websocket-jetty-server -->
         <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.ee10.websocket/jetty-ee10-websocket-jakarta-server -->
-        <server-jetty.version>12.1.2</server-jetty.version>
+        <server-jetty.version>12.1.3</server-jetty.version>
 
 
         <!-- ========================  🌸 -jklingsporn ============================ -->
@@ -331,7 +331,7 @@
         <!-- ========================  🌸 -jsr ============================ -->
         <!-- 升级之后到 jakarta 不再使用 JSR 编号 -->
         <jsr303.validation.version>2.0.1.Final</jsr303.validation.version><!-- JSR303: https://mvnrepository.com/artifact/javax.validation/validation-api -->
-        <jakarta.validation.version>3.1.1</jakarta.validation.version><!-- * https://mvnrepository.com/artifact/jakarta.validation/jakarta.validation-api -->
+        <jakarta.validation.version>4.0.0-M1</jakarta.validation.version><!-- * https://mvnrepository.com/artifact/jakarta.validation/jakarta.validation-api -->
         <jsr311.ws-rs.version>2.1.1</jsr311.ws-rs.version><!-- JSR311: https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
         <jakarta.ws-rs.version>4.0.0</jakarta.ws-rs.version><!-- * https://mvnrepository.com/artifact/jakarta.ws.rs/jakarta.ws.rs-api -->
         <jsr330.inject.version>1</jsr330.inject.version><!-- JSR330: https://mvnrepository.com/artifact/javax.inject/javax.inject -->
@@ -342,9 +342,9 @@
         <jsr338.persistence-api.version>2.2</jsr338.persistence-api.version><!-- JSR338: https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
         <jakarta.persistence-api.version>3.2.0</jakarta.persistence-api.version><!-- * https://mvnrepository.com/artifact/jakarta.persistence/jakarta.persistence-api -->
         <jsr369.servlet-api.version>4.0.1</jsr369.servlet-api.version><!-- JSR369: https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
-        <jakarta.servlet-api.version>6.1.0</jakarta.servlet-api.version><!-- * https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+        <jakarta.servlet-api.version>6.2.0-M1</jakarta.servlet-api.version><!-- * https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
         <jsr341.el-api.version>3.0.1-b06</jsr341.el-api.version><!-- JSR341: https://mvnrepository.com/artifact/javax.el/javax.el-api -->
-        <jakarta.el-api.version>6.0.1</jakarta.el-api.version><!-- * https://mvnrepository.com/artifact/jakarta.el/jakarta.el-api -->
+        <jakarta.el-api.version>6.1.0-M1</jakarta.el-api.version><!-- * https://mvnrepository.com/artifact/jakarta.el/jakarta.el-api -->
         <jsr925.activation.version>1.2.0</jsr925.activation.version><!-- JSR925: https://mvnrepository.com/artifact/javax.activation/javax.activation-api -->
         <jakarta.activation.version>2.0.1</jakarta.activation.version><!-- * https://mvnrepository.com/artifact/jakarta.activation/jakarta.activation-api -->
 
@@ -359,9 +359,9 @@
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params -->
-        <junit.version>5.12.2</junit.version>
+        <junit.version>6.0.0</junit.version>
         <junit-lagecy.version>4.13.2</junit-lagecy.version><!-- http://mvnrepository.com/artifact/junit/junit -->
-        <junit-platform.version>1.12.2</junit-platform.version><!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-launcher -->
+        <junit-platform.version>6.0.0</junit-platform.version><!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-launcher -->
 
 
         <!-- ========================  🌸 -jvmr ============================ -->
@@ -386,7 +386,7 @@
         <logging-log4j2.version>2.25.2</logging-log4j2.version>
         <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
         <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
-        <logging-logback.version>1.5.19</logging-logback.version>
+        <logging-logback.version>1.5.20</logging-logback.version>
         <logging-logback-cal10n.version>0.8.1</logging-logback-cal10n.version><!-- https://mvnrepository.com/artifact/ch.qos.cal10n/cal10n-api -->
         <!-- https://mvnrepository.com/artifact/org.slf4j/jul-to-slf4j/ -->
         <!-- https://mvnrepository.com/artifact/org.slf4j/jul-over-slf4j/ -->
@@ -409,7 +409,7 @@
         <!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-client -->
         <rocketmq.version>5.3.3</rocketmq.version>
         <rocketmq-spring.version>2.3.4</rocketmq-spring.version><!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-spring-boot-starter -->
-        <rabbitmq.version>5.26.0</rabbitmq.version><!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
+        <rabbitmq.version>5.27.0</rabbitmq.version><!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
 
 
         <!-- ========================  🌸 -mybatis ============================ -->
@@ -426,6 +426,8 @@
         <!-- https://mvnrepository.com/artifact/com.baomidou/dynamic-datasource-spring-boot-starter -->
         <!-- https://mvnrepository.com/artifact/com.baomidou/dynamic-datasource-spring-boot3-starter -->
         <mybatis-plus-dynamic-ds.version>4.3.1</mybatis-plus-dynamic-ds.version>
+        <!-- https://mvnrepository.com/artifact/com.github.yulichang/mybatis-plus-join-boot-starter -->
+        <mybatis-plus-join.version>1.5.4</mybatis-plus-join.version>
 
 
         <!-- ========================  🌸 -nacos ============================ -->
@@ -453,7 +455,7 @@
         <!-- https://mvnrepository.com/artifact/io.netty/netty-transport-native-unix-common -->
         <!-- https://mvnrepository.com/artifact/io.netty/netty-resolver-dns-classes-macos -->
         <!-- https://mvnrepository.com/artifact/io.netty/netty-resolver-dns-native-macos -->
-        <netty.version>4.2.6.Final</netty.version>
+        <netty.version>4.2.7.Final</netty.version>
         <!-- https://mvnrepository.com/artifact/io.netty/netty-tcnative-boringssl-static -->
         <!-- https://mvnrepository.com/artifact/io.netty/netty-tcnative -->
         <netty-tcnative.version>2.0.74.Final</netty-tcnative.version>
@@ -535,7 +537,8 @@
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-session-map-jdbc -->
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-session-map-redis -->
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
-        <selenium.version>4.36.0</selenium.version>
+        <selenium.version>4.38.0</selenium.version>
+        <selenium.htlmunit3.version>4.36.1</selenium.htlmunit3.version><!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
 
 
         <!-- ========================  🌸 -sentinel ============================ -->
@@ -589,7 +592,7 @@
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-models-jakarta -->
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations -->
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations-jakarta -->
-        <doc-swagger3.version>2.2.38</doc-swagger3.version>
+        <doc-swagger3.version>2.2.39</doc-swagger3.version>
         <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-dependencies -->
         <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-gateway-spring-boot-starter -->
         <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-openapi3-jakarta-spring-boot-starter -->
@@ -606,22 +609,22 @@
 
         <!-- ========================  🌸 -util ============================ -->
         <util.joda.version>2.14.0</util.joda.version><!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
-        <util.hutool.version>5.8.40</util.hutool.version><!-- https://mvnrepository.com/artifact/cn.hutool/hutool-bom -->
-        <util.ip2region.version>3.1.0</util.ip2region.version><!-- https://mvnrepository.com/artifact/org.lionsoul/ip2region -->
+        <util.hutool.version>5.8.41</util.hutool.version><!-- https://mvnrepository.com/artifact/cn.hutool/hutool-bom -->
+        <util.ip2region.version>3.1.1</util.ip2region.version><!-- https://mvnrepository.com/artifact/org.lionsoul/ip2region -->
         <util.p6spy.version>3.9.1</util.p6spy.version><!-- https://mvnrepository.com/artifact/p6spy/p6spy -->
         <util.fastexcel.version>1.3.0</util.fastexcel.version><!-- https://mvnrepository.com/artifact/cn.idev.excel/fastexcel -->
 
 
         <!-- ========================  🌸 -vendor ============================ -->
-        <vendor.termd-core.version>1.1.10</vendor.termd-core.version><!-- https://mvnrepository.com/artifact/io.termd/termd-core -->
+        <vendor.termd-core.version>1.1.11</vendor.termd-core.version><!-- https://mvnrepository.com/artifact/io.termd/termd-core -->
         <vendor.janino.version>3.1.12</vendor.janino.version><!-- https://mvnrepository.com/artifact/org.codehaus.janino/janino -->
-        <vendor.animal-sniffer-annotations.version>1.24</vendor.animal-sniffer-annotations.version><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/animal-sniffer-annotations -->
+        <vendor.animal-sniffer-annotations.version>1.26</vendor.animal-sniffer-annotations.version><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/animal-sniffer-annotations -->
         <vendor.HdrHistogram.version>2.2.2</vendor.HdrHistogram.version><!-- https://mvnrepository.com/artifact/org.hdrhistogram/HdrHistogram -->
         <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-core -->
         <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-jackson -->
         <vendor.feign.version>8.18.0</vendor.feign.version>
         <vendor.picocli.version>4.7.7</vendor.picocli.version><!-- https://mvnrepository.com/artifact/info.picocli/picocli -->
-        <vendor.checker-qual.version>3.51.0</vendor.checker-qual.version><!-- https://mvnrepository.com/artifact/org.checkerframework/checker-qual -->
+        <vendor.checker-qual.version>3.51.1</vendor.checker-qual.version><!-- https://mvnrepository.com/artifact/org.checkerframework/checker-qual -->
 
 
         <!-- ========================  🌸 -vertx ============================ -->
@@ -643,7 +646,7 @@
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-dbcp -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-api -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina-ha -->
-        <server-tomcat.version>11.0.12</server-tomcat.version>
+        <server-tomcat.version>11.0.13</server-tomcat.version>
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/servlet-api -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/annotations-api -->
         <server-tomcat-legacy.version>6.0.53</server-tomcat-legacy.version>
