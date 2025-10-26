@@ -79,7 +79,7 @@
 
         <!-- ========================  🌸 -alibaba ============================ -->
         <spring-cloud-alibaba.version>2023.0.3.3</spring-cloud-alibaba.version><!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-alibaba-dependencies -->
-        <spring-2025-cloud-alibaba.version>2025.0.0.0-preview</spring-2025-cloud-alibaba.version>
+        <spring-2025-cloud-alibaba.version>2025.0.0.0</spring-2025-cloud-alibaba.version>
 
         <!-- ========================  🌸 -aliyun ============================ -->
         <cloud-aliyun.version>4.7.6</cloud-aliyun.version><!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core -->
@@ -507,7 +507,7 @@
 
         <!-- ========================  🌸 -secure ============================ -->
         <secure-jwt.version>4.5.0</secure-jwt.version><!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
-        <secure-sshd.version>3.0.0-M1</secure-sshd.version><!-- https://mvnrepository.com/artifact/org.apache.sshd/sshd-core -->
+        <secure-sshd.version>3.0.0-M2</secure-sshd.version><!-- https://mvnrepository.com/artifact/org.apache.sshd/sshd-core -->
         <secure-prime-jwt.version>2.0.0</secure-prime-jwt.version><!-- https://mvnrepository.com/artifact/com.inversoft/prime-jwt -->
         <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15to18 -->
         <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk18on -->
@@ -574,9 +574,9 @@
         <spring-starter-bootstrap>4.3.0</spring-starter-bootstrap><!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bootstrap -->
 
         <!-- 实验性版本 -->
-        <spring-2025-boot.version>4.0.0-M3</spring-2025-boot.version>
-        <spring-2025-cloud.version>2025.1.0-M2</spring-2025-cloud.version>
-        <spring-2025-starter-bootstrap>5.0.0-M2</spring-2025-starter-bootstrap>
+        <spring-2025-boot.version>4.0.0-RC1</spring-2025-boot.version>
+        <spring-2025-cloud.version>2025.1.0-M4</spring-2025-cloud.version>
+        <spring-2025-starter-bootstrap>5.0.0-M4</spring-2025-starter-bootstrap>
 
 
         <!-- ========================  🌸 -swagger ============================ -->
