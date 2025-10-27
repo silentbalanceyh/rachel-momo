@@ -628,9 +628,9 @@
 
 
         <!-- ========================  🌸 -vertx ============================ -->
-        <vertx.version>5.0.4</vertx.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-stack-depchain -->
+        <vertx.version>5.0.5</vertx.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-stack-depchain -->
         <vertx-swagger.version>1.6.0</vertx-swagger.version><!-- https://mvnrepository.com/artifact/com.github.phiz71/vertx-swagger-router -->
-        <vertx-legacy.version>4.5.21</vertx-legacy.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-io_uring-incubator -->
+        <vertx-legacy.version>4.5.22</vertx-legacy.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-io_uring-incubator -->
 
 
         <!-- ========================  🌸 -tomcat ============================ -->
