@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.10</version>
+    <version>1.0.11</version>
     <packaging>pom</packaging>
     <name>Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
@@ -68,7 +68,7 @@
         <module>rachel-momo-2025-stack</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.10</rachel-momo.version>
+        <rachel-momo.version>1.0.11</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -116,8 +116,8 @@
 
 
         <!-- ========================  🌸 -aws ============================ -->
-        <aws-sdk.version>2.36.2</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
-        <aws-sdk-legacy.version>1.12.792</aws-sdk-legacy.version><!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
+        <aws-sdk.version>2.37.3</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
+        <aws-sdk-legacy.version>1.12.793</aws-sdk-legacy.version><!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
 
 
         <!-- ========================  🌸 -camunda ============================ -->
@@ -143,7 +143,7 @@
         <cluster-zookeeper.version>3.9.4</cluster-zookeeper.version><!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
         <!-- https://mvnrepository.com/artifact/org.apache.ignite/ignite-core -->
         <!-- https://mvnrepository.com/artifact/org.apache.ignite/ignite-indexing -->
-        <cluster-ignite.version>3.0.0</cluster-ignite.version>
+        <cluster-ignite.version>3.1.0</cluster-ignite.version>
 
 
         <!-- ========================  🌸 -database ============================ -->
@@ -157,7 +157,7 @@
         <database-neo4j.version>6.0.1</database-neo4j.version><!-- https://mvnrepository.com/artifact/org.neo4j.driver/neo4j-java-driver -->
         <database-mongodb.version>5.6.1</database-mongodb.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-sync -->
         <database-mongodb-legacy.version>3.12.14</database-mongodb-legacy.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
-        <database-mysql.version>9.4.0</database-mysql.version><!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+        <database-mysql.version>9.5.0</database-mysql.version><!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
         <database-pgsql.version>42.7.8</database-pgsql.version><!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <database-h2.version>2.4.240</database-h2.version><!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
         <database-sqlite.version>3.50.3.0</database-sqlite.version><!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
@@ -282,7 +282,7 @@
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-afterburner -->
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
-        <jackson.version>2.20.0</jackson.version>
+        <jackson.version>2.20.1</jackson.version>
         <jackson-annotation.version>2.20</jackson-annotation.version><!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
         <jackson-uuid-generator.version>5.1.1</jackson-uuid-generator.version><!-- https://mvnrepository.com/artifact/com.fasterxml.uuid/java-uuid-generator -->
         <jackson-yaml.version>2.5</jackson-yaml.version><!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
@@ -342,7 +342,11 @@
         <jsr338.persistence-api.version>2.2</jsr338.persistence-api.version><!-- JSR338: https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
         <jakarta.persistence-api.version>3.2.0</jakarta.persistence-api.version><!-- * https://mvnrepository.com/artifact/jakarta.persistence/jakarta.persistence-api -->
         <jsr369.servlet-api.version>4.0.1</jsr369.servlet-api.version><!-- JSR369: https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
-        <jakarta.servlet-api.version>6.2.0-M1</jakarta.servlet-api.version><!-- * https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+        <!--
+        Servlet Api 的版本处理比较特殊，最新版依赖 eclipse 中一个 ee 对应的依赖版本，这个依赖版本在内网环境中无法下载，所以
+        回退到 6.1.0 的版本，6.2.0-M1 的版本暂时不使用。
+        -->
+        <jakarta.servlet-api.version>6.1.0</jakarta.servlet-api.version><!-- * https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
         <jsr341.el-api.version>3.0.1-b06</jsr341.el-api.version><!-- JSR341: https://mvnrepository.com/artifact/javax.el/javax.el-api -->
         <jakarta.el-api.version>6.1.0-M1</jakarta.el-api.version><!-- * https://mvnrepository.com/artifact/jakarta.el/jakarta.el-api -->
         <jsr925.activation.version>1.2.0</jsr925.activation.version><!-- JSR925: https://mvnrepository.com/artifact/javax.activation/javax.activation-api -->
@@ -359,9 +363,9 @@
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params -->
-        <junit.version>6.0.0</junit.version>
+        <junit.version>6.0.1</junit.version>
         <junit-lagecy.version>4.13.2</junit-lagecy.version><!-- http://mvnrepository.com/artifact/junit/junit -->
-        <junit-platform.version>6.0.0</junit-platform.version><!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-launcher -->
+        <junit-platform.version>6.0.1</junit-platform.version><!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-launcher -->
 
 
         <!-- ========================  🌸 -jvmr ============================ -->
@@ -538,7 +542,7 @@
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-session-map-redis -->
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
         <selenium.version>4.38.0</selenium.version>
-        <selenium.htlmunit3.version>4.36.1</selenium.htlmunit3.version><!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
+        <selenium.htlmunit3.version>4.38.0</selenium.htlmunit3.version><!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
 
 
         <!-- ========================  🌸 -sentinel ============================ -->
@@ -592,7 +596,7 @@
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-models-jakarta -->
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations -->
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations-jakarta -->
-        <doc-swagger3.version>2.2.39</doc-swagger3.version>
+        <doc-swagger3.version>2.2.40</doc-swagger3.version>
         <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-dependencies -->
         <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-gateway-spring-boot-starter -->
         <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-openapi3-jakarta-spring-boot-starter -->
