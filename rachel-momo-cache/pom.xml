@@ -6,11 +6,11 @@
     <parent>
         <groupId>io.zerows</groupId>
         <artifactId>rachel-momo</artifactId>
-        <version>1.0.12</version>
+        <version>1.0.13</version>
     </parent>
 
     <artifactId>rachel-momo-cache</artifactId>
-    <name>Rachel Momo::Cache @${camunda.version} 🦠</name>
+    <name>Rachel Momo::Cache @${cache.ehcache.version} | ${cache.caffeine.version}🦠</name>
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
