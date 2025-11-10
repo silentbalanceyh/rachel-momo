@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.11</version>
+    <version>1.0.12</version>
     <packaging>pom</packaging>
     <name>Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
@@ -17,6 +17,7 @@
         <module>rachel-momo-apache-felix</module>
         <module>rachel-momo-aspectj</module>
         <module>rachel-momo-aws</module>
+        <module>rachel-momo-cache</module>
         <module>rachel-momo-camunda</module>
         <module>rachel-momo-cluster</module>
         <module>rachel-momo-database</module>
@@ -68,7 +69,7 @@
         <module>rachel-momo-2025-stack</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.11</rachel-momo.version>
+        <rachel-momo.version>1.0.12</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -78,7 +79,7 @@
 
 
         <!-- ========================  🌸 -alibaba ============================ -->
-        <spring-cloud-alibaba.version>2023.0.3.3</spring-cloud-alibaba.version><!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-alibaba-dependencies -->
+        <spring-cloud-alibaba.version>2023.0.3.4</spring-cloud-alibaba.version><!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-alibaba-dependencies -->
         <spring-2025-cloud-alibaba.version>2025.0.0.0</spring-2025-cloud-alibaba.version>
 
         <!-- ========================  🌸 -aliyun ============================ -->
@@ -88,12 +89,12 @@
         <!-- ========================  🌸 -apache-common ============================ -->
         <commons-compress.version>1.28.0</commons-compress.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-compress -->
         <commons-net.version>3.12.0</commons-net.version><!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
-        <commons-codec.version>1.19.0</commons-codec.version><!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+        <commons-codec.version>1.20.0</commons-codec.version><!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
         <commons-collections4.version>4.5.0</commons-collections4.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
         <commons-jexl3.version>3.5.0</commons-jexl3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-jexl3 -->
         <commons-lang3.version>3.19.0</commons-lang3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <commons-cli.version>1.10.0</commons-cli.version><!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
-        <commons-io.version>2.20.0</commons-io.version><!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <commons-io.version>2.21.0</commons-io.version><!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <commons-text.version>1.14.0</commons-text.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
 
 
@@ -111,14 +112,24 @@
         <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjtools -->
         <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
         <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
-        <aspectj.version>1.9.24</aspectj.version>
+        <aspectj.version>1.9.25</aspectj.version>
         <aspectj-jcabi.version>0.26.0</aspectj-jcabi.version><!-- https://mvnrepository.com/artifact/com.jcabi/jcabi-aspects -->
 
 
         <!-- ========================  🌸 -aws ============================ -->
-        <aws-sdk.version>2.37.3</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
+        <aws-sdk.version>2.38.2</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
         <aws-sdk-legacy.version>1.12.793</aws-sdk-legacy.version><!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
 
+
+        <!-- ========================  🌸 -cache ============================ -->
+        <!-- https://mvnrepository.com/artifact/com.github.ben-manes.caffeine/caffeine -->
+        <!-- https://mvnrepository.com/artifact/com.github.ben-manes.caffeine/guava -->
+        <!-- https://mvnrepository.com/artifact/com.github.ben-manes.caffeine/jcache -->
+        <cache.caffeine.version>3.2.3</cache.caffeine.version>
+        <!-- https://mvnrepository.com/artifact/org.ehcache/ehcache -->
+        <!-- https://mvnrepository.com/artifact/org.ehcache/ehcache-clustered -->
+        <!-- https://mvnrepository.com/artifact/org.ehcache/ehcache-transactions -->
+        <cache.ehcache.version>3.11.1</cache.ehcache.version>
 
         <!-- ========================  🌸 -camunda ============================ -->
         <!-- https://mvnrepository.com/artifact/org.camunda.commons/camunda-commons-testing -->
@@ -154,13 +165,13 @@
 
 
         <!-- ========================  🌸 -database-driver ============================ -->
-        <database-neo4j.version>6.0.1</database-neo4j.version><!-- https://mvnrepository.com/artifact/org.neo4j.driver/neo4j-java-driver -->
+        <database-neo4j.version>6.0.2</database-neo4j.version><!-- https://mvnrepository.com/artifact/org.neo4j.driver/neo4j-java-driver -->
         <database-mongodb.version>5.6.1</database-mongodb.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-sync -->
         <database-mongodb-legacy.version>3.12.14</database-mongodb-legacy.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
         <database-mysql.version>9.5.0</database-mysql.version><!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
         <database-pgsql.version>42.7.8</database-pgsql.version><!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <database-h2.version>2.4.240</database-h2.version><!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
-        <database-sqlite.version>3.50.3.0</database-sqlite.version><!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
+        <database-sqlite.version>3.51.0.0</database-sqlite.version><!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
         <!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
         <!-- https://mvnrepository.com/artifact/org.apache.derby/derbytools -->
         <!-- https://mvnrepository.com/artifact/org.apache.derby/derbyclient -->
@@ -194,14 +205,14 @@
 
 
         <!-- ========================  🌸 -flyway ============================ -->
-        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-mysql -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-derby -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-postgresql -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-oracle -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-mysql -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-sqlserver -->
-        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
-        <database-flyway.version>11.15.0</database-flyway.version><!-- 低一个版本，为了统一，因为有两个库还没有 11.13.1 的版本 -->
+        <database-flyway.version>11.16.0</database-flyway.version>
 
 
         <!-- ========================  🌸 -google ============================ -->
@@ -250,7 +261,7 @@
         <hibernate.version>7.1.1.Final</hibernate.version>
         <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
         <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator-cdi -->
-        <hibernate-validator.version>9.0.1.Final</hibernate-validator.version>
+        <hibernate-validator.version>9.1.0.Final</hibernate-validator.version>
 
 
         <!-- ========================  🌸 -httpcore5 ============================ -->
@@ -355,7 +366,7 @@
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-server -->
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-common -->
-        <glassfish-jersey.version>4.0.0-M4</glassfish-jersey.version>
+        <glassfish-jersey.version>4.0.0</glassfish-jersey.version>
         <glassfish-el.version>5.0.0-M1</glassfish-el.version><!-- https://mvnrepository.com/artifact/org.glassfish/jakarta.el -->
 
 
@@ -413,7 +424,7 @@
         <!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-client -->
         <rocketmq.version>5.3.3</rocketmq.version>
         <rocketmq-spring.version>2.3.4</rocketmq-spring.version><!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-spring-boot-starter -->
-        <rabbitmq.version>5.27.0</rabbitmq.version><!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
+        <rabbitmq.version>5.27.1</rabbitmq.version><!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
 
 
         <!-- ========================  🌸 -mybatis ============================ -->
@@ -487,7 +498,7 @@
         <reactive.rxjava2.version>2.2.21</reactive.rxjava2.version><!-- https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava -->
         <reactive.rxjava3.version>3.1.12</reactive.rxjava3.version><!-- https://mvnrepository.com/artifact/io.reactivex.rxjava3/rxjava -->
         <reactive.streams.version>1.0.4</reactive.streams.version><!-- https://mvnrepository.com/artifact/org.reactivestreams/reactive-streams -->
-        <reactive.reactor.version>3.8.0-M7</reactive.reactor.version><!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
+        <reactive.reactor.version>3.8.0</reactive.reactor.version><!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
 
 
         <!-- ========================  🌸 -redxxx ============================ -->
@@ -572,13 +583,13 @@
 
         <!-- ========================  🌸 -spring ============================ -->
         <!-- Fix BUG: Spring Boot [3.5.x] is not compatiable with this Spring Cloud release train -->
-        <spring-boot.version>3.4.10</spring-boot.version><!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies -->
+        <spring-boot.version>3.4.11</spring-boot.version><!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies -->
         <spring-boot-admin.version>3.4.7</spring-boot-admin.version><!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-server -->
         <spring-cloud.version>2024.0.2</spring-cloud.version><!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
         <spring-starter-bootstrap>4.3.0</spring-starter-bootstrap><!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bootstrap -->
 
         <!-- 实验性版本 -->
-        <spring-2025-boot.version>4.0.0-RC1</spring-2025-boot.version>
+        <spring-2025-boot.version>4.0.0-RC2</spring-2025-boot.version>
         <spring-2025-cloud.version>2025.1.0-M4</spring-2025-cloud.version>
         <spring-2025-starter-bootstrap>5.0.0-M4</spring-2025-starter-bootstrap>
 
@@ -628,7 +639,7 @@
         <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-jackson -->
         <vendor.feign.version>8.18.0</vendor.feign.version>
         <vendor.picocli.version>4.7.7</vendor.picocli.version><!-- https://mvnrepository.com/artifact/info.picocli/picocli -->
-        <vendor.checker-qual.version>3.51.1</vendor.checker-qual.version><!-- https://mvnrepository.com/artifact/org.checkerframework/checker-qual -->
+        <vendor.checker-qual.version>3.52.0</vendor.checker-qual.version><!-- https://mvnrepository.com/artifact/org.checkerframework/checker-qual -->
 
 
         <!-- ========================  🌸 -vertx ============================ -->
