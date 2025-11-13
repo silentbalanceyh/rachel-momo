@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.13</version>
+    <version>1.0.14</version>
     <packaging>pom</packaging>
     <name>Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
@@ -69,7 +69,7 @@
         <module>rachel-momo-2025-stack</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.13</rachel-momo.version>
+        <rachel-momo.version>1.0.14</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -93,7 +93,7 @@
         <commons-collections4.version>4.5.0</commons-collections4.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
         <commons-jexl3.version>3.5.0</commons-jexl3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-jexl3 -->
         <commons-lang3.version>3.19.0</commons-lang3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
-        <commons-cli.version>1.10.0</commons-cli.version><!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
+        <commons-cli.version>1.11.0</commons-cli.version><!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
         <commons-io.version>2.21.0</commons-io.version><!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <commons-text.version>1.14.0</commons-text.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
 
@@ -117,7 +117,7 @@
 
 
         <!-- ========================  🌸 -aws ============================ -->
-        <aws-sdk.version>2.38.2</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
+        <aws-sdk.version>2.38.5</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
         <aws-sdk-legacy.version>1.12.793</aws-sdk-legacy.version><!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
 
 
@@ -200,7 +200,7 @@
         <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-x-content -->
         <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client -->
         <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client-sniffer -->
-        <elasticsearch.version>9.2.0</elasticsearch.version>
+        <elasticsearch.version>9.2.1</elasticsearch.version>
         <elasticsearch-client.version>7.17.29</elasticsearch-client.version><!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-high-level-client -->
 
 
@@ -212,11 +212,11 @@
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-oracle -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-mysql -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-sqlserver -->
-        <database-flyway.version>11.16.0</database-flyway.version>
+        <database-flyway.version>11.17.0</database-flyway.version>
 
 
         <!-- ========================  🌸 -google ============================ -->
-        <google-errorprone.version>2.43.0</google-errorprone.version><!-- https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations -->
+        <google-errorprone.version>2.44.0</google-errorprone.version><!-- https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations -->
         <google-jsr305.version>4.9.8</google-jsr305.version><!-- https://mvnrepository.com/artifact/com.github.spotbugs/spotbugs-annotations -->
         <google-jsr305-legacy.version>3.0.2</google-jsr305-legacy.version><!-- https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305 -->
         <google-gson.version>2.13.2</google-gson.version><!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
@@ -303,7 +303,7 @@
         <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
         <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.ee10.websocket/jetty-ee10-websocket-jetty-server -->
         <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.ee10.websocket/jetty-ee10-websocket-jakarta-server -->
-        <server-jetty.version>12.1.3</server-jetty.version>
+        <server-jetty.version>12.1.4</server-jetty.version>
 
 
         <!-- ========================  🌸 -jklingsporn ============================ -->
@@ -336,7 +336,7 @@
         <!-- https://mvnrepository.com/artifact/org.jooq/jooq-migrations-maven -->
         <!-- https://mvnrepository.com/artifact/org.jooq/jooq-postgres-extensions -->
         <!-- https://mvnrepository.com/artifact/org.jooq/jooq-xtend -->
-        <database-jooq.version>3.20.8</database-jooq.version>
+        <database-jooq.version>3.20.9</database-jooq.version>
 
 
         <!-- ========================  🌸 -jsr ============================ -->
@@ -388,7 +388,7 @@
         <jvmr-javassist.version>3.30.2-GA</jvmr-javassist.version><!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
         <!-- https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy -->
         <!-- https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy-agent -->
-        <jvmr-byte-buddy.version>1.17.8</jvmr-byte-buddy.version>
+        <jvmr-byte-buddy.version>1.18.1</jvmr-byte-buddy.version>
 
 
         <!-- ========================  🌸 -logging ============================ -->
@@ -401,7 +401,7 @@
         <logging-log4j2.version>2.25.2</logging-log4j2.version>
         <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
         <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
-        <logging-logback.version>1.5.20</logging-logback.version>
+        <logging-logback.version>1.5.21</logging-logback.version>
         <logging-logback-cal10n.version>0.8.1</logging-logback-cal10n.version><!-- https://mvnrepository.com/artifact/ch.qos.cal10n/cal10n-api -->
         <!-- https://mvnrepository.com/artifact/org.slf4j/jul-to-slf4j/ -->
         <!-- https://mvnrepository.com/artifact/org.slf4j/jul-over-slf4j/ -->
@@ -661,7 +661,7 @@
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-dbcp -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-api -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina-ha -->
-        <server-tomcat.version>11.0.13</server-tomcat.version>
+        <server-tomcat.version>11.0.14</server-tomcat.version>
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/servlet-api -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/annotations-api -->
         <server-tomcat-legacy.version>6.0.53</server-tomcat-legacy.version>
