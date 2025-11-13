@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.14</version>
+    <version>1.0.15</version>
     <packaging>pom</packaging>
     <name>Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
@@ -69,7 +69,7 @@
         <module>rachel-momo-2025-stack</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.14</rachel-momo.version>
+        <rachel-momo.version>1.0.15</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -303,7 +303,7 @@
         <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
         <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.ee10.websocket/jetty-ee10-websocket-jetty-server -->
         <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.ee10.websocket/jetty-ee10-websocket-jakarta-server -->
-        <server-jetty.version>12.1.3</server-jetty.version>
+        <server-jetty.version>12.0.29</server-jetty.version>
 
 
         <!-- ========================  🌸 -jklingsporn ============================ -->

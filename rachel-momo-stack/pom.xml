@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.zerows</groupId>
         <artifactId>rachel-momo</artifactId>
-        <version>1.0.14</version>
+        <version>1.0.15</version>
     </parent>
 
     <artifactId>rachel-momo-stack</artifactId>
@@ -14,21 +14,6 @@
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
-            <!-- Cloud 选择 -->
-            <dependency>
-                <groupId>io.zerows</groupId>
-                <artifactId>rachel-momo-spring</artifactId>
-                <version>${rachel-momo.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>io.zerows</groupId>
-                <artifactId>rachel-momo-alibaba-cloud</artifactId>
-                <version>${rachel-momo.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-aliyun</artifactId>
@@ -158,13 +143,6 @@
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-jackson</artifactId>
-                <version>${rachel-momo.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>io.zerows</groupId>
-                <artifactId>rachel-momo-jetty</artifactId>
                 <version>${rachel-momo.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
@@ -347,6 +325,28 @@
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-vertx</artifactId>
+                <version>${rachel-momo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- Cloud 选择 -->
+            <dependency>
+                <groupId>io.zerows</groupId>
+                <artifactId>rachel-momo-spring</artifactId>
+                <version>${rachel-momo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.zerows</groupId>
+                <artifactId>rachel-momo-alibaba-cloud</artifactId>
+                <version>${rachel-momo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.zerows</groupId>
+                <artifactId>rachel-momo-jetty</artifactId>
                 <version>${rachel-momo.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
