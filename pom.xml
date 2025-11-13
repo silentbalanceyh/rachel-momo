@@ -303,7 +303,7 @@
         <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
         <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.ee10.websocket/jetty-ee10-websocket-jetty-server -->
         <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.ee10.websocket/jetty-ee10-websocket-jakarta-server -->
-        <server-jetty.version>12.1.4</server-jetty.version>
+        <server-jetty.version>12.1.3</server-jetty.version>
 
 
         <!-- ========================  🌸 -jklingsporn ============================ -->

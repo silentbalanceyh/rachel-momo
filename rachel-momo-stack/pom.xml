@@ -14,6 +14,21 @@
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
+            <!-- Cloud 选择 -->
+            <dependency>
+                <groupId>io.zerows</groupId>
+                <artifactId>rachel-momo-spring</artifactId>
+                <version>${rachel-momo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.zerows</groupId>
+                <artifactId>rachel-momo-alibaba-cloud</artifactId>
+                <version>${rachel-momo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-aliyun</artifactId>
@@ -325,21 +340,6 @@
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-vendor</artifactId>
-                <version>${rachel-momo.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <!-- Cloud 选择 -->
-            <dependency>
-                <groupId>io.zerows</groupId>
-                <artifactId>rachel-momo-spring</artifactId>
-                <version>${rachel-momo.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>io.zerows</groupId>
-                <artifactId>rachel-momo-alibaba-cloud</artifactId>
                 <version>${rachel-momo.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
