@@ -38,6 +38,12 @@
                 <artifactId>jakarta.ws.rs-api</artifactId>
                 <version>${jakarta.ws-rs.version}</version>
             </dependency>
+            
+            <dependency>
+                <groupId>jakarta.mail</groupId>
+                <artifactId>jakarta.mail-api</artifactId>
+                <version>${jakarta.email.version}</version>
+            </dependency>
 
 
             <!-- JSR330: Dependency Injection for Java -->

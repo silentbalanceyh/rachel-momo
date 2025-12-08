@@ -192,6 +192,7 @@
 
         <!-- ========================  🌸 -eclipse ============================ -->
         <eclipse-jgit.version>7.4.0.202509020913-r</eclipse-jgit.version><!-- https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit -->
+        <eclipse-angus.version>2.0.5</eclipse-angus.version><!-- https://mvnrepository.com/artifact/org.eclipse.angus/angus-mail -->
 
 
         <!-- ========================  🌸 -elasticsearch ============================ -->
@@ -343,6 +344,7 @@
         <!-- 升级之后到 jakarta 不再使用 JSR 编号 -->
         <jsr303.validation.version>2.0.1.Final</jsr303.validation.version><!-- JSR303: https://mvnrepository.com/artifact/javax.validation/validation-api -->
         <jakarta.validation.version>4.0.0-M1</jakarta.validation.version><!-- * https://mvnrepository.com/artifact/jakarta.validation/jakarta.validation-api -->
+        <jakarta.email.version>2.1.5</jakarta.email.version><!-- https://mvnrepository.com/artifact/jakarta.mail/jakarta.mail-api -->
         <jsr311.ws-rs.version>2.1.1</jsr311.ws-rs.version><!-- JSR311: https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
         <jakarta.ws-rs.version>4.0.0</jakarta.ws-rs.version><!-- * https://mvnrepository.com/artifact/jakarta.ws.rs/jakarta.ws.rs-api -->
         <jsr330.inject.version>1</jsr330.inject.version><!-- JSR330: https://mvnrepository.com/artifact/javax.inject/javax.inject -->

@@ -19,6 +19,11 @@
                 <artifactId>org.eclipse.jgit</artifactId>
                 <version>${eclipse-jgit.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.eclipse.angus</groupId>
+                <artifactId>angus-mail</artifactId>
+                <version>${eclipse-angus.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
