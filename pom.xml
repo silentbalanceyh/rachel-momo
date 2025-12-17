@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.18</version>
+    <version>1.0.19</version>
     <packaging>pom</packaging>
     <name>Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
@@ -70,7 +70,7 @@
         <module>rachel-momo-2025-stack</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.18</rachel-momo.version>
+        <rachel-momo.version>1.0.19</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -358,11 +358,11 @@
         <jsr369.servlet-api.version>4.0.1</jsr369.servlet-api.version><!-- JSR369: https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
         <!--
         Servlet Api 的版本处理比较特殊，最新版依赖 eclipse 中一个 ee 对应的依赖版本，这个依赖版本在内网环境中无法下载，所以
-        回退到 6.1.0 的版本，6.2.0-M1 的版本暂时不使用。
+        回退到 6.1.0 的版本，6.2.0-M1 的版本暂时不使用，同样的 jakarta.el 也会有此处的依赖问题
         -->
         <jakarta.servlet-api.version>6.1.0</jakarta.servlet-api.version><!-- * https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
         <jsr341.el-api.version>3.0.1-b06</jsr341.el-api.version><!-- JSR341: https://mvnrepository.com/artifact/javax.el/javax.el-api -->
-        <jakarta.el-api.version>6.1.0-M1</jakarta.el-api.version><!-- * https://mvnrepository.com/artifact/jakarta.el/jakarta.el-api -->
+        <jakarta.el-api.version>6.0.1</jakarta.el-api.version><!-- * https://mvnrepository.com/artifact/jakarta.el/jakarta.el-api -->
         <jsr925.activation.version>1.2.0</jsr925.activation.version><!-- JSR925: https://mvnrepository.com/artifact/javax.activation/javax.activation-api -->
         <jakarta.activation.version>2.0.1</jakarta.activation.version><!-- * https://mvnrepository.com/artifact/jakarta.activation/jakarta.activation-api -->
 
@@ -370,7 +370,6 @@
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-common -->
         <glassfish-jersey.version>4.0.0</glassfish-jersey.version>
-        <glassfish-el.version>5.0.0-M1</glassfish-el.version><!-- https://mvnrepository.com/artifact/org.glassfish/jakarta.el -->
 
 
         <!-- ========================  🌸 -junit ============================ -->
