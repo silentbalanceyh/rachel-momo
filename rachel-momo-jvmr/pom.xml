@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.zerows</groupId>
         <artifactId>rachel-momo</artifactId>
-        <version>1.0.20</version>
+        <version>1.0.37</version>
     </parent>
 
     <artifactId>rachel-momo-jvmr</artifactId>
@@ -14,6 +14,11 @@
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>io.github.classgraph</groupId>
+                <artifactId>classgraph</artifactId>
+                <version>${jvmr-classgraph.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.esotericsoftware</groupId>
                 <artifactId>reflectasm</artifactId>
