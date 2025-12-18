@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.19</version>
+    <version>1.0.20</version>
     <packaging>pom</packaging>
-    <name>Rachel Momo @${rachel-momo.version}</name>
+    <name>(POM) 📚️ - Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
     <url>https://gitee.com/silentbalanceyh/rachel-momo</url>
     <modules>
@@ -70,7 +70,7 @@
         <module>rachel-momo-2025-stack</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.19</rachel-momo.version>
+        <rachel-momo.version>1.0.20</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -617,6 +617,7 @@
 
 
         <!-- ========================  🌸 -template ============================ -->
+        <tpl.jinjava.version>2.8.2</tpl.jinjava.version><!-- https://mvnrepository.com/artifact/com.hubspot.jinjava/jinjava -->
         <tpl.freemaker.version>1.8.1</tpl.freemaker.version><!-- https://mvnrepository.com/artifact/com.quhaodian/freemaker -->
         <!-- https://mvnrepository.com/artifact/org.apache.velocity/spring-velocity-support -->
         <!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity-engine-core -->

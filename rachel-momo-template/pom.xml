@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.zerows</groupId>
         <artifactId>rachel-momo</artifactId>
-        <version>1.0.19</version>
+        <version>1.0.20</version>
     </parent>
 
     <artifactId>rachel-momo-template</artifactId>
@@ -14,6 +14,11 @@
     <packaging>pom</packaging>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.hubspot.jinjava</groupId>
+                <artifactId>jinjava</artifactId>
+                <version>${tpl.jinjava.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.quhaodian</groupId>
                 <artifactId>freemaker</artifactId>
