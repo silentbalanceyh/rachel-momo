@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.37</version>
+    <version>1.0.38</version>
     <packaging>pom</packaging>
     <name>(POM) 📚️ - Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
@@ -70,7 +70,7 @@
         <module>rachel-momo-2025-stack</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.37</rachel-momo.version>
+        <rachel-momo.version>1.0.38</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -84,7 +84,7 @@
         <spring-2025-cloud-alibaba.version>2025.0.0.0</spring-2025-cloud-alibaba.version>
 
         <!-- ========================  🌸 -aliyun ============================ -->
-        <cloud-aliyun.version>4.7.6</cloud-aliyun.version><!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core -->
+        <cloud-aliyun.version>4.7.8</cloud-aliyun.version><!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core -->
         <cloud-aliyun-dysmsapi.version>2.2.1</cloud-aliyun-dysmsapi.version><!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-dysmsapi -->
 
         <!-- ========================  🌸 -apache-common ============================ -->
@@ -92,7 +92,7 @@
         <commons-net.version>3.12.0</commons-net.version><!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
         <commons-codec.version>1.20.0</commons-codec.version><!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
         <commons-collections4.version>4.5.0</commons-collections4.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
-        <commons-jexl3.version>3.6.0</commons-jexl3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-jexl3 -->
+        <commons-jexl3.version>3.6.1</commons-jexl3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-jexl3 -->
         <commons-lang3.version>3.20.0</commons-lang3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <commons-cli.version>1.11.0</commons-cli.version><!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
         <commons-io.version>2.21.0</commons-io.version><!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
@@ -113,13 +113,13 @@
         <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjtools -->
         <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
         <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
-        <aspectj.version>1.9.25</aspectj.version>
+        <aspectj.version>1.9.25.1</aspectj.version>
         <aspectj-jcabi.version>0.26.0</aspectj-jcabi.version><!-- https://mvnrepository.com/artifact/com.jcabi/jcabi-aspects -->
 
 
         <!-- ========================  🌸 -aws ============================ -->
-        <aws-sdk.version>2.40.4</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
-        <aws-sdk-legacy.version>1.12.794</aws-sdk-legacy.version><!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
+        <aws-sdk.version>2.40.15</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
+        <aws-sdk-legacy.version>1.12.796</aws-sdk-legacy.version><!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
 
 
         <!-- ========================  🌸 -cache ============================ -->
@@ -192,7 +192,7 @@
 
 
         <!-- ========================  🌸 -eclipse ============================ -->
-        <eclipse-jgit.version>7.4.0.202509020913-r</eclipse-jgit.version><!-- https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit -->
+        <eclipse-jgit.version>7.5.0.202512021534-r</eclipse-jgit.version><!-- https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit -->
         <eclipse-angus.version>2.1.0-M1</eclipse-angus.version><!-- https://mvnrepository.com/artifact/org.eclipse.angus/angus-mail -->
 
 
@@ -202,7 +202,7 @@
         <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-x-content -->
         <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client -->
         <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client-sniffer -->
-        <elasticsearch.version>9.2.2</elasticsearch.version>
+        <elasticsearch.version>9.2.3</elasticsearch.version>
         <elasticsearch-client.version>7.17.29</elasticsearch-client.version><!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-high-level-client -->
 
 
@@ -214,7 +214,7 @@
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-oracle -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-mysql -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-sqlserver -->
-        <database-flyway.version>11.19.0</database-flyway.version>
+        <database-flyway.version>11.20.0</database-flyway.version>
 
 
         <!-- ========================  🌸 -google ============================ -->
@@ -242,7 +242,7 @@
         <!-- https://mvnrepository.com/artifact/io.grpc/grpc-services -->
         <!-- https://mvnrepository.com/artifact/io.grpc/grpc-util -->
         <!-- https://mvnrepository.com/artifact/io.grpc/grpc-testing -->
-        <google-grpc.version>1.77.0</google-grpc.version>
+        <google-grpc.version>1.78.0</google-grpc.version>
 
 
         <!-- ========================  🌸 -hibernate ============================ -->
@@ -260,7 +260,7 @@
         <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-jpamodelgen -->
         <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-micrometer -->
         <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-spatial -->
-        <hibernate.version>7.1.1.Final</hibernate.version>
+        <hibernate.version>7.2.0.Final</hibernate.version>
         <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
         <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator-cdi -->
         <hibernate-validator.version>9.1.0.Final</hibernate-validator.version>
@@ -271,12 +271,12 @@
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5 -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-testing -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-h2 -->
-        <httpcore5.version>5.3.6</httpcore5.version>
+        <httpcore5.version>5.4</httpcore5.version>
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-testing -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-cache -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-fluent -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5 -->
-        <httpclient5.version>5.5.1</httpclient5.version>
+        <httpclient5.version>5.6</httpclient5.version>
         <httpclient5-win.version>5.2.3</httpclient5-win.version><!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-win -->
         <!-- 旧版本 -->
         <httpcore4.version>4.4.16</httpcore4.version><!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
@@ -382,7 +382,7 @@
 
 
         <!-- ========================  🌸 -jvmr ============================ -->
-        <jvmr-asm.version>9.9</jvmr-asm.version><!-- 后期拆分：https://mvnrepository.com/artifact/org.ow2.asm/asm -->
+        <jvmr-asm.version>9.9.1</jvmr-asm.version><!-- 后期拆分：https://mvnrepository.com/artifact/org.ow2.asm/asm -->
         <jvmr-reflectasm.version>1.11.9</jvmr-reflectasm.version><!-- https://mvnrepository.com/artifact/com.esotericsoftware/reflectasm -->
         <jvmr-lombok.version>1.18.42</jvmr-lombok.version><!-- http://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <jvmr-cglib.version>3.3.0</jvmr-cglib.version><!-- https://mvnrepository.com/artifact/cglib/cglib -->
@@ -390,7 +390,7 @@
         <jvmr-javassist.version>3.30.2-GA</jvmr-javassist.version><!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
         <!-- https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy -->
         <!-- https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy-agent -->
-        <jvmr-byte-buddy.version>1.18.2</jvmr-byte-buddy.version>
+        <jvmr-byte-buddy.version>1.18.3</jvmr-byte-buddy.version>
         <jvmr-classgraph.version>4.8.184</jvmr-classgraph.version><!-- https://mvnrepository.com/artifact/io.github.classgraph/classgraph -->
 
 
@@ -404,7 +404,7 @@
         <logging-log4j2.version>2.25.2</logging-log4j2.version>
         <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
         <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
-        <logging-logback.version>1.5.21</logging-logback.version>
+        <logging-logback.version>1.5.23</logging-logback.version>
         <logging-logback-cal10n.version>0.8.1</logging-logback-cal10n.version><!-- https://mvnrepository.com/artifact/ch.qos.cal10n/cal10n-api -->
         <!-- https://mvnrepository.com/artifact/org.slf4j/jul-to-slf4j/ -->
         <!-- https://mvnrepository.com/artifact/org.slf4j/jul-over-slf4j/ -->
@@ -426,7 +426,7 @@
         <!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-common -->
         <!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-client -->
         <rocketmq.version>5.3.4</rocketmq.version>
-        <rocketmq-spring.version>2.3.4</rocketmq-spring.version><!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-spring-boot-starter -->
+        <rocketmq-spring.version>2.3.5</rocketmq-spring.version><!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-spring-boot-starter -->
         <rabbitmq.version>5.28.0</rabbitmq.version><!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
 
 
@@ -473,7 +473,7 @@
         <!-- https://mvnrepository.com/artifact/io.netty/netty-transport-native-unix-common -->
         <!-- https://mvnrepository.com/artifact/io.netty/netty-resolver-dns-classes-macos -->
         <!-- https://mvnrepository.com/artifact/io.netty/netty-resolver-dns-native-macos -->
-        <netty.version>4.2.7.Final</netty.version>
+        <netty.version>4.2.9.Final</netty.version>
         <!-- https://mvnrepository.com/artifact/io.netty/netty-tcnative-boringssl-static -->
         <!-- https://mvnrepository.com/artifact/io.netty/netty-tcnative -->
         <netty-tcnative.version>2.0.74.Final</netty-tcnative.version>
@@ -501,11 +501,11 @@
         <reactive.rxjava2.version>2.2.21</reactive.rxjava2.version><!-- https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava -->
         <reactive.rxjava3.version>3.1.12</reactive.rxjava3.version><!-- https://mvnrepository.com/artifact/io.reactivex.rxjava3/rxjava -->
         <reactive.streams.version>1.0.4</reactive.streams.version><!-- https://mvnrepository.com/artifact/org.reactivestreams/reactive-streams -->
-        <reactive.reactor.version>3.8.0</reactive.reactor.version><!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
+        <reactive.reactor.version>3.8.1</reactive.reactor.version><!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
 
 
         <!-- ========================  🌸 -redxxx ============================ -->
-        <redx.jedis.version>7.1.0</redx.jedis.version><!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+        <redx.jedis.version>7.2.0</redx.jedis.version><!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
         <redx.redisson.lock4j.version>2.2.7</redx.redisson.lock4j.version><!-- https://mvnrepository.com/artifact/com.baomidou/lock4j-redisson-spring-boot-starter -->
         <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
         <!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
@@ -556,7 +556,7 @@
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-session-map-redis -->
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
         <selenium.version>4.39.0</selenium.version>
-        <selenium.htlmunit3.version>4.38.0</selenium.htlmunit3.version><!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
+        <selenium.htlmunit3.version>4.39.0</selenium.htlmunit3.version><!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
 
 
         <!-- ========================  🌸 -sentinel ============================ -->
@@ -648,7 +648,7 @@
         <!-- ========================  🌸 -util ============================ -->
         <util.joda.version>2.14.0</util.joda.version><!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
         <util.hutool.version>5.8.42</util.hutool.version><!-- https://mvnrepository.com/artifact/cn.hutool/hutool-bom -->
-        <util.ip2region.version>3.3.0</util.ip2region.version><!-- https://mvnrepository.com/artifact/org.lionsoul/ip2region -->
+        <util.ip2region.version>3.3.2</util.ip2region.version><!-- https://mvnrepository.com/artifact/org.lionsoul/ip2region -->
         <util.p6spy.version>3.9.1</util.p6spy.version><!-- https://mvnrepository.com/artifact/p6spy/p6spy -->
         <util.fastexcel.version>1.3.0</util.fastexcel.version><!-- https://mvnrepository.com/artifact/cn.idev.excel/fastexcel -->
 
@@ -666,9 +666,9 @@
 
 
         <!-- ========================  🌸 -vertx ============================ -->
-        <vertx.version>5.0.5</vertx.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-stack-depchain -->
+        <vertx.version>5.0.6</vertx.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-stack-depchain -->
         <vertx-swagger.version>1.6.0</vertx-swagger.version><!-- https://mvnrepository.com/artifact/com.github.phiz71/vertx-swagger-router -->
-        <vertx-legacy.version>4.5.22</vertx-legacy.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-io_uring-incubator -->
+        <vertx-legacy.version>4.5.23</vertx-legacy.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-io_uring-incubator -->
 
 
         <!-- ========================  🌸 -wxjava ============================ -->
@@ -679,7 +679,7 @@
         <!-- https://mvnrepository.com/artifact/com.github.binarywang/weixin-java-open -->
         <!-- https://mvnrepository.com/artifact/com.github.binarywang/weixin-java-common -->
         <!-- https://mvnrepository.com/artifact/com.github.binarywang/weixin-java-channel -->
-        <wxjava.version>4.7.9-20251205.162836</wxjava.version>
+        <wxjava.version>4.7.9-20251224.154809</wxjava.version>
 
         <!-- ====== ☘️ 非标准第三方插件 ===== -->
         <mavenex.plugin.aspectj>1.15.0</mavenex.plugin.aspectj><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/aspectj-maven-plugin -->
