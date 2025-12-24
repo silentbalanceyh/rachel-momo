@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.38</version>
+    <version>1.0.39</version>
     <packaging>pom</packaging>
     <name>(POM) 📚️ - Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
@@ -70,7 +70,7 @@
         <module>rachel-momo-2025-stack</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.38</rachel-momo.version>
+        <rachel-momo.version>1.0.39</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -679,7 +679,7 @@
         <!-- https://mvnrepository.com/artifact/com.github.binarywang/weixin-java-open -->
         <!-- https://mvnrepository.com/artifact/com.github.binarywang/weixin-java-common -->
         <!-- https://mvnrepository.com/artifact/com.github.binarywang/weixin-java-channel -->
-        <wxjava.version>4.7.9-20251224.154809</wxjava.version>
+        <wxjava.version>4.7.0</wxjava.version>
 
         <!-- ====== ☘️ 非标准第三方插件 ===== -->
         <mavenex.plugin.aspectj>1.15.0</mavenex.plugin.aspectj><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/aspectj-maven-plugin -->
