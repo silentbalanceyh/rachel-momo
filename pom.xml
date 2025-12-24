@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.39</version>
+    <version>1.0.40</version>
     <packaging>pom</packaging>
     <name>(POM) 📚️ - Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
@@ -70,7 +70,7 @@
         <module>rachel-momo-2025-stack</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.39</rachel-momo.version>
+        <rachel-momo.version>1.0.40</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -370,6 +370,8 @@
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-common -->
         <glassfish-jersey.version>4.0.0</glassfish-jersey.version>
+        <glassfish-el.version>4.0.2</glassfish-el.version><!-- https://mvnrepository.com/artifact/org.glassfish/jakarta.el -->
+        <glassfish-json.version>2.0.1</glassfish-json.version><!-- https://mvnrepository.com/artifact/org.glassfish/jakarta.json -->
 
 
         <!-- ========================  🌸 -junit ============================ -->
