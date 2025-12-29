@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.40</version>
+    <version>1.0.43</version>
     <packaging>pom</packaging>
     <name>(POM) 📚️ - Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
@@ -39,6 +39,7 @@
         <module>rachel-momo-jvmr</module>
         <module>rachel-momo-logging</module>
         <module>rachel-momo-mapstruct</module>
+        <module>rachel-momo-micrometer</module>
         <module>rachel-momo-mq</module>
         <module>rachel-momo-mybatisplus</module>
         <module>rachel-momo-nacos</module>
@@ -70,7 +71,7 @@
         <module>rachel-momo-2025-stack</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.40</rachel-momo.version>
+        <rachel-momo.version>1.0.43</rachel-momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -422,6 +423,10 @@
         <!-- https://mvnrepository.com/artifact/io.github.linpeilie/mapstruct-plus -->
         <!-- https://mvnrepository.com/artifact/io.github.linpeilie/mapstruct-plus-spring-boot-starter -->
         <util.mapstruct.version>1.5.0</util.mapstruct.version>
+
+        <!-- ========================  🌸 -micrometer ============================ -->
+        <!-- https://mvnrepository.com/artifact/io.micrometer/micrometer-bom -->
+        <monitor.micrometer.version>1.16.1</monitor.micrometer.version>
 
 
         <!-- ========================  🌸 -mq ============================ -->
