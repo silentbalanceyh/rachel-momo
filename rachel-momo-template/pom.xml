@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.zerows</groupId>
         <artifactId>rachel-momo</artifactId>
-        <version>1.0.44</version>
+        <version>1.0.45</version>
     </parent>
 
     <artifactId>rachel-momo-template</artifactId>
@@ -19,6 +19,22 @@
                 <artifactId>jinjava</artifactId>
                 <version>${tpl.jinjava.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.hubspot.immutables</groupId>
+                <artifactId>immutable-collection-encodings</artifactId>
+                <version>${tpl.hubspot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hubspot.immutables</groupId>
+                <artifactId>hubspot-style</artifactId>
+                <version>${tpl.hubspot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hubspot.immutables</groupId>
+                <artifactId>immutables-exceptions</artifactId>
+                <version>${tpl.hubspot.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.quhaodian</groupId>
                 <artifactId>freemaker</artifactId>
