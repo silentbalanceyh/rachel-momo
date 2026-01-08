@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.45</version>
+    <version>1.0.46</version>
     <packaging>pom</packaging>
     <name>(POM) 📚️ - Rachel Momo @${rachel-momo.version}</name>
     <!-- License -->
@@ -71,7 +71,10 @@
         <module>rachel-momo-2025-stack</module>
     </modules>
     <properties>
-        <rachel-momo.version>1.0.45</rachel-momo.version>
+        <!-- 子类专用 -->
+        <rachel-momo.version>1.0.46</rachel-momo.version>
+        <r2mo.version>1.0.46</r2mo.version>
+        <momo.version>${rachel-momo.version}</momo.version>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -119,7 +122,7 @@
 
 
         <!-- ========================  🌸 -aws ============================ -->
-        <aws-sdk.version>2.41.1</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
+        <aws-sdk.version>2.41.4</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
         <aws-sdk-legacy.version>1.12.797</aws-sdk-legacy.version><!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
 
 
@@ -404,10 +407,10 @@
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-1.2-api -->
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-to-slf4j -->
-        <logging-log4j2.version>2.25.2</logging-log4j2.version>
+        <logging-log4j2.version>2.25.3</logging-log4j2.version>
         <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
         <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
-        <logging-logback.version>1.5.23</logging-logback.version>
+        <logging-logback.version>1.5.24</logging-logback.version>
         <logging-logback-cal10n.version>0.8.1</logging-logback-cal10n.version><!-- https://mvnrepository.com/artifact/ch.qos.cal10n/cal10n-api -->
         <!-- https://mvnrepository.com/artifact/org.slf4j/jul-to-slf4j/ -->
         <!-- https://mvnrepository.com/artifact/org.slf4j/jul-over-slf4j/ -->
@@ -659,8 +662,8 @@
 
         <!-- ========================  🌸 -util ============================ -->
         <util.joda.version>2.14.0</util.joda.version><!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
-        <util.hutool.version>5.8.42</util.hutool.version><!-- https://mvnrepository.com/artifact/cn.hutool/hutool-bom -->
-        <util.ip2region.version>3.3.2</util.ip2region.version><!-- https://mvnrepository.com/artifact/org.lionsoul/ip2region -->
+        <util.hutool.version>5.8.43</util.hutool.version><!-- https://mvnrepository.com/artifact/cn.hutool/hutool-bom -->
+        <util.ip2region.version>3.3.4</util.ip2region.version><!-- https://mvnrepository.com/artifact/org.lionsoul/ip2region -->
         <util.p6spy.version>3.9.1</util.p6spy.version><!-- https://mvnrepository.com/artifact/p6spy/p6spy -->
         <util.fastexcel.version>1.3.0</util.fastexcel.version><!-- https://mvnrepository.com/artifact/cn.idev.excel/fastexcel -->
 
@@ -674,7 +677,7 @@
         <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-jackson -->
         <vendor.feign.version>8.18.0</vendor.feign.version>
         <vendor.picocli.version>4.7.7</vendor.picocli.version><!-- https://mvnrepository.com/artifact/info.picocli/picocli -->
-        <vendor.checker-qual.version>3.52.1</vendor.checker-qual.version><!-- https://mvnrepository.com/artifact/org.checkerframework/checker-qual -->
+        <vendor.checker-qual.version>3.53.0</vendor.checker-qual.version><!-- https://mvnrepository.com/artifact/org.checkerframework/checker-qual -->
 
 
         <!-- ========================  🌸 -vertx ============================ -->
