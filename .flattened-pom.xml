@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.zerows</groupId>
+    <artifactId>rachel-momo</artifactId>
+    <version>1.0.48</version>
+    <packaging>pom</packaging>
+    <name>(POM) 📚️ - Rachel Momo @${project.version}</name>
+    <!-- License -->
+    <url>https://gitee.com/silentbalanceyh/rachel-momo</url>
+    <modules>
+        <!-- POM 优先 -->
+        <module>rachel-momo-aliyun</module>
+        <module>rachel-momo-apache</module>
+        <module>rachel-momo-apache-felix</module>
+        <module>rachel-momo-aspectj</module>
+        <module>rachel-momo-aws</module>
+        <module>rachel-momo-cache</module>
+        <module>rachel-momo-camunda</module>
+        <module>rachel-momo-cluster</module>
+        <module>rachel-momo-database</module>
+        <module>rachel-momo-database-driver</module>
+        <module>rachel-momo-dubbo</module>
+        <module>rachel-momo-eclipse</module>
+        <module>rachel-momo-elasticsearch</module>
+        <module>rachel-momo-flyway</module>
+        <module>rachel-momo-google</module>
+        <module>rachel-momo-grpc</module>
+        <module>rachel-momo-hibernate</module>
+        <module>rachel-momo-httpcore5</module>
+        <module>rachel-momo-jackson</module>
+        <module>rachel-momo-jetty</module>
+        <module>rachel-momo-jklingsporn</module>
+        <module>rachel-momo-jooq</module>
+        <module>rachel-momo-jsr</module>
+        <module>rachel-momo-junit</module>
+        <module>rachel-momo-jvmr</module>
+        <module>rachel-momo-logging</module>
+        <module>rachel-momo-mapstruct</module>
+        <module>rachel-momo-micrometer</module>
+        <module>rachel-momo-mq</module>
+        <module>rachel-momo-mybatisplus</module>
+        <module>rachel-momo-nacos</module>
+        <module>rachel-momo-netty</module>
+        <module>rachel-momo-osgi</module>
+        <module>rachel-momo-poi</module>
+        <module>rachel-momo-reactive</module>
+        <module>rachel-momo-redxxx</module>
+        <module>rachel-momo-scala</module>
+        <module>rachel-momo-seata</module>
+        <module>rachel-momo-secure</module>
+        <module>rachel-momo-selenium</module>
+        <module>rachel-momo-sentinel</module>
+        <module>rachel-momo-swagger</module>
+        <module>rachel-momo-template</module>
+        <module>rachel-momo-tomcat</module>
+        <module>rachel-momo-util</module>
+        <module>rachel-momo-vendor</module>
+        <module>rachel-momo-wxjava</module>
+        <!-- Cloud 选择 -->
+        <module>rachel-momo-spring</module>
+        <module>rachel-momo-alibaba-cloud</module>
+        <module>rachel-momo-vertx</module>
+        <module>rachel-momo-stack</module>
+        <module>rachel-momo-0216</module>
+        <!-- Cloud 2025 实验版 -->
+        <module>rachel-momo-2025-spring</module>
+        <module>rachel-momo-2025-alibaba-cloud</module>
+        <module>rachel-momo-2025-stack</module>
+    </modules>
+    <properties>
+        <!-- Reversion -->
+        <revision>1.0.48</revision>
+        <!-- 项目基本信息 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <java.version>17</java.version>
+
+
+        <!-- ========================  🌸 -alibaba ============================ -->
+        <spring-cloud-alibaba.version>2023.0.3.4</spring-cloud-alibaba.version><!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-alibaba-dependencies -->
+        <spring-2025-cloud-alibaba.version>2025.0.0.0</spring-2025-cloud-alibaba.version>
+
+        <!-- ========================  🌸 -aliyun ============================ -->
+        <cloud-aliyun.version>4.7.8</cloud-aliyun.version><!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core -->
+        <cloud-aliyun-dysmsapi.version>2.2.1</cloud-aliyun-dysmsapi.version><!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-dysmsapi -->
+
+        <!-- ========================  🌸 -apache-common ============================ -->
+        <commons-compress.version>1.28.0</commons-compress.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-compress -->
+        <commons-net.version>3.12.0</commons-net.version><!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
+        <commons-codec.version>1.20.0</commons-codec.version><!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+        <commons-collections4.version>4.5.0</commons-collections4.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
+        <commons-jexl3.version>3.6.1</commons-jexl3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-jexl3 -->
+        <commons-lang3.version>3.20.0</commons-lang3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <commons-cli.version>1.11.0</commons-cli.version><!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
+        <commons-io.version>2.21.0</commons-io.version><!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <commons-text.version>1.15.0</commons-text.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
+
+
+        <!-- ========================  🌸 -apache-felix ============================ -->
+        <felix-framework.version>7.0.5</felix-framework.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.framework -->
+        <felix-scr.versoin>2.2.14</felix-scr.versoin><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr -->
+        <felix-scr-annotations.version>1.12.0</felix-scr-annotations.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr.annotations -->
+        <felix-shell.version>1.4.3</felix-shell.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.shell -->
+        <felix-dm.version>4.6.1</felix-dm.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.dependencymanager -->
+        <felix-logback.version>1.0.6</felix-logback.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.logback -->
+        <felix-gogo-command.version>1.1.2</felix-gogo-command.version><!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.gogo.command -->
+
+
+        <!-- ========================  🌸 -aspectj ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjtools -->
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+        <aspectj.version>1.9.25.1</aspectj.version>
+        <aspectj-jcabi.version>0.26.0</aspectj-jcabi.version><!-- https://mvnrepository.com/artifact/com.jcabi/jcabi-aspects -->
+
+
+        <!-- ========================  🌸 -aws ============================ -->
+        <aws-sdk.version>2.41.4</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
+        <aws-sdk-legacy.version>1.12.797</aws-sdk-legacy.version><!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
+
+
+        <!-- ========================  🌸 -cache ============================ -->
+        <!-- https://mvnrepository.com/artifact/com.github.ben-manes.caffeine/caffeine -->
+        <!-- https://mvnrepository.com/artifact/com.github.ben-manes.caffeine/guava -->
+        <!-- https://mvnrepository.com/artifact/com.github.ben-manes.caffeine/jcache -->
+        <cache.caffeine.version>3.2.3</cache.caffeine.version>
+        <!-- https://mvnrepository.com/artifact/org.ehcache/ehcache -->
+        <!-- https://mvnrepository.com/artifact/org.ehcache/ehcache-clustered -->
+        <!-- https://mvnrepository.com/artifact/org.ehcache/ehcache-transactions -->
+        <cache.ehcache.version>3.11.1</cache.ehcache.version>
+
+        <!-- ========================  🌸 -camunda ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.commons/camunda-commons-testing -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.commons/camunda-commons-utils -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.commons/camunda-commons-logging -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.connect/camunda-connect-core -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.connect/camunda-connect-soap-http-client -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.connect/camunda-connect-http-client -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.connect/camunda-connect-connectors-all -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.spin/camunda-spin-dataformat-xml-dom -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.spin/camunda-spin-dataformat-xml-dom-jakarta -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.spin/camunda-spin-dataformat-all -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.spin/camunda-spin-dataformat-json-jackson -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.spin/camunda-spin-core -->
+        <!-- https://mvnrepository.com/artifact/org.camunda.template-engines/camunda-template-engines-freemarker -->
+        <camunda.version>7.24.0</camunda.version>
+        <camunda-bpm.version>1.2.0</camunda-bpm.version><!-- https://mvnrepository.com/artifact/org.camunda.bpm.extension.xslt/camunda-bpm-xslt -->
+
+
+        <!-- ========================  🌸 -cluster ============================ -->
+        <cluster-hazelcast.version>5.6.0</cluster-hazelcast.version><!-- https://mvnrepository.com/artifact/com.hazelcast/hazelcast -->
+        <cluster-zookeeper.version>3.9.4</cluster-zookeeper.version><!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
+        <!-- https://mvnrepository.com/artifact/org.apache.ignite/ignite-core -->
+        <!-- https://mvnrepository.com/artifact/org.apache.ignite/ignite-indexing -->
+        <cluster-ignite.version>3.1.0</cluster-ignite.version>
+
+
+        <!-- ========================  🌸 -database ============================ -->
+        <database-hikari.version>7.0.2</database-hikari.version><!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
+        <!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
+        <!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-cdi -->
+        <database-liquibase.version>5.0.1</database-liquibase.version>
+
+
+        <!-- ========================  🌸 -database-driver ============================ -->
+        <database-neo4j.version>6.0.2</database-neo4j.version><!-- https://mvnrepository.com/artifact/org.neo4j.driver/neo4j-java-driver -->
+        <database-mongodb.version>5.6.1</database-mongodb.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-sync -->
+        <database-mongodb-legacy.version>3.12.14</database-mongodb-legacy.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
+        <database-mysql.version>9.5.0</database-mysql.version><!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+        <database-pgsql.version>42.7.8</database-pgsql.version><!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <database-h2.version>2.4.240</database-h2.version><!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+        <database-sqlite.version>3.51.1.0</database-sqlite.version><!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
+        <!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
+        <!-- https://mvnrepository.com/artifact/org.apache.derby/derbytools -->
+        <!-- https://mvnrepository.com/artifact/org.apache.derby/derbyclient -->
+        <!-- https://mvnrepository.com/artifact/org.apache.derby/derbynet -->
+        <database-derby.version>10.17.1.0</database-derby.version>
+
+
+        <!-- ========================  🌸 -dubbo ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo -->
+        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-cluster -->
+        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-spring-boot-starter -->
+        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-spring-boot-actuator -->
+        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-metadata-report-nacos -->
+        <cloud-dubbo.version>3.3.6</cloud-dubbo.version>
+        <cloud-dubbo-metadata.version>3.2.18</cloud-dubbo-metadata.version><!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-metadata-report-redis -->
+        <cloud-dubbo-metaredis.version>3.3.1</cloud-dubbo-metaredis.version><!-- https://mvnrepository.com/artifact/org.apache.dubbo.extensions/dubbo-metadata-report-redis -->
+
+
+        <!-- ========================  🌸 -eclipse ============================ -->
+        <eclipse-jgit.version>7.5.0.202512021534-r</eclipse-jgit.version><!-- https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit -->
+        <eclipse-angus.version>2.1.0-M1</eclipse-angus.version><!-- https://mvnrepository.com/artifact/org.eclipse.angus/angus-mail -->
+
+
+        <!-- ========================  🌸 -elasticsearch ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-core -->
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-x-content -->
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client -->
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client-sniffer -->
+        <elasticsearch.version>9.2.3</elasticsearch.version>
+        <elasticsearch-client.version>7.17.29</elasticsearch-client.version><!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-high-level-client -->
+
+
+        <!-- ========================  🌸 -flyway ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-derby -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-postgresql -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-oracle -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-mysql -->
+        <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-sqlserver -->
+        <database-flyway.version>11.20.0</database-flyway.version>
+
+
+        <!-- ========================  🌸 -google ============================ -->
+        <google-errorprone.version>2.45.0</google-errorprone.version><!-- https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations -->
+        <google-jsr305.version>4.9.8</google-jsr305.version><!-- https://mvnrepository.com/artifact/com.github.spotbugs/spotbugs-annotations -->
+        <google-jsr305-legacy.version>3.0.2</google-jsr305-legacy.version><!-- https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305 -->
+        <google-gson.version>2.13.2</google-gson.version><!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <google-guice.version>7.0.0</google-guice.version><!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
+        <google-guava.version>33.5.0-jre</google-guava.version><!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
+        <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java-util -->
+        <google-protobuf.version>4.33.2</google-protobuf.version>
+        <google-etcd.version>2.18.0</google-etcd.version><!-- https://mvnrepository.com/artifact/org.mousio/etcd4j -->
+        <google-j2objc.version>3.1</google-j2objc.version><!-- https://mvnrepository.com/artifact/com.google.j2objc/j2objc-annotations -->
+
+
+        <!-- ========================  🌸 -grpc ============================ -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-context -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-stub -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-protobuf -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-shaded -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-netty -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-core -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-auth -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-services -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-util -->
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-testing -->
+        <google-grpc.version>1.78.0</google-grpc.version>
+
+
+        <!-- ========================  🌸 -hibernate ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-processor -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-community-dialects -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-jcache -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-envers -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-hikaricp -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-testing -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-agroal -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-ant -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-c3p0 -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-graalvm -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-jpamodelgen -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-micrometer -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-spatial -->
+        <hibernate.version>7.2.0.Final</hibernate.version>
+        <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator-cdi -->
+        <hibernate-validator.version>9.1.0.Final</hibernate-validator.version>
+
+
+        <!-- ========================  🌸 -httpcore5 ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-reactive -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5 -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-testing -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-h2 -->
+        <httpcore5.version>5.4</httpcore5.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-testing -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-cache -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-fluent -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5 -->
+        <httpclient5.version>5.6</httpclient5.version>
+        <httpclient5-win.version>5.2.3</httpclient5-win.version><!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-win -->
+        <!-- 旧版本 -->
+        <httpcore4.version>4.4.16</httpcore4.version><!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpmime -->
+        <httpclient4.version>4.5.14</httpclient4.version>
+
+
+        <!-- ========================  🌸 -jackson ============================ -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jdk8 -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jsr310 -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-smile -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-parameter-names -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-afterburner -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+        <jackson.version>2.20.1</jackson.version>
+        <jackson-annotation.version>2.20</jackson-annotation.version><!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
+        <jackson-uuid-generator.version>5.2.0</jackson-uuid-generator.version><!-- https://mvnrepository.com/artifact/com.fasterxml.uuid/java-uuid-generator -->
+        <jackson-yaml.version>2.5</jackson-yaml.version><!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+
+
+        <!-- ========================  🌸 -jetty ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.ee10.websocket/jetty-ee10-websocket-jetty-server -->
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty.ee10.websocket/jetty-ee10-websocket-jakarta-server -->
+        <server-jetty.version>12.0.29</server-jetty.version>
+
+
+        <!-- ========================  🌸 -jklingsporn ============================ -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-classic-jdbc -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-classic-reactive -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-rx-jdbc -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-rx-reactive -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-rx3-jdbc -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-rx3-reactive -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-mutiny-jdbc -->
+        <!-- https://mvnrepository.com/artifact/io.github.jklingsporn/vertx-jooq-mutiny-reactive -->
+        <jklingsporn.version>6.5.5</jklingsporn.version>
+
+
+        <!-- ========================  🌸 -jooq ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-codegen -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-meta -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-checker -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-codegen-gradle -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-codegen-maven -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-jackson-extensions -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-kotlin -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-kotlin-coroutines -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-meta-extensions -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-meta-extensions-hibernate -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-meta-extensions-liquibase -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-meta-kotlin -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-migrations -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-migrations-maven -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-postgres-extensions -->
+        <!-- https://mvnrepository.com/artifact/org.jooq/jooq-xtend -->
+        <database-jooq.version>3.20.10</database-jooq.version>
+
+
+        <!-- ========================  🌸 -jsr ============================ -->
+        <!-- 升级之后到 jakarta 不再使用 JSR 编号 -->
+        <jsr303.validation.version>2.0.1.Final</jsr303.validation.version><!-- JSR303: https://mvnrepository.com/artifact/javax.validation/validation-api -->
+        <jakarta.validation.version>4.0.0-M1</jakarta.validation.version><!-- * https://mvnrepository.com/artifact/jakarta.validation/jakarta.validation-api -->
+        <jakarta.email.version>2.2.0-M1</jakarta.email.version><!-- https://mvnrepository.com/artifact/jakarta.mail/jakarta.mail-api -->
+        <jsr311.ws-rs.version>2.1.1</jsr311.ws-rs.version><!-- JSR311: https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+        <jakarta.ws-rs.version>4.0.0</jakarta.ws-rs.version><!-- * https://mvnrepository.com/artifact/jakarta.ws.rs/jakarta.ws.rs-api -->
+        <jsr330.inject.version>1</jsr330.inject.version><!-- JSR330: https://mvnrepository.com/artifact/javax.inject/javax.inject -->
+        <jakarta.inject.version>2.0.1.MR</jakarta.inject.version><!-- * https://mvnrepository.com/artifact/jakarta.inject/jakarta.inject-api -->
+        <jsr222.jaxb-api.version>2.4.0-b180830.0359</jsr222.jaxb-api.version><!-- JSR222: https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+        <jakarta.jaxb-api.version>4.0.4</jakarta.jaxb-api.version><!-- https://mvnrepository.com/artifact/jakarta.xml.bind/jakarta.xml.bind-api -->
+        <jsr107.cache-api.version>1.1.1</jsr107.cache-api.version><!-- JSR107: https://mvnrepository.com/artifact/javax.cache/cache-api -->
+        <jsr338.persistence-api.version>2.2</jsr338.persistence-api.version><!-- JSR338: https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
+        <jakarta.persistence-api.version>3.2.0</jakarta.persistence-api.version><!-- * https://mvnrepository.com/artifact/jakarta.persistence/jakarta.persistence-api -->
+        <jsr369.servlet-api.version>4.0.1</jsr369.servlet-api.version><!-- JSR369: https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <!--
+        Servlet Api 的版本处理比较特殊，最新版依赖 eclipse 中一个 ee 对应的依赖版本，这个依赖版本在内网环境中无法下载，所以
+        回退到 6.1.0 的版本，6.2.0-M1 的版本暂时不使用，同样的 jakarta.el 也会有此处的依赖问题
+        -->
+        <jakarta.servlet-api.version>6.1.0</jakarta.servlet-api.version><!-- * https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+        <jsr341.el-api.version>3.0.1-b06</jsr341.el-api.version><!-- JSR341: https://mvnrepository.com/artifact/javax.el/javax.el-api -->
+        <jakarta.el-api.version>6.0.1</jakarta.el-api.version><!-- * https://mvnrepository.com/artifact/jakarta.el/jakarta.el-api -->
+        <jsr925.activation.version>1.2.0</jsr925.activation.version><!-- JSR925: https://mvnrepository.com/artifact/javax.activation/javax.activation-api -->
+        <jakarta.activation.version>2.0.1</jakarta.activation.version><!-- * https://mvnrepository.com/artifact/jakarta.activation/jakarta.activation-api -->
+
+        <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-server -->
+        <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
+        <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-common -->
+        <glassfish-jersey.version>4.0.0</glassfish-jersey.version>
+        <glassfish-el.version>4.0.2</glassfish-el.version><!-- https://mvnrepository.com/artifact/org.glassfish/jakarta.el -->
+        <glassfish-json.version>2.0.1</glassfish-json.version><!-- https://mvnrepository.com/artifact/org.glassfish/jakarta.json -->
+
+
+        <!-- ========================  🌸 -junit ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params -->
+        <junit.version>6.1.0-M1</junit.version>
+        <junit-lagecy.version>4.13.2</junit-lagecy.version><!-- http://mvnrepository.com/artifact/junit/junit -->
+        <junit-platform.version>6.1.0-M1</junit-platform.version><!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-launcher -->
+
+
+        <!-- ========================  🌸 -jvmr ============================ -->
+        <jvmr-asm.version>9.9.1</jvmr-asm.version><!-- 后期拆分：https://mvnrepository.com/artifact/org.ow2.asm/asm -->
+        <jvmr-reflectasm.version>1.11.9</jvmr-reflectasm.version><!-- https://mvnrepository.com/artifact/com.esotericsoftware/reflectasm -->
+        <jvmr-lombok.version>1.18.42</jvmr-lombok.version><!-- http://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <jvmr-cglib.version>3.3.0</jvmr-cglib.version><!-- https://mvnrepository.com/artifact/cglib/cglib -->
+        <jvmr-reflections.version>0.10.2</jvmr-reflections.version><!-- https://mvnrepository.com/artifact/org.reflections/reflections -->
+        <jvmr-javassist.version>3.30.2-GA</jvmr-javassist.version><!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+        <!-- https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy -->
+        <!-- https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy-agent -->
+        <jvmr-byte-buddy.version>1.18.3</jvmr-byte-buddy.version>
+        <jvmr-classgraph.version>4.8.184</jvmr-classgraph.version><!-- https://mvnrepository.com/artifact/io.github.classgraph/classgraph -->
+
+
+        <!-- ========================  🌸 -logging ============================ -->
+        <logging-common.version>1.3.5</logging-common.version><!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-1.2-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-to-slf4j -->
+        <logging-log4j2.version>2.25.3</logging-log4j2.version>
+        <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+        <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
+        <logging-logback.version>1.5.24</logging-logback.version>
+        <logging-logback-cal10n.version>0.8.1</logging-logback-cal10n.version><!-- https://mvnrepository.com/artifact/ch.qos.cal10n/cal10n-api -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/jul-to-slf4j/ -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/jul-over-slf4j/ -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/jcl-over-slf4j/ -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api/ -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-ext/ -->
+        <logging-slf4j.version>2.0.17</logging-slf4j.version>
+
+
+        <!-- ========================  🌸 -mapstruct ============================ -->
+        <!-- https://mvnrepository.com/artifact/io.github.linpeilie/mapstruct-plus-object-convert -->
+        <!-- https://mvnrepository.com/artifact/io.github.linpeilie/mapstruct-plus-processor -->
+        <!-- https://mvnrepository.com/artifact/io.github.linpeilie/mapstruct-plus -->
+        <!-- https://mvnrepository.com/artifact/io.github.linpeilie/mapstruct-plus-spring-boot-starter -->
+        <util.mapstruct.version>1.5.0</util.mapstruct.version>
+
+        <!-- ========================  🌸 -micrometer ============================ -->
+        <!-- https://mvnrepository.com/artifact/io.micrometer/micrometer-bom -->
+        <monitor.micrometer.version>1.16.1</monitor.micrometer.version>
+
+
+        <!-- ========================  🌸 -mq ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-common -->
+        <!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-client -->
+        <rocketmq.version>5.4.0</rocketmq.version>
+        <rocketmq-spring.version>2.3.5</rocketmq-spring.version><!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-spring-boot-starter -->
+        <rabbitmq.version>5.28.0</rabbitmq.version><!-- https://mvnrepository.com/artifact/com.rabbitmq/amqp-client -->
+
+
+        <!-- ========================  🌸 -mybatis ============================ -->
+        <mybatis.version>3.5.19</mybatis.version><!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-extension -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-generator -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-annotation -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-jsqlparser -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-core -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-spring -->
+        <mybatis-plus.version>3.5.15</mybatis-plus.version>
+        <mybatis-spring.version>3.0.5</mybatis-spring.version><!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/dynamic-datasource-spring-boot-starter -->
+        <!-- https://mvnrepository.com/artifact/com.baomidou/dynamic-datasource-spring-boot3-starter -->
+        <mybatis-plus-dynamic-ds.version>4.3.1</mybatis-plus-dynamic-ds.version>
+        <!-- https://mvnrepository.com/artifact/com.github.yulichang/mybatis-plus-join-boot-starter -->
+        <mybatis-plus-join.version>1.5.5</mybatis-plus-join.version>
+
+
+        <!-- ========================  🌸 -nacos ============================ -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.nacos/nacos-api -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.nacos/nacos-common -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.nacos/nacos-client -->
+        <cloud-nacos.version>3.1.1</cloud-nacos.version>
+
+        <!-- ========================  🌸 -netty ============================ -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-buffer -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-common -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-handler -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-handler-proxy -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-codec -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-codec-dns -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-codec-http -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-codec-http2 -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-codec-mqtt -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-resolver -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-resolver-dns -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-resolver-dns-native-macos MacOS 专用 -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-transport -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-transport-native-epoll -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-transport-native-kqueue -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-transport-native-unix-common -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-resolver-dns-classes-macos -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-resolver-dns-native-macos -->
+        <netty.version>4.2.9.Final</netty.version>
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-tcnative-boringssl-static -->
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-tcnative -->
+        <netty-tcnative.version>2.0.74.Final</netty-tcnative.version>
+
+
+        <!-- ========================  🌸 -osgi ============================ -->
+        <osgi-framework.version>1.10.0</osgi-framework.version><!-- https://mvnrepository.com/artifact/org.osgi/org.osgi.framework -->
+        <osgi-core.version>8.0.0</osgi-core.version><!-- https://mvnrepository.com/artifact/org.osgi/osgi.core -->
+        <osgi-cmpn.version>7.0.0</osgi-cmpn.version><!-- https://mvnrepository.com/artifact/org.osgi/osgi.cmpn -->
+        <osgi-annotation.version>8.1.0</osgi-annotation.version><!-- https://mvnrepository.com/artifact/org.osgi/osgi.annotation -->
+        <osgi-service-cm.version>1.6.1</osgi-service-cm.version><!-- https://mvnrepository.com/artifact/org.osgi/org.osgi.service.cm -->
+
+
+        <!-- ========================  🌸 -poi ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-xml -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-excelant -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-lite -->
+        <poi.version>5.5.1</poi.version>
+        <poi-ooxml-schemas.version>4.1.2</poi-ooxml-schemas.version>
+
+
+        <!-- ========================  🌸 -reactive ============================ -->
+        <reactive.rxjava2.version>2.2.21</reactive.rxjava2.version><!-- https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava -->
+        <reactive.rxjava3.version>3.1.12</reactive.rxjava3.version><!-- https://mvnrepository.com/artifact/io.reactivex.rxjava3/rxjava -->
+        <reactive.streams.version>1.0.4</reactive.streams.version><!-- https://mvnrepository.com/artifact/org.reactivestreams/reactive-streams -->
+        <reactive.reactor.version>3.8.1</reactive.reactor.version><!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
+
+
+        <!-- ========================  🌸 -redxxx ============================ -->
+        <redx.jedis.version>7.2.0</redx.jedis.version><!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+        <redx.redisson.lock4j.version>2.2.7</redx.redisson.lock4j.version><!-- https://mvnrepository.com/artifact/com.baomidou/lock4j-redisson-spring-boot-starter -->
+        <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
+        <!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
+        <redx.redisson.version>3.52.0</redx.redisson.version>
+
+
+        <!-- ========================  🌸 -scala ============================ -->
+        <scala.version>3.7.3</scala.version><!-- https://mvnrepository.com/artifact/org.scala-lang/scala3-library -->
+        <scala-legacy.version>2.13.17</scala-legacy.version><!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
+
+
+        <!-- ========================  🌸 -seata ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.seata/seata-all -->
+        <!-- https://mvnrepository.com/artifact/org.apache.seata/seata-spring-boot-starter -->
+        <cloud-seata.version>2.5.0</cloud-seata.version>
+
+
+        <!-- ========================  🌸 -secure ============================ -->
+        <secure-jwt.version>4.5.0</secure-jwt.version><!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
+        <secure-jwt-jose.version>10.6</secure-jwt-jose.version><!-- https://mvnrepository.com/artifact/com.nimbusds/nimbus-jose-jwt -->
+        <secure-jwt-prime.version>2.0.0</secure-jwt-prime.version><!-- https://mvnrepository.com/artifact/com.inversoft/prime-jwt -->
+        <secure-sshd.version>3.0.0-M2</secure-sshd.version><!-- https://mvnrepository.com/artifact/org.apache.sshd/sshd-core -->
+        <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15to18 -->
+        <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk18on -->
+        <secure-bcprov-jdk18on.version>1.83</secure-bcprov-jdk18on.version>
+        <!-- https://mvnrepository.com/artifact/cn.dev33/sa-token-core -->
+        <!-- https://mvnrepository.com/artifact/cn.dev33/sa-token-jwt -->
+        <secure-satoken.version>1.44.0</secure-satoken.version>
+
+
+        <!-- ========================  🌸 -selenium ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/htmlunit3-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chromium-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v134 -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v135 -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-edge-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-grid -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-http -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-ie-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-json -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-manager -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-safari-driver -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-session-map-jdbc -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-session-map-redis -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
+        <selenium.version>4.39.0</selenium.version>
+        <selenium.htlmunit3.version>4.39.0</selenium.htlmunit3.version><!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
+
+
+        <!-- ========================  🌸 -sentinel ============================ -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-core -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-parameter-flow-control -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-extension -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-apollo -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-zookeeper -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-nacos -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-redis -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-consul -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-web-servlet -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-spring-cloud-gateway-adapter -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-transport-simple-http -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-annotation-aspectj -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-reactor-adapter -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-cluster-server-default -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-cluster-client-default -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-spring-webflux-adapter -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-api-gateway-adapter-common -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-spring-webmvc-v6x-adapter -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-dubbo-adapter -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-apache-dubbo-adapter -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-apache-dubbo3-adapter -->
+        <cloud-sentinel.version>1.8.8</cloud-sentinel.version>
+
+
+        <!-- ========================  🌸 -spring ============================ -->
+        <!-- Fix BUG: Spring Boot [3.5.x] is not compatiable with this Spring Cloud release train -->
+        <spring-boot.version>3.4.11</spring-boot.version><!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies -->
+        <spring-boot-admin.version>3.4.7</spring-boot-admin.version><!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-server -->
+        <spring-cloud.version>2024.0.2</spring-cloud.version><!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
+        <spring-starter-bootstrap>4.3.0</spring-starter-bootstrap><!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bootstrap -->
+
+        <!-- 实验性版本 -->
+        <spring-2025-boot.version>4.0.0-RC2</spring-2025-boot.version>
+        <spring-2025-cloud.version>2025.1.0-M4</spring-2025-cloud.version>
+        <spring-2025-starter-bootstrap>5.0.0-M4</spring-2025-starter-bootstrap>
+
+
+        <!-- ========================  🌸 -swagger ============================ -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-jaxrs2 -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-jaxrs2-jakarta -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-jaxrs2-servlet-initializer -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-jaxrs2-servlet-initializer-jakarta -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-core -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-core-jakarta -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-integration -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-integration-jakarta -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-models -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-models-jakarta -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations -->
+        <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations-jakarta -->
+        <doc-swagger3.version>2.2.41</doc-swagger3.version>
+        <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-dependencies -->
+        <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-gateway-spring-boot-starter -->
+        <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-openapi3-jakarta-spring-boot-starter -->
+        <doc-knife4j.version>4.5.0</doc-knife4j.version>
+
+
+        <!-- ========================  🌸 -template ============================ -->
+        <tpl.jinjava.version>2.8.2</tpl.jinjava.version><!-- https://mvnrepository.com/artifact/com.hubspot.jinjava/jinjava -->
+        <tpl.freemaker.version>1.8.1</tpl.freemaker.version><!-- https://mvnrepository.com/artifact/com.quhaodian/freemaker -->
+        <!-- https://mvnrepository.com/artifact/org.apache.velocity/spring-velocity-support -->
+        <!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity-engine-core -->
+        <tpl.velocity.version>2.4.1</tpl.velocity.version>
+        <!-- https://mvnrepository.com/artifact/com.hubspot.immutables/immutables-exceptions -->
+        <!-- https://mvnrepository.com/artifact/com.hubspot.immutables/immutable-collection-encodings -->
+        <!-- https://mvnrepository.com/artifact/com.hubspot.immutables/hubspot-style -->
+        <tpl.hubspot.version>1.11.2</tpl.hubspot.version>
+        <tpl.velocity-tools.version>3.1</tpl.velocity-tools.version><!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity-tools -->
+
+
+        <!-- ========================  🌸 -tomcat ============================ -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jdbc -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-coyote -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-annotations-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-juli -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jsp-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper-el -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-dbcp -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina-ha -->
+        <server-tomcat.version>11.0.15</server-tomcat.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/servlet-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/annotations-api -->
+        <server-tomcat-legacy.version>6.0.53</server-tomcat-legacy.version>
+
+
+        <!-- ========================  🌸 -util ============================ -->
+        <util.joda.version>2.14.0</util.joda.version><!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+        <util.hutool.version>5.8.43</util.hutool.version><!-- https://mvnrepository.com/artifact/cn.hutool/hutool-bom -->
+        <util.ip2region.version>3.3.4</util.ip2region.version><!-- https://mvnrepository.com/artifact/org.lionsoul/ip2region -->
+        <util.p6spy.version>3.9.1</util.p6spy.version><!-- https://mvnrepository.com/artifact/p6spy/p6spy -->
+        <util.fastexcel.version>1.3.0</util.fastexcel.version><!-- https://mvnrepository.com/artifact/cn.idev.excel/fastexcel -->
+
+
+        <!-- ========================  🌸 -vendor ============================ -->
+        <vendor.termd-core.version>1.1.11</vendor.termd-core.version><!-- https://mvnrepository.com/artifact/io.termd/termd-core -->
+        <vendor.janino.version>3.1.12</vendor.janino.version><!-- https://mvnrepository.com/artifact/org.codehaus.janino/janino -->
+        <vendor.animal-sniffer-annotations.version>1.26</vendor.animal-sniffer-annotations.version><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/animal-sniffer-annotations -->
+        <vendor.HdrHistogram.version>2.2.2</vendor.HdrHistogram.version><!-- https://mvnrepository.com/artifact/org.hdrhistogram/HdrHistogram -->
+        <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-core -->
+        <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-jackson -->
+        <vendor.feign.version>8.18.0</vendor.feign.version>
+        <vendor.picocli.version>4.7.7</vendor.picocli.version><!-- https://mvnrepository.com/artifact/info.picocli/picocli -->
+        <vendor.checker-qual.version>3.53.0</vendor.checker-qual.version><!-- https://mvnrepository.com/artifact/org.checkerframework/checker-qual -->
+
+
+        <!-- ========================  🌸 -vertx ============================ -->
+        <vertx.version>5.0.6</vertx.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-stack-depchain -->
+        <vertx-swagger.version>1.6.0</vertx-swagger.version><!-- https://mvnrepository.com/artifact/com.github.phiz71/vertx-swagger-router -->
+        <vertx-legacy.version>4.5.23</vertx-legacy.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-io_uring-incubator -->
+
+
+        <!-- ========================  🌸 -wxjava ============================ -->
+        <!-- https://mvnrepository.com/artifact/com.github.binarywang/weixin-java-pay -->
+        <!-- https://mvnrepository.com/artifact/com.github.binarywang/weixin-java-mp -->
+        <!-- https://mvnrepository.com/artifact/com.github.binarywang/weixin-java-miniapp -->
+        <!-- https://mvnrepository.com/artifact/com.github.binarywang/weixin-java-cp -->
+        <!-- https://mvnrepository.com/artifact/com.github.binarywang/weixin-java-open -->
+        <!-- https://mvnrepository.com/artifact/com.github.binarywang/weixin-java-common -->
+        <!-- https://mvnrepository.com/artifact/com.github.binarywang/weixin-java-channel -->
+        <wxjava.version>4.7.0</wxjava.version>
+
+        <!-- ====== ☘️ 非标准第三方插件 ===== -->
+        <mavenex.plugin.aspectj>1.15.0</mavenex.plugin.aspectj><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/aspectj-maven-plugin -->
+        <mavenex.plugin.build-helper>3.6.1</mavenex.plugin.build-helper><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/build-helper-maven-plugin -->
+        <mavenex.plugin.bundle>6.0.0</mavenex.plugin.bundle><!-- https://mvnrepository.com/artifact/org.apache.felix/maven-bundle-plugin -->
+        <mavenex.plugin.central-publishing>0.9.0</mavenex.plugin.central-publishing><!-- https://mvnrepository.com/artifact/org.sonatype.central/central-publishing-maven-plugin -->
+        <mavenex.plugin.cobertura>2.7</mavenex.plugin.cobertura><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/cobertura-maven-plugin -->
+        <mavenex.plugin.copy-rename>1.0.1</mavenex.plugin.copy-rename><!-- https://mvnrepository.com/artifact/com.coderplus.maven.plugins/copy-rename-maven-plugin -->
+        <mavenex.plugin.coveralls>4.3.0</mavenex.plugin.coveralls><!-- https://mvnrepository.com/artifact/org.eluder.coveralls/coveralls-maven-plugin -->
+        <mavenex.plugin.docker>0.46.0</mavenex.plugin.docker><!-- https://mvnrepository.com/artifact/io.fabric8/docker-maven-plugin -->
+        <mavenex.plugin.exec>3.5.1</mavenex.plugin.exec><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/exec-maven-plugin -->
+        <mavenex.plugin.fabric8>4.4.2</mavenex.plugin.fabric8><!-- https://mvnrepository.com/artifact/io.fabric8/fabric8-maven-plugin -->
+        <mavenex.plugin.lombok>1.18.20.0</mavenex.plugin.lombok><!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven-plugin -->
+        <mavenex.plugin.jcabi>0.17.0</mavenex.plugin.jcabi><!-- https://mvnrepository.com/artifact/com.jcabi/jcabi-maven-plugin -->
+        <mavenex.plugin.os>1.7.1</mavenex.plugin.os><!-- https://mvnrepository.com/artifact/kr.motd.maven/os-maven-plugin -->
+        <mavenex.plugin.protobuf>0.6.1</mavenex.plugin.protobuf><!-- https://mvnrepository.com/artifact/org.xolstice.maven.plugins/protobuf-maven-plugin -->
+        <mavenex.plugin.proguard>2.7.0</mavenex.plugin.proguard><!-- https://mvnrepository.com/artifact/com.github.wvengen/proguard-maven-plugin -->
+        <mavenex.plugin.staging>1.7.0</mavenex.plugin.staging><!-- https://mvnrepository.com/artifact/org.sonatype.plugins/nexus-staging-maven-plugin -->
+        <mavenex.plugin.versions>2.19.1</mavenex.plugin.versions><!-- http://www.mvnrepository.com/artifact/org.codehaus.mojo/versions-maven-plugin -->
+        <mavenex.plugin.processor>5.1</mavenex.plugin.processor><!-- https://mvnrepository.com/artifact/org.bsc.maven/maven-processor-plugin -->
+        <mavenex.plugin.liquibase>5.0.1</mavenex.plugin.liquibase><!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-maven-plugin -->
+        <mavenex.plugin.springboot>3.5.7</mavenex.plugin.springboot><!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-maven-plugin -->
+
+        <!-- ====== 🌷 标准 Maven 插件 （可以不加 groupId） ===== -->
+        <maven.plugin.antrun>3.1.0</maven.plugin.antrun><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-antrun-plugin -->
+        <maven.plugin.assembly>3.7.1</maven.plugin.assembly><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-assembly-plugin -->
+        <maven.plugin.clean>3.5.0</maven.plugin.clean><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-clean-plugin -->
+        <maven.plugin.compiler>3.14.1</maven.plugin.compiler><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+        <maven.plugin.dependency>3.8.1</maven.plugin.dependency><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin -->
+        <maven.plugin.deploy>3.1.4</maven.plugin.deploy><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-deploy-plugin -->
+        <maven.plugin.enforcer>3.6.1</maven.plugin.enforcer><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-enforcer-plugin -->
+        <maven.plugin.install>3.1.4</maven.plugin.install><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-install-plugin -->
+        <maven.plugin.jar>3.4.2</maven.plugin.jar><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
+        <maven.plugin.javadoc>3.12.0</maven.plugin.javadoc><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
+        <maven.plugin.pgp>3.2.8</maven.plugin.pgp><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
+        <maven.plugin.project-info-reports>3.9.0</maven.plugin.project-info-reports><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-project-info-reports-plugin -->
+        <maven.plugin.resource>3.3.1</maven.plugin.resource><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
+        <maven.plugin.shade>3.6.1</maven.plugin.shade><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-shade-plugin -->
+        <maven.plugin.site>4.0.0-M16</maven.plugin.site><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-site-plugin -->
+        <maven.plugin.source>3.3.1</maven.plugin.source><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
+        <maven.plugin.surefire>3.5.4</maven.plugin.surefire><!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+    </properties>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>${maven.plugin.antrun}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>${maven.plugin.assembly}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>${maven.plugin.clean}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven.plugin.compiler}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>${maven.plugin.dependency}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>${maven.plugin.deploy}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-enforcer-plugin</artifactId>
+                    <version>${maven.plugin.enforcer}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>${maven.plugin.install}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>${maven.plugin.jar}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${maven.plugin.javadoc}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>${maven.plugin.pgp}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>${maven.plugin.project-info-reports}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${maven.plugin.resource}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-shade-plugin</artifactId>
+                    <version>${maven.plugin.shade}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>${maven.plugin.site}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${maven.plugin.source}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven.plugin.surefire}</version>
+                </plugin>
+
+
+                <!-- =================== 🛰️ 第三方插件 ==================== -->
+                <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-maven-plugin -->
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.springboot}</version>
+                </plugin>
+                <plugin>
+                    <groupId>kr.motd.maven</groupId>
+                    <artifactId>os-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.os}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.xolstice.maven.plugins</groupId>
+                    <artifactId>protobuf-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.protobuf}</version>
+                </plugin>
+                <plugin>
+                    <groupId>io.fabric8</groupId>
+                    <artifactId>docker-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.docker}</version>
+                </plugin>
+                <plugin>
+                    <groupId>io.fabric8</groupId>
+                    <artifactId>fabric8-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.fabric8}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.coderplus.maven.plugins</groupId>
+                    <artifactId>copy-rename-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.copy-rename}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.jcabi</groupId>
+                    <artifactId>jcabi-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.jcabi}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>aspectj-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.aspectj}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>cobertura-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.cobertura}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.eluder.coveralls</groupId>
+                    <artifactId>coveralls-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.coveralls}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.sonatype.plugins</groupId>
+                    <artifactId>nexus-staging-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.staging}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.bsc.maven</groupId>
+                    <artifactId>maven-processor-plugin</artifactId>
+                    <version>${mavenex.plugin.processor}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.liquibase</groupId>
+                    <artifactId>liquibase-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.liquibase}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.lombok}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <version>${mavenex.plugin.bundle}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.sonatype.central</groupId>
+                    <artifactId>central-publishing-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.central-publishing}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>versions-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.versions}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.exec}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.build-helper}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.github.wvengen</groupId>
+                    <artifactId>proguard-maven-plugin</artifactId>
+                    <version>${mavenex.plugin.proguard}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <additionalOptions>
+                        <additionalOption>-Xdoclint:none</additionalOption>
+                    </additionalOptions>
+                    <failOnError>false</failOnError>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>flatten-maven-plugin</artifactId>
+                <version>1.7.3</version>
+                <configuration>
+                    <updatePomFile>true</updatePomFile>
+                    <flattenMode>resolveCiFriendliesOnly</flattenMode>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>flatten</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>flatten</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>flatten-clean</id>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Source -->
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                        <configuration>
+                            <passphraseServerId>oss</passphraseServerId>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>oss</publishingServerId>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+    <description>
+        统一版本管理模型，管理所有依赖库的版本号，方便在各个项目中通过 stack - import 方式引用
+    </description>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <comments>The project itself is licensed under MIT License.</comments>
+        </license>
+    </licenses>
+    <!-- Developers -->
+    <developers>
+        <developer>
+            <name>lang.yu</name>
+            <email>silentbalanceyh@126.com</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
+    <!-- Scm Connection -->
+    <scm>
+        <connection>scm:git:https://gitee.com/silentbalanceyh/r2mo-rachel-momo.git</connection>
+        <developerConnection>scm:git:https://gitee.com/silentbalanceyh</developerConnection>
+        <url>https://www.zerows.io</url>
+        <tag>v${project.version}</tag>
+    </scm>
+    <!-- Distribution -->
+    <distributionManagement>
+        <snapshotRepository>
+            <id>oss</id>
+            <name>Maven Central Snapshots Repository</name>
+            <url>https://central.sonatype.com</url>
+        </snapshotRepository>
+        <repository>
+            <id>oss</id>
+            <name>Maven Central Staging Repository</name>
+            <url>https://central.sonatype.com</url>
+        </repository>
+    </distributionManagement>
+</project>

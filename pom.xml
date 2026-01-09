@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.zerows</groupId>
     <artifactId>rachel-momo</artifactId>
-    <version>1.0.47</version>
+    <version>${revision}</version>
     <packaging>pom</packaging>
-    <name>(POM) 📚️ - Rachel Momo @${rachel-momo.version}</name>
+    <name>(POM) 📚️ - Rachel Momo @${project.version}</name>
     <!-- License -->
     <url>https://gitee.com/silentbalanceyh/rachel-momo</url>
     <modules>
@@ -71,10 +71,8 @@
         <module>rachel-momo-2025-stack</module>
     </modules>
     <properties>
-        <!-- 子类专用 -->
-        <rachel-momo.version>1.0.47</rachel-momo.version>
-        <r2mo.version>1.0.47</r2mo.version>
-        <momo.version>${rachel-momo.version}</momo.version>
+        <!-- Reversion -->
+        <revision>1.0.48</revision>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -929,6 +927,31 @@
                         <phase>deploy</phase>
                         <goals>
                             <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>flatten-maven-plugin</artifactId>
+                <version>1.7.3</version>
+                <configuration>
+                    <updatePomFile>true</updatePomFile>
+                    <flattenMode>resolveCiFriendliesOnly</flattenMode>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>flatten</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>flatten</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>flatten-clean</id>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>clean</goal>
                         </goals>
                     </execution>
                 </executions>

@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.zerows</groupId>
         <artifactId>rachel-momo</artifactId>
-        <version>1.0.47</version>
+        <version>${revision}</version>
     </parent>
 
     <artifactId>rachel-momo-stack</artifactId>
@@ -17,329 +17,329 @@
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-aliyun</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-apache</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-apache-felix</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-aspectj</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-aws</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-cache</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-camunda</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-cluster</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-database</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-database-driver</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-dubbo</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-eclipse</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-elasticsearch</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-flyway</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-google</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-grpc</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-hibernate</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-httpcore5</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-jackson</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-jklingsporn</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-jooq</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-jsr</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-junit</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-jvmr</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-logging</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-mapstruct</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-micrometer</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-mq</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-mybatisplus</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-nacos</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-netty</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-osgi</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-poi</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-reactive</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-redxxx</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-scala</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-seata</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-secure</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-selenium</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-sentinel</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-swagger</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-template</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-tomcat</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-util</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-vendor</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-vertx</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-wxjava</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -347,21 +347,21 @@
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-spring</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-alibaba-cloud</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.zerows</groupId>
                 <artifactId>rachel-momo-jetty</artifactId>
-                <version>${rachel-momo.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

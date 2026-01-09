@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.zerows</groupId>
+        <artifactId>rachel-momo</artifactId>
+        <version>1.0.48</version>
+    </parent>
+
+    <artifactId>rachel-momo-jklingsporn</artifactId>
+    <name>Rachel Momo::Jklingsporn @${jklingsporn.version}</name>
+    <packaging>pom</packaging>
+    <dependencyManagement>
+        <dependencies>
+            <!-- Implement -->
+            <dependency>
+                <groupId>io.github.jklingsporn</groupId>
+                <artifactId>vertx-jooq-classic-jdbc</artifactId>
+                <version>${jklingsporn.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.jklingsporn</groupId>
+                <artifactId>vertx-jooq-classic-reactive</artifactId>
+                <version>${jklingsporn.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.jklingsporn</groupId>
+                <artifactId>vertx-jooq-rx-jdbc</artifactId>
+                <version>${jklingsporn.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.jklingsporn</groupId>
+                <artifactId>vertx-jooq-rx-reactive</artifactId>
+                <version>${jklingsporn.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.jklingsporn</groupId>
+                <artifactId>vertx-jooq-rx3-jdbc</artifactId>
+                <version>${jklingsporn.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.jklingsporn</groupId>
+                <artifactId>vertx-jooq-rx3-reactive</artifactId>
+                <version>${jklingsporn.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.jklingsporn</groupId>
+                <artifactId>vertx-jooq-mutiny-jdbc</artifactId>
+                <version>${jklingsporn.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.jklingsporn</groupId>
+                <artifactId>vertx-jooq-mutiny-reactive</artifactId>
+                <version>${jklingsporn.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
