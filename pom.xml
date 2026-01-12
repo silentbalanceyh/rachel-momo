@@ -72,7 +72,7 @@
     </modules>
     <properties>
         <!-- Reversion -->
-        <revision>1.0.48</revision>
+        <revision>1.0.49</revision>
         <!-- 项目基本信息 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
