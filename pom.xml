@@ -635,7 +635,7 @@
         <!-- https://mvnrepository.com/artifact/com.hubspot.immutables/immutables-exceptions -->
         <!-- https://mvnrepository.com/artifact/com.hubspot.immutables/immutable-collection-encodings -->
         <!-- https://mvnrepository.com/artifact/com.hubspot.immutables/hubspot-style -->
-        <tpl.hubspot.version>1.11.3</tpl.hubspot.version>
+        <tpl.hubspot.version>1.11.2</tpl.hubspot.version>
         <tpl.velocity-tools.version>3.1</tpl.velocity-tools.version><!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity-tools -->
 
 
