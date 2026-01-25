@@ -371,7 +371,7 @@
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-server -->
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-common -->
-        <glassfish-jersey.version>4.0.0</glassfish-jersey.version>
+        <glassfish-jersey.version>4.0.1</glassfish-jersey.version>
         <glassfish-el.version>4.0.2</glassfish-el.version><!-- https://mvnrepository.com/artifact/org.glassfish/jakarta.el -->
         <glassfish-json.version>2.0.1</glassfish-json.version><!-- https://mvnrepository.com/artifact/org.glassfish/jakarta.json -->
 
@@ -635,7 +635,7 @@
         <!-- https://mvnrepository.com/artifact/com.hubspot.immutables/immutables-exceptions -->
         <!-- https://mvnrepository.com/artifact/com.hubspot.immutables/immutable-collection-encodings -->
         <!-- https://mvnrepository.com/artifact/com.hubspot.immutables/hubspot-style -->
-        <tpl.hubspot.version>1.11.2</tpl.hubspot.version>
+        <tpl.hubspot.version>1.11.3</tpl.hubspot.version>
         <tpl.velocity-tools.version>3.1</tpl.velocity-tools.version><!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity-tools -->
 
 
