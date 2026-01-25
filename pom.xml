@@ -371,7 +371,7 @@
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-server -->
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-common -->
-        <glassfish-jersey.version>4.0.1</glassfish-jersey.version>
+        <glassfish-jersey.version>4.0.0</glassfish-jersey.version>
         <glassfish-el.version>4.0.2</glassfish-el.version><!-- https://mvnrepository.com/artifact/org.glassfish/jakarta.el -->
         <glassfish-json.version>2.0.1</glassfish-json.version><!-- https://mvnrepository.com/artifact/org.glassfish/jakarta.json -->
 
