@@ -6,6 +6,14 @@
 
 ![ZERO](docs/images/logo.jpeg)
 
+## 0. 引导
+
+- 教程：<https://www.yuque.com/jiezizhu/r2mo>
+- 教程地图：<https://kumu.io/LangYu1017/zero>
+- 示例：<https://gitee.com/zero-ws/zero-rachel-momo>
+
+![Rachel-Momo](docs/images/rachel-momo.png)
+
 ---
 
 ## 介绍
@@ -29,14 +37,6 @@ Rachel Momo（统一版本管理，适用于所有项目）
 - ✅️ / 可用的入口
 - 🧩 / 继承用父类
 - 🧫 / 实验性版本，一般包含最新依赖
-
-### 核心文档
-
-文档管理平台，对接 <https://gitee.com/zero-ws/r2mo-matrix>，文档以地图模式的文档为主
-
-- 参考链接：<https://kumu.io/LangYu1017/r2mo#r2mo-dash>
-
----
 
 ## 使用
 
@@ -69,16 +69,3 @@ Rachel Momo（统一版本管理，适用于所有项目）
     <version>${momo.version}</version>
 </parent>
 ```
-
----
-
-## 参考链接
-
-- Zero后端：<https://www.zerows.io/>
-- Zero前端：<https://www.vertxui.cn/>
-- Zero云端：<https://www.vertx-cloud.cn/>
-- Zero工具箱：<https://www.vertxai.cn/>
-- 白皮书（旧版）：<https://www.vertx-cloud.cn/document/doc-web/index-standalone.html>
-- Zero教程：<https://lang-yu.gitbook.io/zero/>
-- Vertx基础：<https://lang-yu.gitbook.io/vert.x/>
-- CDA（AI笔记）：<https://lang-yu.gitbook.io/mi-ai/>
