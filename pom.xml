@@ -216,7 +216,7 @@
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-oracle -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-mysql -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-sqlserver -->
-        <database-flyway.version>12.0.0</database-flyway.version>
+        <database-flyway.version>11.20.3</database-flyway.version>
 
 
         <!-- ========================  🌸 -google ============================ -->
