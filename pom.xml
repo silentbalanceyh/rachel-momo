@@ -204,7 +204,7 @@
         <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-x-content -->
         <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client -->
         <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client-sniffer -->
-        <elasticsearch.version>9.3.0</elasticsearch.version>
+        <elasticsearch.version>9.2.5</elasticsearch.version>
         <elasticsearch-client.version>7.17.29</elasticsearch-client.version><!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-high-level-client -->
 
 
