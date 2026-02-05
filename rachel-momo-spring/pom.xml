@@ -39,6 +39,12 @@
                 <artifactId>spring-cloud-starter-bootstrap</artifactId>
                 <version>${spring-starter-bootstrap}</version>
             </dependency>
+            <!-- Spring Doc Version -->
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>${spring-doc.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>

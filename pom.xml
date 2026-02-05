@@ -92,7 +92,7 @@
         <!-- ========================  🌸 -apache-common ============================ -->
         <commons-compress.version>1.28.0</commons-compress.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-compress -->
         <commons-net.version>3.12.0</commons-net.version><!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
-        <commons-codec.version>1.20.0</commons-codec.version><!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+        <commons-codec.version>1.21.0</commons-codec.version><!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
         <commons-collections4.version>4.5.0</commons-collections4.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
         <commons-jexl3.version>3.6.1</commons-jexl3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-jexl3 -->
         <commons-lang3.version>3.20.0</commons-lang3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
@@ -120,7 +120,7 @@
 
 
         <!-- ========================  🌸 -aws ============================ -->
-        <aws-sdk.version>2.41.4</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
+        <aws-sdk.version>2.41.22</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
         <aws-sdk-legacy.version>1.12.797</aws-sdk-legacy.version><!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
 
 
@@ -171,7 +171,7 @@
         <database-neo4j.version>6.0.2</database-neo4j.version><!-- https://mvnrepository.com/artifact/org.neo4j.driver/neo4j-java-driver -->
         <database-mongodb.version>5.6.2</database-mongodb.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-sync -->
         <database-mongodb-legacy.version>3.12.14</database-mongodb-legacy.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
-        <database-mysql.version>9.5.0</database-mysql.version><!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+        <database-mysql.version>9.6.0</database-mysql.version><!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
         <database-pgsql.version>42.7.9</database-pgsql.version><!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <database-h2.version>2.4.240</database-h2.version><!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
         <database-sqlite.version>3.51.1.0</database-sqlite.version><!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
@@ -204,7 +204,7 @@
         <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-x-content -->
         <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client -->
         <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client-sniffer -->
-        <elasticsearch.version>9.2.4</elasticsearch.version>
+        <elasticsearch.version>9.3.0</elasticsearch.version>
         <elasticsearch-client.version>7.17.29</elasticsearch-client.version><!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-high-level-client -->
 
 
@@ -216,7 +216,7 @@
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-database-oracle -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-mysql -->
         <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-sqlserver -->
-        <database-flyway.version>11.20.2</database-flyway.version>
+        <database-flyway.version>12.0.0</database-flyway.version>
 
 
         <!-- ========================  🌸 -google ============================ -->
@@ -244,7 +244,7 @@
         <!-- https://mvnrepository.com/artifact/io.grpc/grpc-services -->
         <!-- https://mvnrepository.com/artifact/io.grpc/grpc-util -->
         <!-- https://mvnrepository.com/artifact/io.grpc/grpc-testing -->
-        <google-grpc.version>1.78.0</google-grpc.version>
+        <google-grpc.version>1.79.0</google-grpc.version>
 
 
         <!-- ========================  🌸 -hibernate ============================ -->
@@ -340,7 +340,7 @@
         <!-- https://mvnrepository.com/artifact/org.jooq/jooq-migrations-maven -->
         <!-- https://mvnrepository.com/artifact/org.jooq/jooq-postgres-extensions -->
         <!-- https://mvnrepository.com/artifact/org.jooq/jooq-xtend -->
-        <database-jooq.version>3.20.10</database-jooq.version>
+        <database-jooq.version>3.20.11</database-jooq.version>
 
 
         <!-- ========================  🌸 -jsr ============================ -->
@@ -371,7 +371,7 @@
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-server -->
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-common -->
-        <glassfish-jersey.version>4.0.1</glassfish-jersey.version>
+        <glassfish-jersey.version>4.0.2</glassfish-jersey.version>
         <glassfish-el.version>4.0.2</glassfish-el.version><!-- https://mvnrepository.com/artifact/org.glassfish/jakarta.el -->
         <glassfish-json.version>2.0.1</glassfish-json.version><!-- https://mvnrepository.com/artifact/org.glassfish/jakarta.json -->
 
@@ -408,7 +408,7 @@
         <logging-log4j2.version>2.25.3</logging-log4j2.version>
         <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
         <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
-        <logging-logback.version>1.5.25</logging-logback.version>
+        <logging-logback.version>1.5.27</logging-logback.version>
         <logging-logback-cal10n.version>0.8.1</logging-logback-cal10n.version><!-- https://mvnrepository.com/artifact/ch.qos.cal10n/cal10n-api -->
         <!-- https://mvnrepository.com/artifact/org.slf4j/jul-to-slf4j/ -->
         <!-- https://mvnrepository.com/artifact/org.slf4j/jul-over-slf4j/ -->
@@ -509,7 +509,7 @@
         <reactive.rxjava2.version>2.2.21</reactive.rxjava2.version><!-- https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava -->
         <reactive.rxjava3.version>3.1.12</reactive.rxjava3.version><!-- https://mvnrepository.com/artifact/io.reactivex.rxjava3/rxjava -->
         <reactive.streams.version>1.0.4</reactive.streams.version><!-- https://mvnrepository.com/artifact/org.reactivestreams/reactive-streams -->
-        <reactive.reactor.version>3.8.1</reactive.reactor.version><!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
+        <reactive.reactor.version>3.8.2</reactive.reactor.version><!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
 
 
         <!-- ========================  🌸 -redxxx ============================ -->
@@ -533,7 +533,7 @@
 
         <!-- ========================  🌸 -secure ============================ -->
         <secure-jwt.version>4.5.0</secure-jwt.version><!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
-        <secure-jwt-jose.version>10.6</secure-jwt-jose.version><!-- https://mvnrepository.com/artifact/com.nimbusds/nimbus-jose-jwt -->
+        <secure-jwt-jose.version>10.7</secure-jwt-jose.version><!-- https://mvnrepository.com/artifact/com.nimbusds/nimbus-jose-jwt -->
         <secure-jwt-prime.version>2.0.0</secure-jwt-prime.version><!-- https://mvnrepository.com/artifact/com.inversoft/prime-jwt -->
         <secure-sshd.version>3.0.0-M2</secure-sshd.version><!-- https://mvnrepository.com/artifact/org.apache.sshd/sshd-core -->
         <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15to18 -->
@@ -599,6 +599,7 @@
         <spring-boot-admin.version>3.4.7</spring-boot-admin.version><!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-server -->
         <spring-cloud.version>2024.0.2</spring-cloud.version><!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
         <spring-starter-bootstrap>4.3.0</spring-starter-bootstrap><!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bootstrap -->
+        <spring-doc.version>2.8.15</spring-doc.version><!-- Source: https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui -->
 
         <!-- 实验性版本 -->
         <spring-2025-boot.version>4.0.0-RC2</spring-2025-boot.version>
@@ -621,13 +622,15 @@
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations-jakarta -->
         <doc-swagger3.version>2.2.42</doc-swagger3.version>
         <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-dependencies -->
+        <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-openapi3-ui -->
         <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-gateway-spring-boot-starter -->
+        <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-openapi3-spring-boot-starter -->
         <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-openapi3-jakarta-spring-boot-starter -->
         <doc-knife4j.version>4.5.0</doc-knife4j.version>
 
 
         <!-- ========================  🌸 -template ============================ -->
-        <tpl.jinjava.version>2.8.2</tpl.jinjava.version><!-- https://mvnrepository.com/artifact/com.hubspot.jinjava/jinjava -->
+        <tpl.jinjava.version>2.8.3</tpl.jinjava.version><!-- https://mvnrepository.com/artifact/com.hubspot.jinjava/jinjava -->
         <tpl.freemaker.version>1.8.1</tpl.freemaker.version><!-- https://mvnrepository.com/artifact/com.quhaodian/freemaker -->
         <!-- https://mvnrepository.com/artifact/org.apache.velocity/spring-velocity-support -->
         <!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity-engine-core -->
@@ -652,7 +655,7 @@
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-dbcp -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-api -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina-ha -->
-        <server-tomcat.version>11.0.15</server-tomcat.version>
+        <server-tomcat.version>11.0.18</server-tomcat.version>
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/servlet-api -->
         <!-- https://mvnrepository.com/artifact/org.apache.tomcat/annotations-api -->
         <server-tomcat-legacy.version>6.0.53</server-tomcat-legacy.version>
@@ -669,13 +672,13 @@
         <!-- ========================  🌸 -vendor ============================ -->
         <vendor.termd-core.version>1.1.11</vendor.termd-core.version><!-- https://mvnrepository.com/artifact/io.termd/termd-core -->
         <vendor.janino.version>3.1.12</vendor.janino.version><!-- https://mvnrepository.com/artifact/org.codehaus.janino/janino -->
-        <vendor.animal-sniffer-annotations.version>1.26</vendor.animal-sniffer-annotations.version><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/animal-sniffer-annotations -->
+        <vendor.animal-sniffer-annotations.version>1.27</vendor.animal-sniffer-annotations.version><!-- https://mvnrepository.com/artifact/org.codehaus.mojo/animal-sniffer-annotations -->
         <vendor.HdrHistogram.version>2.2.2</vendor.HdrHistogram.version><!-- https://mvnrepository.com/artifact/org.hdrhistogram/HdrHistogram -->
         <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-core -->
         <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-jackson -->
         <vendor.feign.version>8.18.0</vendor.feign.version>
         <vendor.picocli.version>4.7.7</vendor.picocli.version><!-- https://mvnrepository.com/artifact/info.picocli/picocli -->
-        <vendor.checker-qual.version>3.53.0</vendor.checker-qual.version><!-- https://mvnrepository.com/artifact/org.checkerframework/checker-qual -->
+        <vendor.checker-qual.version>3.53.1</vendor.checker-qual.version><!-- https://mvnrepository.com/artifact/org.checkerframework/checker-qual -->
 
 
         <!-- ========================  🌸 -vertx ============================ -->
