@@ -94,7 +94,7 @@
         <commons-net.version>3.12.0</commons-net.version><!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
         <commons-codec.version>1.21.0</commons-codec.version><!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
         <commons-collections4.version>4.5.0</commons-collections4.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
-        <commons-jexl3.version>3.6.1</commons-jexl3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-jexl3 -->
+        <commons-jexl3.version>3.6.2</commons-jexl3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-jexl3 -->
         <commons-lang3.version>3.20.0</commons-lang3.version><!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <commons-cli.version>1.11.0</commons-cli.version><!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
         <commons-io.version>2.21.0</commons-io.version><!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
@@ -120,7 +120,7 @@
 
 
         <!-- ========================  🌸 -aws ============================ -->
-        <aws-sdk.version>2.41.22</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
+        <aws-sdk.version>2.41.34</aws-sdk.version><!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
         <aws-sdk-legacy.version>1.12.797</aws-sdk-legacy.version><!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
 
 
@@ -168,13 +168,13 @@
 
 
         <!-- ========================  🌸 -database-driver ============================ -->
-        <database-neo4j.version>6.0.2</database-neo4j.version><!-- https://mvnrepository.com/artifact/org.neo4j.driver/neo4j-java-driver -->
+        <database-neo4j.version>6.0.3</database-neo4j.version><!-- https://mvnrepository.com/artifact/org.neo4j.driver/neo4j-java-driver -->
         <database-mongodb.version>5.6.2</database-mongodb.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-sync -->
         <database-mongodb-legacy.version>3.12.14</database-mongodb-legacy.version><!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
         <database-mysql.version>9.6.0</database-mysql.version><!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
-        <database-pgsql.version>42.7.9</database-pgsql.version><!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <database-pgsql.version>42.7.10</database-pgsql.version><!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <database-h2.version>2.4.240</database-h2.version><!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
-        <database-sqlite.version>3.51.1.0</database-sqlite.version><!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
+        <database-sqlite.version>3.51.2.0</database-sqlite.version><!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
         <!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
         <!-- https://mvnrepository.com/artifact/org.apache.derby/derbytools -->
         <!-- https://mvnrepository.com/artifact/org.apache.derby/derbyclient -->
@@ -204,7 +204,7 @@
         <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-x-content -->
         <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client -->
         <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client-sniffer -->
-        <elasticsearch.version>9.2.5</elasticsearch.version>
+        <elasticsearch.version>9.3.0</elasticsearch.version>
         <elasticsearch-client.version>7.17.29</elasticsearch-client.version><!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-high-level-client -->
 
 
@@ -220,7 +220,7 @@
 
 
         <!-- ========================  🌸 -google ============================ -->
-        <google-errorprone.version>2.46.0</google-errorprone.version><!-- https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations -->
+        <google-errorprone.version>2.47.0</google-errorprone.version><!-- https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations -->
         <google-jsr305.version>4.9.8</google-jsr305.version><!-- https://mvnrepository.com/artifact/com.github.spotbugs/spotbugs-annotations -->
         <google-jsr305-legacy.version>3.0.2</google-jsr305-legacy.version><!-- https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305 -->
         <google-gson.version>2.13.2</google-gson.version><!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
@@ -273,7 +273,7 @@
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5 -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-testing -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.core5/httpcore5-h2 -->
-        <httpcore5.version>5.4</httpcore5.version>
+        <httpcore5.version>5.4.1</httpcore5.version>
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-testing -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-cache -->
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents.client5/httpclient5-fluent -->
@@ -297,7 +297,7 @@
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-afterburner -->
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
-        <jackson.version>2.21.0</jackson.version>
+        <jackson.version>2.21.1</jackson.version>
         <jackson-annotation.version>2.21</jackson-annotation.version><!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
         <jackson-uuid-generator.version>5.2.0</jackson-uuid-generator.version><!-- https://mvnrepository.com/artifact/com.fasterxml.uuid/java-uuid-generator -->
         <jackson-yaml.version>2.5</jackson-yaml.version><!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
@@ -353,7 +353,7 @@
         <jsr330.inject.version>1</jsr330.inject.version><!-- JSR330: https://mvnrepository.com/artifact/javax.inject/javax.inject -->
         <jakarta.inject.version>2.0.1.MR</jakarta.inject.version><!-- * https://mvnrepository.com/artifact/jakarta.inject/jakarta.inject-api -->
         <jsr222.jaxb-api.version>2.4.0-b180830.0359</jsr222.jaxb-api.version><!-- JSR222: https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
-        <jakarta.jaxb-api.version>4.0.4</jakarta.jaxb-api.version><!-- https://mvnrepository.com/artifact/jakarta.xml.bind/jakarta.xml.bind-api -->
+        <jakarta.jaxb-api.version>4.0.5</jakarta.jaxb-api.version><!-- https://mvnrepository.com/artifact/jakarta.xml.bind/jakarta.xml.bind-api -->
         <jsr107.cache-api.version>1.1.1</jsr107.cache-api.version><!-- JSR107: https://mvnrepository.com/artifact/javax.cache/cache-api -->
         <jsr338.persistence-api.version>2.2</jsr338.persistence-api.version><!-- JSR338: https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
         <jakarta.persistence-api.version>3.2.0</jakarta.persistence-api.version><!-- * https://mvnrepository.com/artifact/jakarta.persistence/jakarta.persistence-api -->
@@ -394,7 +394,7 @@
         <jvmr-javassist.version>3.30.2-GA</jvmr-javassist.version><!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
         <!-- https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy -->
         <!-- https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy-agent -->
-        <jvmr-byte-buddy.version>1.18.4</jvmr-byte-buddy.version>
+        <jvmr-byte-buddy.version>1.18.5</jvmr-byte-buddy.version>
         <jvmr-classgraph.version>4.8.184</jvmr-classgraph.version><!-- https://mvnrepository.com/artifact/io.github.classgraph/classgraph -->
 
 
@@ -408,7 +408,7 @@
         <logging-log4j2.version>2.25.3</logging-log4j2.version>
         <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
         <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
-        <logging-logback.version>1.5.27</logging-logback.version>
+        <logging-logback.version>1.5.32</logging-logback.version>
         <logging-logback-cal10n.version>0.8.1</logging-logback-cal10n.version><!-- https://mvnrepository.com/artifact/ch.qos.cal10n/cal10n-api -->
         <!-- https://mvnrepository.com/artifact/org.slf4j/jul-to-slf4j/ -->
         <!-- https://mvnrepository.com/artifact/org.slf4j/jul-over-slf4j/ -->
@@ -481,10 +481,10 @@
         <!-- https://mvnrepository.com/artifact/io.netty/netty-transport-native-unix-common -->
         <!-- https://mvnrepository.com/artifact/io.netty/netty-resolver-dns-classes-macos -->
         <!-- https://mvnrepository.com/artifact/io.netty/netty-resolver-dns-native-macos -->
-        <netty.version>4.2.9.Final</netty.version>
+        <netty.version>4.2.10.Final</netty.version>
         <!-- https://mvnrepository.com/artifact/io.netty/netty-tcnative-boringssl-static -->
         <!-- https://mvnrepository.com/artifact/io.netty/netty-tcnative -->
-        <netty-tcnative.version>2.0.74.Final</netty-tcnative.version>
+        <netty-tcnative.version>2.0.75.Final</netty-tcnative.version>
 
 
         <!-- ========================  🌸 -osgi ============================ -->
@@ -509,11 +509,11 @@
         <reactive.rxjava2.version>2.2.21</reactive.rxjava2.version><!-- https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava -->
         <reactive.rxjava3.version>3.1.12</reactive.rxjava3.version><!-- https://mvnrepository.com/artifact/io.reactivex.rxjava3/rxjava -->
         <reactive.streams.version>1.0.4</reactive.streams.version><!-- https://mvnrepository.com/artifact/org.reactivestreams/reactive-streams -->
-        <reactive.reactor.version>3.8.2</reactive.reactor.version><!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
+        <reactive.reactor.version>3.8.3</reactive.reactor.version><!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
 
 
         <!-- ========================  🌸 -redxxx ============================ -->
-        <redx.jedis.version>7.2.1</redx.jedis.version><!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+        <redx.jedis.version>7.3.0</redx.jedis.version><!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
         <redx.redisson.lock4j.version>2.2.7</redx.redisson.lock4j.version><!-- https://mvnrepository.com/artifact/com.baomidou/lock4j-redisson-spring-boot-starter -->
         <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
         <!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
@@ -528,12 +528,12 @@
         <!-- ========================  🌸 -seata ============================ -->
         <!-- https://mvnrepository.com/artifact/org.apache.seata/seata-all -->
         <!-- https://mvnrepository.com/artifact/org.apache.seata/seata-spring-boot-starter -->
-        <cloud-seata.version>2.5.0</cloud-seata.version>
+        <cloud-seata.version>2.6.0</cloud-seata.version>
 
 
         <!-- ========================  🌸 -secure ============================ -->
-        <secure-jwt.version>4.5.0</secure-jwt.version><!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
-        <secure-jwt-jose.version>10.7</secure-jwt-jose.version><!-- https://mvnrepository.com/artifact/com.nimbusds/nimbus-jose-jwt -->
+        <secure-jwt.version>4.5.1</secure-jwt.version><!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
+        <secure-jwt-jose.version>10.8</secure-jwt-jose.version><!-- https://mvnrepository.com/artifact/com.nimbusds/nimbus-jose-jwt -->
         <secure-jwt-prime.version>2.0.0</secure-jwt-prime.version><!-- https://mvnrepository.com/artifact/com.inversoft/prime-jwt -->
         <secure-sshd.version>3.0.0-M2</secure-sshd.version><!-- https://mvnrepository.com/artifact/org.apache.sshd/sshd-core -->
         <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15to18 -->
@@ -564,8 +564,8 @@
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-session-map-jdbc -->
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-session-map-redis -->
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
-        <selenium.version>4.40.0</selenium.version>
-        <selenium.htlmunit3.version>2.70.0</selenium.htlmunit3.version><!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
+        <selenium.version>4.41.0</selenium.version>
+        <selenium.htlmunit3.version>4.41.0</selenium.htlmunit3.version><!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
 
 
         <!-- ========================  🌸 -sentinel ============================ -->
@@ -620,7 +620,7 @@
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-models-jakarta -->
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations -->
         <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations-jakarta -->
-        <doc-swagger3.version>2.2.42</doc-swagger3.version>
+        <doc-swagger3.version>2.2.43</doc-swagger3.version>
         <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-dependencies -->
         <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-openapi3-ui -->
         <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-gateway-spring-boot-starter -->
@@ -638,7 +638,7 @@
         <!-- https://mvnrepository.com/artifact/com.hubspot.immutables/immutables-exceptions -->
         <!-- https://mvnrepository.com/artifact/com.hubspot.immutables/immutable-collection-encodings -->
         <!-- https://mvnrepository.com/artifact/com.hubspot.immutables/hubspot-style -->
-        <tpl.hubspot.version>1.11.3</tpl.hubspot.version>
+        <tpl.hubspot.version>1.11.4</tpl.hubspot.version>
         <tpl.velocity-tools.version>3.1</tpl.velocity-tools.version><!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity-tools -->
 
 
@@ -682,9 +682,9 @@
 
 
         <!-- ========================  🌸 -vertx ============================ -->
-        <vertx.version>5.0.7</vertx.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-stack-depchain -->
+        <vertx.version>5.0.8</vertx.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-stack-depchain -->
         <vertx-swagger.version>1.6.0</vertx-swagger.version><!-- https://mvnrepository.com/artifact/com.github.phiz71/vertx-swagger-router -->
-        <vertx-legacy.version>4.5.24</vertx-legacy.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-io_uring-incubator -->
+        <vertx-legacy.version>4.5.25</vertx-legacy.version><!-- https://mvnrepository.com/artifact/io.vertx/vertx-io_uring-incubator -->
 
 
         <!-- ========================  🌸 -wxjava ============================ -->
