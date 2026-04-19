@@ -30,7 +30,10 @@ Create a new independent `.md` file only when at least one of the following cond
 | `upgrade-path.md` | a new consumer-facing upgrade path exists; an experimental layer is promoted or deprecated |
 | `stack-bom-map.md` | `rachel-momo-stack` import relationships change; an overlay layer is added or removed |
 | `agent-collaboration.md` | recommended reading entry points change; agent role boundaries need adjustment due to new modules |
-| `search-hints.md` | important property names, artifactIds, stack names, or keywords are added |
+| `mcp-agent-rules.md` | MCP activation conditions, output contract, graph/tooling limitations, or cross-repository routing rules change |
+| `consumer-agent-rules.md` | downstream consumer detection, generalized dependency routing, or framework handoff rules change |
+| `pom-analysis.md` | Maven/POM extraction method, analyzer-script output, key baseline metrics, or POM failure-mode rules change |
+| `search-hints.md` | important property names, artifactIds, stack names, keywords, or analyzer commands are added |
 
 **Do not** update mxt files for:
 
@@ -68,7 +71,7 @@ README must always contain:
 
 - repository positioning
 - main entry usage (import / parent)
-- document navigation
+- document navigation, including MCP/POM analysis entry points when present
 - current key baselines
 
 ### framework-map must be updated when:

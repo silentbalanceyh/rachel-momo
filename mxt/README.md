@@ -91,6 +91,9 @@ Use this when:
 - [upgrade-path.md](./upgrade-path.md) — upgrade path, diff checklist, and rollback guidance
 - [stack-bom-map.md](./stack-bom-map.md) — import relationships across stack, parent, and cloud BOMs
 - [agent-collaboration.md](./agent-collaboration.md) — how agents should collaborate safely in this repository
+- [mcp-agent-rules.md](./mcp-agent-rules.md) — MCP-specific trigger, reading, and repository-analysis rules for AI agents
+- [consumer-agent-rules.md](./consumer-agent-rules.md) — generalized rules and portable downstream snippet for AI agents working in projects that depend on Momo directly or through Zero/R2MO
+- [pom-analysis.md](./pom-analysis.md) — Maven/POM relationship extraction rules and analyzer-script output contract
 - [search-hints.md](./search-hints.md) — fast search hints and Maven analysis tooling for agents
 - [evolution-rules.md](./evolution-rules.md) — rules for evolving, extending, and validating this mxt knowledge pack over time
 
@@ -115,6 +118,9 @@ If you are:
 
 - maintaining versions, start with `version-governance.md`
 - deciding which POM to import, start with `stack-bom-map.md` and the decision model above
+- connecting through MCP or building agent routing, start with `mcp-agent-rules.md`
+- working from a project that depends on Momo/Zero/R2MO, run `mxt/scripts/consumer-detect.py` and read `consumer-agent-rules.md`
+- analyzing Maven XML relationships, run `mxt/scripts/pom-map.py` and read `pom-analysis.md`
 - trying to understand module boundaries, start with `framework-map.md`
 - evaluating an upgrade, start with `upgrade-path.md`
 
@@ -126,3 +132,5 @@ For AI agents using this knowledge pack via MCP:
 - **Version properties**: grep root `pom.xml` for `.version=` patterns
 - **BOM imports**: look for `scope>import</scope>` in `rachel-momo-stack/pom.xml`
 - **Overlay detection**: search for `2025-` property prefixes to identify experimental versions
+- **Structured POM map**: run `mxt/scripts/pom-map.py --repo /Users/lang/zero-cloud/app-zero/rachel-momo --format markdown`
+- **Consumer detection**: run `mxt/scripts/consumer-detect.py --repo /path/to/consumer --format markdown`

@@ -25,3 +25,10 @@ hs_err_pid*
 target/
 *.versionsBackup
 .flattened-pom.xml
+
+# Added by code-review-graph
+.code-review-graph/
+
+# Python cache
+__pycache__/**
+mxt/scripts/__pycache__/**

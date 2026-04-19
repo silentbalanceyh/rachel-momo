@@ -72,6 +72,21 @@ Use this to:
 - changing the unified exposure scope: `rachel-momo-stack/pom.xml`
 - changing the parent inheritance entry: `rachel-momo-0216/pom.xml`
 
+
+### Scenario D: I need a structured POM relationship map
+
+1. Run `mxt/scripts/pom-map.py --repo /Users/lang/zero-cloud/app-zero/rachel-momo --format markdown` for a human-readable summary.
+2. Run `mxt/scripts/pom-map.py --repo /Users/lang/zero-cloud/app-zero/rachel-momo --format json` if another agent or MCP pipeline needs structured data.
+3. Use the output to confirm module count, key baselines, entry imports, managed-dependency counts, and property references before editing POM files.
+
+
+### Scenario E: I am in a consumer repository and need to know whether Momo applies
+
+1. Run `/Users/lang/zero-cloud/app-zero/rachel-momo/mxt/scripts/consumer-detect.py --repo <consumer-root> --format markdown`.
+2. If the mode is `direct-momo-*`, read `consumer-agent-rules.md`, `mcp-agent-rules.md`, and `pom-analysis.md`.
+3. If the mode is `zero-transitive-momo`, use Momo for dependency governance and Zero for runtime behavior.
+4. If the mode is `r2mo-transitive-momo`, use Momo for dependency governance and R2MO for runtime behavior.
+
 ## Recommended Agent Tooling for Maven Analysis
 
 When suitable, agents should use Maven-oriented analysis commands or equivalent MCP extraction patterns for:
@@ -89,6 +104,8 @@ Practical targets to extract or run are:
 - `help:effective-settings` when repository behavior matters
 - root `pom.xml` property diffs versus child BOM mappings
 - direct comparison of `rachel-momo-stack` and `rachel-momo-2025-stack`
+- `mxt/scripts/pom-map.py --format markdown|json` for repository-local POM relationship extraction
+- `mxt/scripts/consumer-detect.py --repo <consumer-root> --format markdown|json` for consumer-side activation detection
 
 If shell execution is expensive or unavailable, agents should approximate the same analysis by reading:
 

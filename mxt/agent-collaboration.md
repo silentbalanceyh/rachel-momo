@@ -57,6 +57,26 @@ Read first:
 - `rachel-momo-2025-alibaba-cloud`
 - `rachel-momo-vertx`
 
+
+### 4. MCP/POM graph agent
+
+Responsible for:
+
+- running `code-review-graph status` to understand code-language graph coverage
+- running `mxt/scripts/consumer-detect.py` when the active workspace is a project that may depend on Momo through Zero/R2MO
+- running `mxt/scripts/pom-map.py` to extract Maven/POM relationships that the code graph cannot see
+- converting task wording into the correct POM layer: root property, domain BOM, stack, parent, overlay, or plugin management
+- producing the standard MCP output contract from `mcp-agent-rules.md` / `pom-analysis.md`
+
+Read first:
+
+- `mxt/mcp-agent-rules.md`
+- `mxt/consumer-agent-rules.md`
+- `mxt/pom-analysis.md`
+- `mxt/search-hints.md`
+
+Do not treat a sparse `code-review-graph` result as proof that the repository has no logic. In this repository, sparse graph coverage means the logic is Maven XML and must be extracted through POM analysis.
+
 ## Common Collaboration Mistakes
 
 ### Mistake 1: treating the root `pom.xml` as the final import entry
