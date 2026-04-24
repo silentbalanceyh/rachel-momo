@@ -74,6 +74,17 @@ When a consumer task may involve framework dependencies:
    - shared standards: `mxt-spec`
 6. Return an answer that separates **version governance** from **runtime behavior**.
 
+If the consumer task explicitly spans Momo, Spec, R2MO, and Zero, start with:
+
+- `/Users/lang/zero-cloud/app-zero/zero-ecotope/mxt/biological-network-overview.md`
+- `/Users/lang/zero-cloud/app-zero/zero-ecotope/mxt/biological-network-cross-repo-handoff.md`
+
+Even in cross-repository work, prefer pairwise handling:
+
+1. Momo + one necessary partner repository
+2. stop if the pair closes the answer
+3. add another repository only if the unresolved point is still real
+
 ## Requirement Routing Matrix
 
 | User requirement in a consumer project | What Momo can answer | What Momo cannot answer alone |
@@ -84,6 +95,7 @@ When a consumer task may involve framework dependencies:
 | “Zero endpoint behaves incorrectly” | Zero baseline dependencies | endpoint routing, Actor/Stub/Service logic in Zero |
 | “R2MO Spring security/login issue” | Spring/Security baseline dependencies | Spring Security configuration and code paths in R2MO |
 | “Shared API/model marker issue” | dependency exposure of shared spec | marker semantics without reading `r2mo-spec` |
+| “AspectJ dependency is present but runtime advice still misbehaves” | AspectJ/plugin governance | actual Spring/Zero runtime advice path without reading `r2mo-rapid` or `zero-ecotope` |
 
 ## Handoff Output Contract
 
@@ -161,4 +173,3 @@ for runtime behavior and shared semantic contracts.
 ```
 
 This snippet is intentionally short enough to embed in downstream `AGENTS.md`, `CLAUDE.md`, `.cursor/rules`, or project-local MCP instructions.
-

@@ -88,11 +88,14 @@ Use this when:
 
 - [framework-map.md](./framework-map.md) — layered module map and responsibility boundaries
 - [version-governance.md](./version-governance.md) — version sources, override rules, governance model, and drift hotspots
+- [aspectj-governance.md](./aspectj-governance.md) — AspectJ dependency/plugin governance and boundary vs runtime AOP implementation
 - [upgrade-path.md](./upgrade-path.md) — upgrade path, diff checklist, and rollback guidance
 - [stack-bom-map.md](./stack-bom-map.md) — import relationships across stack, parent, and cloud BOMs
 - [agent-collaboration.md](./agent-collaboration.md) — how agents should collaborate safely in this repository
 - [mcp-agent-rules.md](./mcp-agent-rules.md) — MCP-specific trigger, reading, and repository-analysis rules for AI agents
 - [consumer-agent-rules.md](./consumer-agent-rules.md) — generalized rules and portable downstream snippet for AI agents working in projects that depend on Momo directly or through Zero/R2MO
+- [../../zero-ecotope/mxt/biological-network-overview.md](../../zero-ecotope/mxt/biological-network-overview.md) — cross-repository MD-driven routing across governance, semantics, runtime, and delivery
+- [../../zero-ecotope/mxt/biological-network-pairwise-matrix.md](../../zero-ecotope/mxt/biological-network-pairwise-matrix.md) — pairwise processing templates across Momo, Spec, R2MO, and Zero
 - [pom-analysis.md](./pom-analysis.md) — Maven/POM relationship extraction rules and analyzer-script output contract
 - [search-hints.md](./search-hints.md) — fast search hints and Maven analysis tooling for agents
 - [evolution-rules.md](./evolution-rules.md) — rules for evolving, extending, and validating this mxt knowledge pack over time
@@ -119,10 +122,16 @@ If you are:
 - maintaining versions, start with `version-governance.md`
 - deciding which POM to import, start with `stack-bom-map.md` and the decision model above
 - connecting through MCP or building agent routing, start with `mcp-agent-rules.md`
+- building cross-repository agent routing across Momo/Spec/R2MO/Zero, start with `../../zero-ecotope/mxt/biological-network-overview.md`
 - working from a project that depends on Momo/Zero/R2MO, run `mxt/scripts/consumer-detect.py` and read `consumer-agent-rules.md`
 - analyzing Maven XML relationships, run `mxt/scripts/pom-map.py` and read `pom-analysis.md`
 - trying to understand module boundaries, start with `framework-map.md`
 - evaluating an upgrade, start with `upgrade-path.md`
+
+Cross-repository rule:
+
+- Momo should usually pair with one runtime or semantic repository
+- do not require all external repositories unless the current pair still leaves governance or runtime proof unresolved
 
 ## Quick MCP Extraction Hints
 
